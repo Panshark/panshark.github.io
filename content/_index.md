@@ -14,7 +14,6 @@ sections:
       username: me
       text: |-
         Ph.D. candidate at **NYU Wireless** working on RF sensing, wireless robotics, ISAC, and reinforcement learning.
-        **Open to faculty and research scientist roles (2026).**
 
         [Download Academic CV](/cvs/CV_academic.pdf) · [Download Industry CV](/cvs/CV_industrial.pdf)
       headings:
