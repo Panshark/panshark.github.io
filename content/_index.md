@@ -40,7 +40,7 @@ sections:
 
         ---
 
-        I am a Ph.D. candidate in Electrical and Computer Engineering at New York University, supervised by **Prof. Sundeep Rangan** in NYU Wireless. My research spans **RF sensing**, **wireless robotics**, **ISAC**, and **reinforcement learning**, with recent focus on likelihood-based RF localization and multi-band UE coordination under mobility. I build end-to-end systems that connect theory, simulation, and robotics experiments.
+        I am a Ph.D. candidate in Electrical and Computer Engineering at New York University, supervised by **[Prof. Sundeep Rangan](https://engineering.nyu.edu/faculty/sundeep-rangan)** in NYU Wireless. My research spans **RF sensing**, **wireless robotics**, **ISAC**, and **reinforcement learning**, with recent focus on likelihood-based RF localization and multi-band UE coordination under mobility. I build end-to-end systems that connect theory, simulation, and robotics experiments.
     design:
       columns: '2'
 
