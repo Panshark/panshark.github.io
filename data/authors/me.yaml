@@ -46,7 +46,7 @@ education:
     start: 2022-09-01
     end: ''
     summary: |
-      Advisor: Prof. Sundeep Rangan (Director, NYU Wireless)
+      Advisor: [Prof. Sundeep Rangan](https://engineering.nyu.edu/faculty/sundeep-rangan) (Director, NYU Wireless)
       Award: 2023 Ernst Weber Fellowship
   - degree: M.S. in Computer Engineering
     institution: New York University
@@ -104,10 +104,10 @@ skills:
         level: 3
   - name: Simulation & Frameworks
     items:
+      - label: Sionna
+        level: 5
       - label: ROS2
         level: 5
-      - label: Sionna
-        level: 4
       - label: Remcom (Wireless)
         level: 4
       - label: SUMO & CARLA
