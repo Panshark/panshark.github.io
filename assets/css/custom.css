@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap');
+
+:root {
+  --font-sans: 'Space Grotesk', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-serif: 'Fraunces', ui-serif, Georgia, serif;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, .section-heading, .navbar-brand {
+  font-family: var(--font-serif);
+  letter-spacing: -0.01em;
+}
+
+a {
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
+
+img {
+  border-radius: 14px;
+}
+
+.section {
+  scroll-margin-top: 96px;
+}
+
+.hb-gradient-mesh {
+  filter: saturate(1.1) brightness(1.02);
+}
+
+.turtlebot-video {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 1rem;
+  border-radius: 14px;
+}
+
+.turtlebot-portrait {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  margin: 2rem auto 0;
+}

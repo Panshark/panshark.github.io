@@ -1,0 +1,148 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+
+name:
+  display: Haozhe Lei
+  given: Haozhe
+  family: Lei
+  alternate: ''
+  pronunciation: ''
+  pronouns: ''
+
+postnominals:
+  - Graduate Student Member, IEEE
+
+role: Ph.D. Candidate in Electrical and Computer Engineering
+
+bio: |
+  Haozhe Lei (Graduate Student Member, IEEE) received the B.E. degree in electrical engineering and automation from China Agricultural University, Beijing, China, in 2019, and the M.S. degree in computer engineering from New York University (NYU), NY, USA, in 2022. He is currently pursuing the Ph.D. degree in electrical engineering with NYU Wireless, under the supervision of Professor Sundeep Rangan. His research interests include RF sensing, Wireless Robotics, integrated sensing and communication (ISAC), and reinforcement learning. His recent work focuses on likelihood-based RF localization and full-posterior inference for 6G decision making, as well as multi-band antenna/receiver coordination under mobility. He also develops wireless robotics systems for indoor navigation, including a mobile-robot-based FR3 platform for closed-loop localization and navigation experiments. He was a recipient of the 2023 Ernst Weber Fellowship from the NYU Tandon School of Engineering.
+
+affiliations:
+  - name: NYU Wireless, New York University
+    url: https://wireless.engineering.nyu.edu/
+
+links:
+  - icon: at-symbol
+    url: mailto:hl4155@nyu.edu
+    label: E-mail
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=-y347yUAAAAJ
+  - icon: brands/github
+    url: https://github.com/Panshark
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/haozhelei-panshark
+
+interests:
+  - RF sensing and ISAC
+  - Wireless robotics and indoor navigation
+  - Likelihood-based RF localization
+  - Reinforcement learning for wireless systems
+  - Multi-band UE coordination under mobility
+
+education:
+  - degree: Ph.D. in Electrical and Computer Engineering
+    institution: New York University
+    start: 2022-09-01
+    end: ''
+    summary: |
+      Advisor: Prof. Sundeep Rangan (Director, NYU Wireless)
+      Award: 2023 Ernst Weber Fellowship
+  - degree: M.S. in Computer Engineering
+    institution: New York University
+    start: 2020-09-01
+    end: 2022-05-31
+  - degree: B.E. in Electrical Engineering and Automation
+    institution: China Agricultural University
+    start: 2015-09-01
+    end: 2019-06-30
+
+experience:
+  - role: Research Assistant
+    org: NYU Wireless
+    start: 2022-09-01
+    summary: |
+      Research at the intersection of wireless sensing, AI, and robotics. Focus areas include likelihood-based RF localization, physics-informed RL for navigation, mmWave radar sensing in ROS2, and multi-band antenna/receiver coordination under mobility.
+  - role: Research Assistant
+    org: NYU C2SMARTER Center
+    start: 2023-09-01
+    summary: |
+      Traffic mobility control and digital-twin closed-loop analytics for safety risk prediction and response.
+  - role: Research Assistant
+    org: NYU Center for Cybersecurity
+    start: 2021-09-01
+    end: 2024-01-31
+    summary: |
+      Safe adaptive control and routing under strategic behavior for cyber-physical systems.
+  - role: Research Intern
+    org: Astrabeam LLC
+    start: 2025-06-01
+    end: 2025-08-31
+    summary: |
+      Doppler-based mmWave radar processing in ROS2 for odometry and object detection.
+  - role: Algorithm Engineer Intern
+    org: JD.com, Inc.
+    start: 2021-01-01
+    end: 2021-02-28
+    summary: |
+      Rotational object detection (CenterNet PIoU) and deployment to manufacturing lab.
+
+skills:
+  - name: Programming & Tools
+    items:
+      - label: Python
+        level: 5
+      - label: Linux/Shell scripting
+        level: 5
+      - label: MATLAB
+        level: 4
+      - label: R
+        level: 3
+      - label: LaTeX
+        level: 5
+      - label: Kubernetes (HSRN)
+        level: 3
+  - name: Simulation & Frameworks
+    items:
+      - label: ROS2
+        level: 5
+      - label: Sionna
+        level: 4
+      - label: Remcom (Wireless)
+        level: 4
+      - label: SUMO & CARLA
+        level: 4
+  - name: Robotics & Wireless Hardware
+    items:
+      - label: Turtlebot4
+        level: 4
+      - label: TI mmWave radar (AWR1642/AWR6843)
+        level: 4
+      - label: DCA1000
+        level: 4
+
+awards:
+  - title: Ernst Weber Fellowship (NYU Tandon School of Engineering)
+    awarder: New York University
+    date: 2023-01-01
+    summary: ''
+  - title: School of Engineering Fellowship (NYU Tandon School of Engineering)
+    awarder: New York University
+    date: 2022-01-01
+    summary: ''
+  - title: Tandon Research Excellence Exhibit - AI-Driven Interactive Safe Autonomous Driving
+    awarder: New York University
+    date: 2022-01-01
+    summary: ''
+  - title: Mathematical Contest in Modeling (S Prize)
+    awarder: MCM
+    date: 2018-01-01
+    summary: ''
+  - title: Beijing Higher Education Association Mathematical Contest (Second Prize)
+    awarder: BHEAMC
+    date: 2017-01-01
+    summary: ''
+  - title: China National University Student Innovation & Entrepreneurship Training Program
+    awarder: CAU
+    date: 2017-01-01
+    summary: ''
