@@ -34,10 +34,10 @@ links:
     url: https://www.linkedin.com/in/haozhelei-panshark
 
 interests:
-  - RF sensing and ISAC
-  - Wireless robotics and indoor navigation
-  - Likelihood-based RF localization
-  - Reinforcement learning for wireless systems
+  - RF sensing and ISAC inference
+  - Multimodal spatial reasoning and embodied agents
+  - Wireless robotics, localization, and navigation
+  - Full-posterior RF localization for 6G decision making
   - Multi-band UE coordination under mobility
 
 education:

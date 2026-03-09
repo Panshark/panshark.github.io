@@ -8,16 +8,15 @@ authors:
   - Hitesh Poddar
   - Tomoki Yoshimura
   - Sundeep Rangan
-date: "2025-01-01"
-publishDate: "2025-01-01"
+date: "2026-01-01"
+publishDate: "2026-01-01"
 publication_types:
-  - manuscript
-publication: ""
+  - "paper-conference"
+publication: "IEEE International Conference on Communications (ICC)"
 publication_short: ""
 abstract: ""
 summary: ""
 tags:
-  - "under-review"
   - preprint
 featured: true
 hugoblox:
@@ -34,4 +33,3 @@ projects:
   - "multi-band-ue-coordination"
 slides: ""
 ---
-

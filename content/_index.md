@@ -13,7 +13,7 @@ sections:
     content:
       username: me
       text: |-
-        Ph.D. candidate at **NYU Wireless** working on RF sensing, wireless robotics, ISAC, and reinforcement learning.
+        Ph.D. candidate at **NYU Wireless** working on RF sensing, wireless robotics, multimodal spatial reasoning, and reinforcement learning.
 
         [Download Academic CV](/cvs/CV_academic.pdf) · [Download Industry CV](/cvs/CV_industrial.pdf)
       headings:
@@ -39,7 +39,7 @@ sections:
 
         ---
 
-        I am a Ph.D. candidate in Electrical and Computer Engineering at New York University, supervised by **[Prof. Sundeep Rangan](https://engineering.nyu.edu/faculty/sundeep-rangan)** in NYU Wireless. My research spans **RF sensing**, **wireless robotics**, **ISAC**, and **reinforcement learning**, with recent focus on likelihood-based RF localization and multi-band UE coordination under mobility. I build end-to-end systems that connect theory, simulation, and robotics experiments.
+        I am a Ph.D. candidate in Electrical and Computer Engineering at New York University, supervised by **[Prof. Sundeep Rangan](https://engineering.nyu.edu/faculty/sundeep-rangan)** in NYU Wireless. My research spans **RF sensing**, **wireless robotics**, **multimodal spatial reasoning**, and **reinforcement learning**, with recent focus on likelihood-based RF localization and full-posterior inference for 6G decision making, as well as multi-band antenna/receiver coordination under mobility. I build end-to-end systems that connect theory, simulation, and robotics experiments.
     design:
       columns: '2'
 
@@ -51,11 +51,11 @@ sections:
         - name: Likelihood-Based RF Localization
           description: Full-posterior inference pipelines for 6G decision making and risk-aware control.
           icon: chart-bar
-        - name: Wireless Indoor Navigation
-          description: Physics-informed RL and digital twins for zero-shot navigation and sensing.
+        - name: Multimodal Spatial Reasoning
+          description: Scene-graph representations and agentic inference for spatial grounding and object search.
           icon: map
         - name: Wireless Robotics Systems
-          description: FR3/TurtleBot4 platform for closed-loop localization and navigation.
+          description: FR3/TurtleBot4 platform for closed-loop localization and indoor navigation experiments.
           icon: cpu-chip
         - name: Multi-Band UE Coordination
           description: Transformer-based antenna and band coordination under mobility.
