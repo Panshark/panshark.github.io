@@ -1,9 +1,9 @@
 ---
 title: Wireless Indoor Navigation & SLAM
-summary: Physics-informed RL and digital-twin methods for zero-shot wireless navigation and efficient environment sensing.
+summary: Ray-tracing digital-twin priors and physics-informed RL for zero-shot wireless navigation, localization, and wireless SLAM.
 date: 2025-01-01
 featured: true
-weight: 1
+weight: 2
 tags:
   - Wireless
   - Robotics
@@ -11,12 +11,13 @@ tags:
   - Reinforcement Learning
 ---
 
-We develop zero-shot navigation and sensing pipelines that combine physics-informed reinforcement learning, digital twins, and full-posterior RF inference for robust indoor autonomy.
+I develop ray-tracing wireless digital twins and **PIRL** (physics-informed reinforcement learning) methods that use simulated propagation as a transferable prior for zero-shot indoor navigation, wireless SLAM, and symbolic-prior robot policies. This line is being extended toward physical localization and navigation experiments with TurtleBot4 and Jackal UGV platforms, FR3 channel-sounding hardware, and controlled navigation scenarios.
 
 ![Posterior inference map](prob_estimate.png)
 
+*This figure links posterior RF belief maps with indoor navigation, showing how uncertainty-aware localization can support zero-shot wireless robot policies.*
+
 **Related papers**
-- [Zero-Shot Wireless Indoor Navigation through Physics-Informed Reinforcement Learning (ICRA 2024)](/uploads/papers/zeroshot-wireless-indoor-nav-icra2024.pdf)
-- [Digital Twin-Enhanced Wireless Indoor Navigation: Achieving Efficient Environment Sensing with Zero-Shot Reinforcement Learning (IEEE OJ-COMS 2025)](/uploads/papers/digital-twin-zeroshot-nav.pdf)
-- [Reinforcement Learning with Physics-Informed Symbolic Program Priors for Zero-Shot Wireless Indoor Navigation (RLC 2025)](/uploads/papers/rl-symbolic-priors-zeroshot-nav.pdf)
-- [Beyond Point Estimates: Likelihood-Based Full-Posterior Wireless Localization (arXiv 2025)](/uploads/papers/likelihood-full-posterior-localization.pdf)
+- [Zero-Shot Wireless Indoor Navigation through Physics-Informed Reinforcement Learning (ICRA 2024)](https://par.nsf.gov/servlets/purl/10548847)
+- [Digital Twin-Enhanced Wireless Indoor Navigation: Achieving Efficient Environment Sensing with Zero-Shot Reinforcement Learning (IEEE OJ-COMS 2025)](https://doi.org/10.1109/OJCOMS.2025.3552277)
+- [Reinforcement Learning with Physics-Informed Symbolic Program Priors for Zero-Shot Wireless Indoor Navigation (RLC 2025 Spotlight)](https://openreview.net/pdf?id=w1Lg5cxCCU)

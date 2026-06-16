@@ -19,6 +19,8 @@ summary: ""
 tags: []
 featured: true
 links:
+  - name: Article
+    url: "https://doi.org/10.1109/OJCOMS.2025.3552277"
   - type: pdf
     url: "/uploads/papers/digital-twin-zeroshot-nav.pdf"
 image:
@@ -30,4 +32,3 @@ projects:
   - "wireless-robotics-platform"
 slides: ""
 ---
-

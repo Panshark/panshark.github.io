@@ -1,5 +1,5 @@
 ---
-title: "Digital Twin-Based Driver Risk-Aware Intelligent Mobility Analytics for Urban Transportation Management"
+title: "Digital Twin-Based Driver Risk-Aware Predictive Mobility Analytics for Real-Time Situational Awareness Through Cooperative Sensing"
 authors:
   - Tao Li
   - Zilin Bian
@@ -20,7 +20,9 @@ abstract: ""
 summary: ""
 tags: []
 featured: false
-links: []
+links:
+  - name: Article
+    url: "https://doi.org/10.1109/TITS.2025.3604569"
 image:
   caption: ""
   focal_point: ""
@@ -28,4 +30,3 @@ image:
 projects: []
 slides: ""
 ---
-

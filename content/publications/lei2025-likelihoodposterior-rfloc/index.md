@@ -5,11 +5,11 @@ authors:
   - Hao Guo
   - Tommy Svensson
   - Sundeep Rangan
-date: "2025-01-01"
-publishDate: "2025-01-01"
+date: "2026-01-01"
+publishDate: "2026-01-01"
 publication_types:
-  - manuscript
-publication: ""
+  - "paper-conference"
+publication: "Asilomar"
 publication_short: ""
 abstract: ""
 summary: ""
@@ -22,13 +22,12 @@ hugoblox:
     arxiv: 2509.25719
 links:
   - type: pdf
-    url: "/uploads/papers/likelihood-full-posterior-localization.pdf"
+    url: "https://arxiv.org/pdf/2509.25719"
 image:
   caption: ""
   focal_point: ""
   preview_only: true
 projects:
-  - "wireless-indoor-navigation"
+  - "rf-belief-inference"
 slides: ""
 ---
-

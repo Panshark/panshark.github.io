@@ -1,20 +1,21 @@
 ---
-title: "Learning a Measurement-to-Posterior Map for Wireless Localization"
+title: "Site-Agnostic Posterior Inference for Indoor Localization with Ray-Tracing Wireless Digital Twins"
 authors:
   - me
-  - Hao Guo
+  - Roberto Bomfin
+  - Marwa Chafii
   - Sundeep Rangan
 date: "2026-01-01"
 publishDate: "2026-01-01"
 publication_types:
   - "article-journal"
-publication: "IEEE Transactions on Signal Processing"
+publication: "IEEE Transactions on Wireless Communications"
 publication_short: ""
 abstract: ""
-summary: ""
+summary: "Under review."
 tags:
   - "under-review"
-featured: false
+featured: true
 links: []
 image:
   caption: ""

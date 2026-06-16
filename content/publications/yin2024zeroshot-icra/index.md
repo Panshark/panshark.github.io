@@ -19,7 +19,7 @@ tags: []
 featured: true
 links:
   - type: pdf
-    url: "/uploads/papers/zeroshot-wireless-indoor-nav-icra2024.pdf"
+    url: "https://par.nsf.gov/servlets/purl/10548847"
 image:
   caption: ""
   focal_point: ""
@@ -29,4 +29,3 @@ projects:
   - "wireless-robotics-platform"
 slides: ""
 ---
-

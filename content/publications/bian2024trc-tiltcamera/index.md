@@ -19,7 +19,9 @@ abstract: ""
 summary: ""
 tags: []
 featured: false
-links: []
+links:
+  - name: Article
+    url: "https://doi.org/10.1016/j.trc.2024.104804"
 image:
   caption: ""
   focal_point: ""
@@ -27,4 +29,3 @@ image:
 projects: []
 slides: ""
 ---
-

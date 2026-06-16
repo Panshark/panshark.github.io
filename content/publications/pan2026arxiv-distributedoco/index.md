@@ -9,13 +9,13 @@ authors:
 date: "2026-01-01"
 publishDate: "2026-01-01"
 publication_types:
-  - manuscript
-publication: ""
+  - "article-journal"
+publication: "IEEE Control Systems Letters"
 publication_short: ""
 abstract: ""
 summary: ""
 tags:
-  - preprint
+  - accepted
 featured: false
 hugoblox:
   ids:
@@ -23,6 +23,8 @@ hugoblox:
 links:
   - type: pdf
     url: "https://arxiv.org/pdf/2602.10452"
+  - name: DOI
+    url: "https://doi.org/10.1109/LCSYS.2026.3696347"
 image:
   caption: ""
   focal_point: ""

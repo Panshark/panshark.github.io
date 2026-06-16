@@ -1,17 +1,18 @@
 ---
-title: "Learning a Measurement-to-Posterior Map for Wireless Localization"
+title: "Likelihood-Based Wireless Localization with Last-Bounce Spatial Features"
 authors:
+  - Roberto Bomfin
   - me
-  - Hao Guo
   - Sundeep Rangan
+  - Marwa Chafii
 date: "2026-01-01"
 publishDate: "2026-01-01"
 publication_types:
-  - "article-journal"
-publication: "IEEE Transactions on Signal Processing"
+  - "paper-conference"
+publication: "Asilomar"
 publication_short: ""
 abstract: ""
-summary: ""
+summary: "Under review."
 tags:
   - "under-review"
 featured: false

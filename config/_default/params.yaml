@@ -19,9 +19,9 @@ hugoblox:
     # Schema.org type for structured data
     type: person                        # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: "Wireless sensing / robotics / ISAC / reinforcement learning"
+    tagline: "Uncertainty-aware wireless intelligence for embodied autonomy and adaptive 6G"
     # Site meta description for search engines and social sharing
-    description: "Haozhe Lei is a Ph.D. candidate at NYU Wireless working on RF sensing, wireless robotics, ISAC, and reinforcement learning."
+    description: "Haozhe Lei is an NYU WIRELESS Ph.D. candidate advised by Sundeep Rangan, working on posterior RF localization, wireless digital twins, wireless robotics, multi-band UE adaptation, and multimodal spatial reasoning."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: ""                       # Twitter/X handle for Twitter Cards (without @)

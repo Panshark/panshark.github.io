@@ -14,7 +14,9 @@ abstract: ""
 summary: ""
 tags: []
 featured: false
-links: []
+links:
+  - type: pdf
+    url: "https://arxiv.org/pdf/2409.00243"
 image:
   caption: ""
   focal_point: ""
@@ -22,4 +24,3 @@ image:
 projects: []
 slides: ""
 ---
-

@@ -1,5 +1,6 @@
 ---
 title: "Adaptive Incentive-Compatible Navigational Route Recommendations in Urban Transportation Networks"
+draft: true
 authors:
   - "Ya-Ting Yang"
   - me
@@ -28,4 +29,3 @@ image:
 projects: []
 slides: ""
 ---
-

@@ -17,7 +17,7 @@ tags: []
 featured: true
 links:
   - type: pdf
-    url: "/uploads/papers/rl-symbolic-priors-zeroshot-nav.pdf"
+    url: "https://openreview.net/pdf?id=w1Lg5cxCCU"
 image:
   caption: ""
   focal_point: ""
@@ -27,4 +27,3 @@ projects:
   - "wireless-robotics-platform"
 slides: ""
 ---
-

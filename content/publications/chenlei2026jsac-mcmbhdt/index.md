@@ -1,9 +1,8 @@
 ---
-title: "Transformer-Based Rate Prediction for Multi-Band Cellular Handsets"
+title: "MCMB-HDT: A Multi-Cell Multi-Band Handset Digital Twin for Learning-Based Closed-Loop Array Activation"
 authors:
   - Ruibin Chen
   - me
-  - Hao Guo
   - Marco Mezzavilla
   - Hitesh Poddar
   - Tomoki Yoshimura
@@ -11,20 +10,15 @@ authors:
 date: "2026-01-01"
 publishDate: "2026-01-01"
 publication_types:
-  - "paper-conference"
-publication: "IEEE ICC Workshops"
+  - "article-journal"
+publication: "IEEE Journal on Selected Areas in Communications"
 publication_short: ""
 abstract: ""
-summary: ""
+summary: "Under review."
 tags:
-  - accepted
+  - "under-review"
 featured: true
-hugoblox:
-  ids:
-    arxiv: 2509.25722
-links:
-  - type: pdf
-    url: "https://arxiv.org/pdf/2509.25722"
+links: []
 image:
   caption: ""
   focal_point: ""
