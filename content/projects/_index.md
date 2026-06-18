@@ -11,6 +11,8 @@ sections:
     content:
       title: Selected Projects
       text: A growing portfolio of wireless sensing, robotics, and ISAC systems. New projects will be added as they mature.
+      sort_by: weight
+      order: asc
       filters:
         folders:
           - projects

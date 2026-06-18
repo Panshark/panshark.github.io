@@ -3,7 +3,7 @@ title: Multi-Band UE Coordination Under Mobility
 summary: UE-centric multi-cell multi-band handset digital twins for closed-loop array, band, and rate prediction under mobility.
 date: 2025-01-01
 featured: true
-weight: 3
+weight: 4
 tags:
   - Wireless
   - Systems

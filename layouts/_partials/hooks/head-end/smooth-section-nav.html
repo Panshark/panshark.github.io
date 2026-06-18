@@ -1,0 +1,97 @@
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const bio = document.querySelector('.resume-biography');
+    if (bio) {
+      const bioColumns = bio.querySelectorAll('.md\\:col-span-4, .md\\:col-span-8');
+      const detailColumn = bioColumns[1];
+      const interestBlock = [...(detailColumn?.children || [])].find((child) => child.textContent.includes('Interests'));
+
+      if (interestBlock) {
+        interestBlock.classList.add('profile-interests');
+      }
+
+      bio.querySelectorAll('[class*="md:col-span-8"] > .mb-16 > .grid p.text-sm').forEach((dateBlock) => {
+        const parts = dateBlock.innerHTML
+          .split(/<br\s*\/?>/i)
+          .map((part) => part.replace(/<[^>]+>/g, '').trim())
+          .filter(Boolean);
+
+        if (parts.length >= 2) {
+          dateBlock.textContent = parts.join(' - ');
+        }
+      });
+    }
+
+    const isHome = window.location.pathname === '/' || window.location.pathname === '/index.html';
+    const navMenu = document.querySelector('#nav-menu');
+    const sectionLinks = [...document.querySelectorAll('header a[href^="/#"]')];
+
+    if (!navMenu || !sectionLinks.length) return;
+
+    if (!isHome) {
+      const pageLink = document.querySelector(`header a[href="${window.location.pathname}"]`);
+      if (pageLink) pageLink.classList.add('is-active-section');
+      return;
+    }
+
+    const indicator = document.createElement('span');
+    indicator.className = 'section-nav-indicator';
+    indicator.setAttribute('aria-hidden', 'true');
+    navMenu.append(indicator);
+
+    const setActiveLink = (link) => {
+      if (!link) return;
+      sectionLinks.forEach((item) => item.classList.toggle('is-active-section', item === link));
+
+      const menuRect = navMenu.getBoundingClientRect();
+      const linkRect = link.getBoundingClientRect();
+      const center = linkRect.left - menuRect.left + (linkRect.width / 2);
+      indicator.style.transform = `translateX(${center}px)`;
+      indicator.style.opacity = '1';
+    };
+
+    const linksById = new Map(
+      sectionLinks
+        .map((link) => [link.getAttribute('href').replace('/#', ''), link])
+        .filter(([id]) => id)
+    );
+
+    if (isHome) {
+      sectionLinks.forEach((link) => {
+        link.addEventListener('click', (event) => {
+          const id = link.getAttribute('href').replace('/#', '');
+          const target = document.getElementById(id);
+          if (!target) return;
+
+          event.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          history.pushState(null, '', `#${id}`);
+          setActiveLink(link);
+        });
+      });
+
+      const observer = new IntersectionObserver((entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+        if (visible) setActiveLink(linksById.get(visible.target.id));
+      }, {
+        rootMargin: '-25% 0px -58% 0px',
+        threshold: [0.12, 0.35, 0.6],
+      });
+
+      linksById.forEach((_, id) => {
+        const section = document.getElementById(id);
+        if (section) observer.observe(section);
+      });
+    }
+
+    const initial = sectionLinks.find((link) => link.getAttribute('href') === `/${window.location.hash}`);
+    setActiveLink(initial || sectionLinks[0]);
+    window.addEventListener('resize', () => {
+      const active = sectionLinks.find((link) => link.classList.contains('is-active-section'));
+      setActiveLink(active || sectionLinks[0]);
+    });
+  });
+</script>

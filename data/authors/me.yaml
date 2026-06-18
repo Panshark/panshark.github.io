@@ -45,19 +45,19 @@ interests:
 education:
   - degree: Ph.D. in Electrical and Computer Engineering
     institution: New York University
-    start: 2022-09-01
-    end: 2027-05-31
+    start: '2022'
+    end: 'Expected 2027'
     summary: |
       Advisor: [Prof. Sundeep Rangan](https://engineering.nyu.edu/faculty/sundeep-rangan) (Director, NYU WIRELESS)
       Award: 2023 Ernst Weber Fellowship
   - degree: M.S. in Computer Engineering
     institution: New York University
-    start: 2020-09-01
-    end: 2022-05-31
+    start: '2020'
+    end: '2022'
   - degree: B.E. in Electrical Engineering and Automation
     institution: China Agricultural University
-    start: 2015-09-01
-    end: 2019-06-30
+    start: '2015'
+    end: '2019'
 
 experience:
   - role: Research Assistant
@@ -71,18 +71,18 @@ experience:
     end: 2026-03-31
     summary: |
       Predictive correlated online learning, distributed pan-tilt-camera control, and digital-twin closed-loop analytics for traffic monitoring, driver-risk-aware mobility/safety prediction, and distributed online control.
-  - role: Research Assistant
-    org: NYU Center for Cybersecurity
-    start: 2021-09-01
-    end: 2024-01-31
-    summary: |
-      Safe adaptive control and routing under strategic behavior for cyber-physical systems.
   - role: Research Intern
     org: Astrabeam LLC
     start: 2025-06-01
     end: 2025-08-31
     summary: |
       Doppler-based mmWave radar processing in ROS2 for odometry and object detection.
+  - role: Research Assistant
+    org: NYU Center for Cybersecurity
+    start: 2021-09-01
+    end: 2024-01-31
+    summary: |
+      Safe adaptive control and routing under strategic behavior for cyber-physical systems.
   - role: Algorithm Engineer Intern
     org: JD.com, Inc.
     start: 2021-01-01
@@ -143,10 +143,6 @@ awards:
     awarder: New York University
     date: 2022-01-01
     summary: '[CyberByte feature](https://issuu.com/nyutandon/docs/t2223cp_centerforcybersecurity_cyberbyte_fall2022_/14?e=17&o=1)'
-  - title: Mathematical Contest in Modeling (S Prize)
-    awarder: MCM
-    date: 2018-01-01
-    summary: ''
   - title: Beijing Higher Education Association Mathematical Contest (Second Prize)
     awarder: BHEAMC
     date: 2017-01-01

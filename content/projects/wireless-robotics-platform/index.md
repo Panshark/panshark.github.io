@@ -3,7 +3,7 @@ title: Wireless Robotics Platform (FR3 / TurtleBot4)
 summary: RFSoC/Pi-Radio FR3/mmWave channel-sounding platform for robotic localization and navigation experiments.
 date: 2025-01-01
 featured: true
-weight: 4
+weight: 2
 tags:
   - Wireless
   - Robotics

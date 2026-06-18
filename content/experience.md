@@ -8,16 +8,20 @@ design:
 
 sections:
   - block: resume-experience
+    id: experience-timeline
     content:
+      title: Research & Professional Experience
       username: me
     design:
       date_format: 'January 2006'
       is_education_first: false
   - block: resume-skills
+    id: expertise
     content:
       title: Technical Expertise
       username: me
   - block: markdown
+    id: mentoring
     content:
       title: Mentoring
       text: |-
@@ -30,10 +34,12 @@ sections:
     design:
       columns: '1'
   - block: resume-awards
+    id: awards
     content:
       title: Awards
       username: me
   - block: markdown
+    id: review-services
     content:
       title: Review Services
       text: |-

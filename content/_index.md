@@ -6,42 +6,46 @@ date: 2022-10-24
 type: landing
 
 design:
-  spacing: '6rem'
+  spacing: '2.75rem'
 
 sections:
   - block: resume-biography-3
     content:
       username: me
       text: |-
-        Ph.D. candidate in Electrical and Computer Engineering at **NYU WIRELESS**, advised by **Prof. Sundeep Rangan**. I build uncertainty-aware wireless intelligence for embodied autonomy and adaptive 6G systems.
+        I am a Ph.D. candidate in Electrical and Computer Engineering at **New York University**, advised by **[Prof. Sundeep Rangan](https://engineering.nyu.edu/faculty/sundeep-rangan)** at **[NYU WIRELESS](https://wireless.engineering.nyu.edu/)**.
 
-        [Download Academic CV](/cvs/CV_academic.pdf)
+        My research develops **spatially aware, uncertainty-aware wireless intelligence** for embodied autonomy and adaptive 6G systems. I build algorithms, wireless digital twins, and physical FR3/mmWave testbeds that turn sparse RF and multimodal observations into calibrated spatial beliefs and closed-loop decisions.
+
+        <div class="hero-actions">
+          <a href="#research">Research themes</a>
+          <a href="#publications">Key publications</a>
+          <a href="/cvs/CV_academic.pdf">Academic CV</a>
+        </div>
       headings:
-        about: ''
-        education: ''
-        interests: ''
+        about: About
+        education: Education
+        interests: Research Interests
     design:
       background:
         gradient_mesh:
-          enable: true
+          enable: false
       name:
         size: md
       avatar:
         size: large
-        shape: circle
+        shape: square
 
   - block: markdown
     id: about
     content:
-      title: About
+      title: Research Overview
       text: |-
-        ![Formal portrait](/media/formal.jpg)
+        <img class="about-portrait" src="/media/casual.png" alt="Casual portrait">
 
-        ---
+        My work starts from a simple problem: future wireless and robotic systems rarely see the world through clean measurements. A receiver may observe only a few multipath components; a robot may have partial visual context; a handset may only measure the bands and antenna modules it chooses to activate. In these settings, a single point estimate is often less useful than a belief over competing spatial hypotheses.
 
-        I am a Ph.D. candidate in Electrical and Computer Engineering at New York University, advised by **[Prof. Sundeep Rangan](https://engineering.nyu.edu/faculty/sundeep-rangan)** in **NYU WIRELESS**. My research asks how future wireless systems can move beyond point estimates and link metrics to represent competing spatial hypotheses, quantify uncertainty, and use those beliefs for sensing, navigation, and resource activation when observations are sparse, noisy, blocked, and environment-dependent.
-
-        My current work combines **posterior RF localization**, **wireless digital twins**, **wireless robotics**, **multi-band UE adaptation**, and **multimodal spatial reasoning**. I developed MC-CLE and LOCUS-DT for likelihood-based RF belief inference; study PIRL and digital-twin priors for zero-shot wireless robot navigation; develop MCMB-HDT for closed-loop multi-band handset adaptation; and build object-centric graph memories for robot grounding and search. I also build physical FR3/mmWave RFSoC/Pi-Radio measurement systems with TurtleBot4 and Jackal UGV platforms.
+        I use this view to connect four threads: **posterior RF localization** through MC-CLE and LOCUS-DT, **wireless digital twins** for zero-shot robot navigation and SLAM, **UE-centric multi-band adaptation** under mobility and blockage, and **multimodal spatial memory** for embodied agents. The long-term goal is to make wireless systems not only communicate, but also reason about space, uncertainty, and action.
     design:
       columns: '2'
 
@@ -68,8 +72,10 @@ sections:
   - block: collection
     id: projects
     content:
-      title: Selected Projects
+      title: Key Projects
       text: Wireless systems and embodied AI pipelines that move from probabilistic inference to real-world experiments.
+      sort_by: weight
+      order: asc
       filters:
         folders:
           - projects
@@ -81,37 +87,36 @@ sections:
       show_read_time: false
       show_read_more: false
 
-  - block: collection
+  - block: markdown
     id: publications
     content:
-      title: Selected Publications
-      filters:
-        folders:
-          - publications
-        featured_only: true
-    design:
-      view: citation
+      title: Key Publications
+      text: |-
+        - **2026 · IEEE TWC**: [Site-Agnostic Posterior Inference for Indoor Localization with Ray-Tracing Wireless Digital Twins](/publications/lei2026twc-siteagnostic-posterior/)
+        - **2026 · IEEE JSAC**: [MCMB-HDT: A Multi-Cell Multi-Band Handset Digital Twin for Learning-Based Closed-Loop Array Activation](/publications/chenlei2026jsac-mcmbhdt/)
+        - **2026 · IEEE ICC Workshops**: [Transformer-Based Rate Prediction for Multi-Band Cellular Handsets](/publications/chenlei2025-multibandue-switching/)
+        - **2026 · IEEE GLOBECOM**: [LOCUS-DT: Localization via Observation-Conditioned Uncertainty Scoring with Digital Twins](/publications/lei2026globecom-locusdt/)
+        - **2026 · Asilomar**: [Beyond Point Estimates: Likelihood-Based Full-Posterior Wireless Localization](/publications/lei2025-likelihoodposterior-rfloc/)
+        - **2025 · IEEE OJ-COMS**: [Digital Twin-Enhanced Wireless Indoor Navigation: Achieving Efficient Environment Sensing with Zero-Shot Reinforcement Learning](/publications/lei2025ojcoms-digitaltwin/)
+        - **2025 · RLC**: [Reinforcement Learning with Physics-Informed Symbolic Program Priors for Zero-Shot Wireless Indoor Navigation](/publications/li2025rlc-symbolicpriors/)
+        - **2024 · IEEE ICRA**: [Zero-Shot Wireless Indoor Navigation through Physics-Informed Reinforcement Learning](/publications/yin2024zeroshot-icra/)
 
-  - block: collection
-    id: all-publications
-    content:
-      title: All Publications
-      filters:
-        folders:
-          - publications
+        [Full publication list](/publications/)
     design:
-      view: citation
+      columns: '1'
 
   - block: markdown
     id: lab
     content:
-      title: Lab
+      title: 'Our Center: NYU WIRELESS'
       text: |-
-        ![NYU WIRELESS group photo](/media/lab.jpg)
+        <a class="lab-photo-link" href="/uploads/NYU_wireless.pdf" aria-label="Open NYU WIRELESS overview PDF">
+          <img src="/media/lab.jpg" alt="NYU WIRELESS group photo">
+        </a>
 
         ---
 
-        I am part of **NYU WIRELESS**, a leading 6G research center at NYU Tandon. For an overview of the center's scope, facilities, and research programs, see the NYU WIRELESS overview deck.
+        I am proud to be part of **NYU WIRELESS**, a leading 6G research center at NYU Tandon and the home base for my work on wireless sensing, localization, digital twins, and robotic measurement systems. The center gives my research a rare mix of theory, simulation, RF hardware, and mobile robotic platforms.
 
         [NYU WIRELESS Overview (PDF)](/uploads/NYU_wireless.pdf)
     design:

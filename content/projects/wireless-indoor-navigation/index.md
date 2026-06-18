@@ -3,7 +3,7 @@ title: Wireless Indoor Navigation & SLAM
 summary: Ray-tracing digital-twin priors and physics-informed RL for zero-shot wireless navigation, localization, and wireless SLAM.
 date: 2025-01-01
 featured: true
-weight: 2
+weight: 3
 tags:
   - Wireless
   - Robotics
