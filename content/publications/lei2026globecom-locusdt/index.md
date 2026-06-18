@@ -1,10 +1,5 @@
 ---
 title: "LOCUS-DT: Localization via Observation-Conditioned Uncertainty Scoring with Digital Twins"
-draft: true
-build:
-  render: never
-  list: never
-  publishResources: false
 authors:
   - me
   - Roberto Bomfin
@@ -14,10 +9,10 @@ date: "2026-01-01"
 publishDate: "2026-01-01"
 publication_types:
   - "paper-conference"
-publication: "IEEE GLOBECOM"
+publication: "IEEE GLOBECOM (under review)"
 publication_short: ""
 abstract: ""
-summary: "Under review."
+summary: "Under review at IEEE GLOBECOM."
 tags:
   - "under-review"
 featured: true

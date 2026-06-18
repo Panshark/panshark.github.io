@@ -1,12 +1,8 @@
 ---
-title: Publications
+title: Full Publications
 cms_exclude: true
+aliases:
+  - /publications/full/
 
-# View.
-view: citation
-
-# Optional header image (relative to `static/media/` folder).
-banner:
-  caption: ''
-  image: ''
+summary: "Published papers, accepted papers, arXiv preprints, and selected manuscripts under review."
 ---

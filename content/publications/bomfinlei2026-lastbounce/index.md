@@ -1,10 +1,5 @@
 ---
 title: "Likelihood-Based Wireless Localization with Last-Bounce Spatial Features"
-draft: true
-build:
-  render: never
-  list: never
-  publishResources: false
 authors:
   - Roberto Bomfin
   - me
@@ -14,10 +9,10 @@ date: "2026-01-01"
 publishDate: "2026-01-01"
 publication_types:
   - "paper-conference"
-publication: "Asilomar"
+publication: "Asilomar (under review)"
 publication_short: ""
 abstract: ""
-summary: "Under review."
+summary: "Under review at Asilomar."
 tags:
   - "under-review"
 featured: false

@@ -30,3 +30,4 @@ I am developing **MCMB-HDT** (Multi-Cell Multi-Band Handset Digital Twin), a UE-
 
 **Related papers**
 - [Transformer-Based Rate Prediction for Multi-Band Cellular Handsets](https://arxiv.org/pdf/2509.25722) (IEEE ICC Workshops 2026)
+- [MCMB-HDT: A Multi-Cell Multi-Band Handset Digital Twin for Learning-Based Closed-Loop Array Activation](/publications/chenlei2026jsac-mcmbhdt/) (IEEE JSAC, under review)

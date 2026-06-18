@@ -45,7 +45,7 @@
 
       const menuRect = navMenu.getBoundingClientRect();
       const linkRect = link.getBoundingClientRect();
-      const center = linkRect.left - menuRect.left + (linkRect.width / 2);
+      const center = linkRect.left - menuRect.left + (linkRect.width / 2) - (indicator.offsetWidth / 2);
       indicator.style.transform = `translateX(${center}px)`;
       indicator.style.opacity = '1';
     };
@@ -56,6 +56,33 @@
         .filter(([id]) => id)
     );
 
+    const sections = [...linksById.entries()]
+      .map(([id, link]) => ({ id, link, node: document.getElementById(id) }))
+      .filter((item) => item.node);
+
+    let ticking = false;
+    const updateActiveFromScroll = () => {
+      const scrollProbe = window.scrollY + 112;
+      const pageBottom = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 4;
+      let active = sections[0];
+
+      if (pageBottom) {
+        active = sections[sections.length - 1];
+      } else {
+        for (const section of sections) {
+          const sectionTop = section.node.getBoundingClientRect().top + window.scrollY;
+          if (sectionTop <= scrollProbe) {
+            active = section;
+          } else {
+            break;
+          }
+        }
+      }
+
+      if (active) setActiveLink(active.link);
+      ticking = false;
+    };
+
     if (isHome) {
       sectionLinks.forEach((link) => {
         link.addEventListener('click', (event) => {
@@ -64,31 +91,23 @@
           if (!target) return;
 
           event.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          const targetTop = target.getBoundingClientRect().top + window.scrollY - 72;
+          window.scrollTo({ top: targetTop, behavior: 'smooth' });
           history.pushState(null, '', `#${id}`);
           setActiveLink(link);
         });
       });
 
-      const observer = new IntersectionObserver((entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-
-        if (visible) setActiveLink(linksById.get(visible.target.id));
-      }, {
-        rootMargin: '-25% 0px -58% 0px',
-        threshold: [0.12, 0.35, 0.6],
-      });
-
-      linksById.forEach((_, id) => {
-        const section = document.getElementById(id);
-        if (section) observer.observe(section);
-      });
+      window.addEventListener('scroll', () => {
+        if (ticking) return;
+        ticking = true;
+        window.requestAnimationFrame(updateActiveFromScroll);
+      }, { passive: true });
     }
 
     const initial = sectionLinks.find((link) => link.getAttribute('href') === `/${window.location.hash}`);
     setActiveLink(initial || sectionLinks[0]);
+    updateActiveFromScroll();
     window.addEventListener('resize', () => {
       const active = sectionLinks.find((link) => link.classList.contains('is-active-section'));
       setActiveLink(active || sectionLinks[0]);

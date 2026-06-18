@@ -1,0 +1,57 @@
+{{ define "main" }}
+<main class="publication-list-page">
+  <div class="publication-list-shell">
+    <header class="publication-list-header">
+      <p class="publication-list-kicker">Haozhe Lei</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.summary }}
+        <p>{{ . }}</p>
+      {{ end }}
+    </header>
+
+    <div class="full-publication-list">
+      {{ range .RegularPagesRecursive.ByDate.Reverse }}
+        {{ $tags := .Params.tags | default (slice) }}
+        <article class="full-publication-card">
+          <div class="full-publication-meta">
+            {{ with .Params.publication }}<span>{{ . }}</span>{{ end }}
+            <span>{{ .Date.Format "2006" }}</span>
+          </div>
+
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+
+          {{ with .Params.authors }}
+            {{ $authors := slice }}
+            {{ range . }}
+              {{ $name := . }}
+              {{ if eq $name "me" }}
+                {{ $name = "Haozhe Lei" }}
+              {{ end }}
+              {{ $authors = $authors | append $name }}
+            {{ end }}
+            <p class="full-publication-authors">{{ delimit $authors ", " }}</p>
+          {{ end }}
+
+          <div class="full-publication-footer">
+            <div class="full-publication-badges">
+              {{ if in $tags "under-review" }}<span>Under review</span>{{ end }}
+              {{ if in $tags "accepted" }}<span>Accepted</span>{{ end }}
+              {{ if in $tags "preprint" }}<span>Preprint</span>{{ end }}
+            </div>
+
+            {{ with .Params.links }}
+              <div class="full-publication-links">
+                {{ range . }}
+                  {{ $label := or .name .type "Link" }}
+                  {{ if eq $label "pdf" }}{{ $label = "PDF" }}{{ end }}
+                  <a href="{{ .url }}" target="_blank" rel="noopener">{{ $label }}</a>
+                {{ end }}
+              </div>
+            {{ end }}
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</main>
+{{ end }}
