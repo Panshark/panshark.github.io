@@ -14,7 +14,7 @@ publication_types:
 publication: 2024 IEEE International Conference on Robotics and Automation (ICRA)
 publication_short: ""
 abstract: ""
-summary: ""
+summary: "Published at IEEE ICRA 2024."
 tags: []
 featured: true
 links:
@@ -29,3 +29,7 @@ projects:
   - "wireless-robotics-platform"
 slides: ""
 ---
+
+<div class="author-role-note">
+  <span>Co-first author</span>
+</div>

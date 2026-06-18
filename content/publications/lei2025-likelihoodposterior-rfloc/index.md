@@ -9,10 +9,10 @@ date: "2026-01-01"
 publishDate: "2026-01-01"
 publication_types:
   - "paper-conference"
-publication: "Asilomar"
+publication: "Asilomar (under review)"
 publication_short: ""
 abstract: ""
-summary: ""
+summary: "arXiv preprint; under review at Asilomar."
 tags:
   - "under-review"
   - preprint
@@ -31,3 +31,7 @@ projects:
   - "rf-belief-inference"
 slides: ""
 ---
+
+<div class="author-role-note">
+  <span>Sole corresponding author</span>
+</div>

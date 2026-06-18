@@ -15,7 +15,7 @@ publication_types:
 publication: "IEEE ICC Workshops"
 publication_short: ""
 abstract: ""
-summary: ""
+summary: "Accepted at IEEE ICC Workshops."
 tags:
   - accepted
 featured: true
@@ -33,3 +33,8 @@ projects:
   - "multi-band-ue-coordination"
 slides: ""
 ---
+
+<div class="author-role-note">
+  <span>Co-first author</span>
+  <span>Sole corresponding author</span>
+</div>

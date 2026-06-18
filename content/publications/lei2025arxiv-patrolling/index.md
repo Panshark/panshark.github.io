@@ -12,10 +12,10 @@ date: "2025-01-01"
 publishDate: "2025-01-01"
 publication_types:
   - manuscript
-publication: ""
+publication: "arXiv preprint"
 publication_short: ""
 abstract: ""
-summary: ""
+summary: "arXiv preprint."
 tags:
   - preprint
 featured: false
@@ -32,4 +32,3 @@ image:
 projects: []
 slides: ""
 ---
-

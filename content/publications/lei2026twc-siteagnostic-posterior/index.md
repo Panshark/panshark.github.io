@@ -1,5 +1,10 @@
 ---
 title: "Site-Agnostic Posterior Inference for Indoor Localization with Ray-Tracing Wireless Digital Twins"
+draft: true
+build:
+  render: never
+  list: never
+  publishResources: false
 authors:
   - me
   - Roberto Bomfin
@@ -25,3 +30,7 @@ projects:
   - "rf-belief-inference"
 slides: ""
 ---
+
+<div class="author-role-note">
+  <span>Sole corresponding author</span>
+</div>

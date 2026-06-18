@@ -17,7 +17,7 @@ publication_types:
 publication: IEEE Transactions on Intelligent Transportation Systems
 publication_short: ""
 abstract: ""
-summary: ""
+summary: "Published in IEEE Transactions on Intelligent Transportation Systems."
 tags: []
 featured: false
 links:
@@ -30,3 +30,7 @@ image:
 projects: []
 slides: ""
 ---
+
+<div class="author-role-note">
+  <span>Co-first author</span>
+</div>

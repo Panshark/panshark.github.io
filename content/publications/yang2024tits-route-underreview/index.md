@@ -1,6 +1,5 @@
 ---
 title: "Adaptive Incentive-Compatible Navigational Route Recommendations in Urban Transportation Networks"
-draft: true
 authors:
   - "Ya-Ting Yang"
   - me
@@ -9,11 +8,12 @@ date: "2024-01-01"
 publishDate: "2024-01-01"
 publication_types:
   - manuscript
-publication: IEEE Transactions on Intelligent Transportation Systems
+publication: "IEEE Transactions on Intelligent Transportation Systems (under review)"
 publication_short: ""
 abstract: ""
-summary: ""
+summary: "arXiv preprint; under review at IEEE Transactions on Intelligent Transportation Systems."
 tags:
+  - "under-review"
   - preprint
 featured: false
 hugoblox:

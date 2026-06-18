@@ -1,5 +1,10 @@
 ---
 title: "Likelihood-Based Wireless Localization with Last-Bounce Spatial Features"
+draft: true
+build:
+  render: never
+  list: never
+  publishResources: false
 authors:
   - Roberto Bomfin
   - me

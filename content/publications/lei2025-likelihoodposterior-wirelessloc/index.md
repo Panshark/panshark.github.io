@@ -1,5 +1,10 @@
 ---
 title: "Learning a Measurement-to-Posterior Map for Wireless Localization"
+draft: true
+build:
+  render: never
+  list: never
+  publishResources: false
 authors:
   - me
   - Hao Guo
@@ -11,7 +16,7 @@ publication_types:
 publication: "IEEE Transactions on Signal Processing"
 publication_short: ""
 abstract: ""
-summary: ""
+summary: "Under review."
 tags:
   - "under-review"
 featured: false
@@ -24,3 +29,7 @@ projects:
   - "rf-belief-inference"
 slides: ""
 ---
+
+<div class="author-role-note">
+  <span>Sole corresponding author</span>
+</div>

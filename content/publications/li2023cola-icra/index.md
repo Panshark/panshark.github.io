@@ -11,7 +11,7 @@ publication_types:
 publication: 2023 IEEE International Conference on Robotics and Automation (ICRA)
 publication_short: ""
 abstract: ""
-summary: ""
+summary: "Published at IEEE ICRA 2023."
 tags: []
 featured: false
 links:
@@ -24,3 +24,7 @@ image:
 projects: []
 slides: ""
 ---
+
+<div class="author-role-note">
+  <span>Co-first author</span>
+</div>

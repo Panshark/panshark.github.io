@@ -605,6 +605,27 @@ header .navbar {
   border-radius: 7px !important;
 }
 
+.author-role-note {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0.2rem 0 1.15rem;
+}
+
+.author-role-note span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.28rem 0.68rem;
+  border: 1px solid rgba(138, 21, 56, 0.2);
+  border-radius: 999px;
+  background: var(--site-accent-soft);
+  color: var(--site-accent);
+  font-size: 0.86rem;
+  font-weight: 650;
+  line-height: 1.25;
+}
+
 #experience-timeline > .mx-auto,
 #expertise > .flex,
 #expertise > .grid,
