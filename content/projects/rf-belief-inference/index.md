@@ -13,7 +13,9 @@ tags:
 
 I develop posterior RF localization methods that preserve competing transmitter-location hypotheses instead of collapsing wireless observations into a single point estimate. This line includes **MC-CLE** for candidate-likelihood posterior inference and **LOCUS-DT**, which uses ray-tracing wireless digital twins as candidate-indexed multipath libraries for site-agnostic, layout-aware uncertainty scoring.
 
-![MC-CLE posterior inference workflow](mccle_flow.png)
+<div style="background: #fff; padding: 12px; border-radius: 6px;">
+  <img src="mccle_flow.png" alt="MC-CLE posterior inference workflow" style="display: block; width: 100%; height: auto;" />
+</div>
 
 *MC-CLE uses the ray-tracing scene, receiver pose geometry, and channel signature to score candidate transmitter locations and produce a posterior belief map.*
 
