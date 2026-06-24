@@ -45,7 +45,7 @@ sections:
 
         My work starts from a simple problem: future wireless and robotic systems rarely see the world through clean measurements. A receiver may observe only a few multipath components; a robot may have partial visual context; a handset may only measure the bands and antenna modules it chooses to activate. In these settings, a single point estimate is often less useful than a belief over competing spatial hypotheses.
 
-        I use this view to connect four threads: **posterior RF localization** through MC-CLE and LOCUS-DT, **wireless digital twins** for zero-shot robot navigation and SLAM, **UE-centric multi-band adaptation** under mobility and blockage, and **multimodal spatial memory** for embodied agents. The long-term goal is to make wireless systems not only communicate, but also reason about space, uncertainty, and action.
+        I use this view to connect four threads: **posterior RF localization** through MC-CLE and LOCUS-DT, **wireless digital twins** for zero-shot robot navigation and SLAM, **UE-centric multi-band adaptation** under mobility and blockage, and **object-centric spatial memory** for wearable and embodied agents. The long-term goal is to make wireless systems not only communicate, but also reason about space, uncertainty, and action.
     design:
       columns: '2'
 
@@ -66,6 +66,9 @@ sections:
         - name: Closed-Loop UE Adaptation
           description: Multi-cell multi-band handset digital twins for array, band, and rate prediction under mobility.
           icon: arrows-right-left
+        - name: Object-Centric Spatial Memory
+          description: Sparse egocentric sensing and semantic 3D object memories for wearable and embodied agents.
+          icon: cube
     design:
       columns: 2
 

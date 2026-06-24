@@ -1,6 +1,6 @@
 ---
 title: Multimodal Spatial Reasoning & Object Memory
-summary: Object-centric graph memories for view retrieval, object localization, instance clustering, object search, and agentic robot grounding.
+summary: Lightweight object-centric semantic 3D memory for wearable and embodied spatial intelligence.
 date: 2026-01-01
 featured: true
 weight: 5
@@ -11,11 +11,15 @@ tags:
   - Embodied Agents
 ---
 
-I am developing a spatial-reasoning pipeline that converts Habitat exploration into object-level graph memories by fusing detector masks, depth geometry, VLM descriptions, and CLIP/DINOv3 representations. The pipeline supports view retrieval, object localization, instance clustering, object search, and agentic robot grounding.
+I am developing lightweight object-centric semantic 3D memory for wearable and embodied spatial intelligence. The system converts sparse egocentric RGB/depth/pose observations into localized object records, so an agent can answer spatial queries without storing or processing every frame as a dense map.
 
 **Current pipeline**
-- Habitat exploration with VLM-based object-category selection.
-- YOLO-World detection, NanoSAM masks, DepthPro depth, and geometric projection.
-- Batched or crop-level object VLM descriptions.
-- CLIP/DINOv3 object embeddings and spatial database artifacts.
-- View retrieval, object localization, instance clustering, and analysis.
+- Sparse Habitat/HM3D or egocentric exploration with VLM-guided object-category selection.
+- YOLO-World detection, NanoSAM masks, DepthPro depth, field-of-view geometry, and visibility-aware object scoring.
+- Batched or crop-level object VLM descriptions, CLIP/DINOv3 embeddings, and cross-view association.
+- Queryable object records with labels, masks, depth, global coordinates, object-view links, and object-object spatial relations.
+- Wearable/robot-side object memory with edge/cloud support for heavier perception, identity consolidation, and prioritized map updates.
+
+**Supported tasks**
+- View retrieval, object localization, instance clustering, and spatial search.
+- Agentic grounding for robots or wearable assistants operating under sensing, power, bandwidth, and compute constraints.

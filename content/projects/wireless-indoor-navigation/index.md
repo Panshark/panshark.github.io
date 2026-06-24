@@ -17,6 +17,10 @@ I develop ray-tracing wireless digital twins and **PIRL** (physics-informed rein
 
 *This figure links posterior RF belief maps with indoor navigation, showing how uncertainty-aware localization can support zero-shot wireless robot policies.*
 
+<img src="navigation_rollout_animation.gif" alt="Wireless navigation rollout animation" loading="lazy" />
+
+*The rollout animation shows a navigation policy using wireless belief maps as spatial guidance during indoor search.*
+
 **Related papers**
 - [Zero-Shot Wireless Indoor Navigation through Physics-Informed Reinforcement Learning (ICRA 2024)](https://par.nsf.gov/servlets/purl/10548847)
 - [Digital Twin-Enhanced Wireless Indoor Navigation: Achieving Efficient Environment Sensing with Zero-Shot Reinforcement Learning (IEEE OJ-COMS 2025)](https://doi.org/10.1109/OJCOMS.2025.3552277)
