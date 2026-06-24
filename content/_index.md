@@ -72,6 +72,20 @@ sections:
     design:
       columns: 2
 
+  - block: markdown
+    id: research-map
+    content:
+      title: ''
+      text: |-
+        <figure class="research-map-panel" aria-labelledby="research-map-caption">
+          <img src="/media/research-program-detail.png" alt="Detailed research map connecting RF posterior inference, wireless digital twins, robotics testbeds, UE adaptation, and object-centric spatial reasoning.">
+          <figcaption id="research-map-caption">
+            <strong>How the themes connect.</strong> The figure summarizes my research program as one loop: sparse RF and multimodal observations are converted into spatial beliefs, validated through wireless digital twins and robotic testbeds, and used for closed-loop decisions in localization, navigation, UE adaptation, and spatial memory.
+          </figcaption>
+        </figure>
+    design:
+      columns: '1'
+
   - block: collection
     id: projects
     content:

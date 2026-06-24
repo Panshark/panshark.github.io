@@ -919,6 +919,53 @@ header .navbar {
   line-height: 1.65;
 }
 
+#research-map {
+  padding-top: 0.25rem !important;
+  margin-top: -1.75rem;
+}
+
+#research-map > .flex,
+#research-map .prose {
+  width: 100%;
+  max-width: var(--home-wide) !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+#research-map .research-map-panel {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.95rem;
+  border: 1px solid var(--site-line);
+  border-radius: 8px;
+  background: var(--site-panel);
+  box-shadow: 0 12px 28px rgba(24, 33, 47, 0.075);
+}
+
+#research-map .research-map-panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: none;
+}
+
+#research-map .research-map-panel figcaption {
+  max-width: 920px;
+  margin: 0.85rem auto 0;
+  color: var(--site-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  text-align: left;
+}
+
+#research-map .research-map-panel figcaption strong {
+  color: var(--site-ink);
+  font-weight: 650;
+}
+
 .dark #research.blox-features section > div > div.space-y-8 > div {
   background:
     linear-gradient(180deg, rgba(20, 30, 48, 0.88), rgba(15, 23, 42, 0.84)),
@@ -929,6 +976,13 @@ header .navbar {
 .dark #research.blox-features section > div > div.space-y-8 > div > div:first-child {
   background: var(--site-accent-soft) !important;
   border-color: rgba(125, 211, 252, 0.18);
+}
+
+.dark #research-map .research-map-panel {
+  background:
+    linear-gradient(180deg, rgba(20, 30, 48, 0.9), rgba(15, 23, 42, 0.86)),
+    var(--site-panel);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.22);
 }
 
 #nav-menu {
@@ -1085,6 +1139,26 @@ header .nav-link:hover {
 
   header .navbar div.px-3:has(> select[onchange*="data-theme-pack"]) {
     display: none;
+  }
+
+  #research-map {
+    margin-top: -1rem;
+    padding-top: 0 !important;
+  }
+
+  #research-map .research-map-panel {
+    padding: 0.6rem;
+    border-radius: 6px;
+  }
+
+  #research-map .research-map-panel img {
+    border-radius: 4px;
+  }
+
+  #research-map .research-map-panel figcaption {
+    margin-top: 0.65rem;
+    font-size: 0.86rem;
+    line-height: 1.55;
   }
 
   .resume-biography .max-w-7xl,
