@@ -1,6 +1,6 @@
 ---
 title: Multimodal Spatial Reasoning & Object Memory
-summary: Lightweight object-centric semantic 3D memory for wearable and embodied spatial intelligence.
+summary: Adaptive sparse sensing and object-centric semantic 3D memory for wearable and embodied spatial intelligence.
 date: 2026-01-01
 featured: true
 weight: 5
@@ -11,7 +11,15 @@ tags:
   - Embodied Agents
 ---
 
-I am developing lightweight object-centric semantic 3D memory for wearable and embodied spatial intelligence. The system converts sparse egocentric RGB/depth/pose observations into localized object records, so an agent can answer spatial queries without storing or processing every frame as a dense map.
+I am developing adaptive sparse sensing and lightweight object-centric semantic 3D memory for wearable and embodied spatial intelligence. The system converts selected egocentric RGB/depth/pose observations into localized object records, so an agent can answer spatial queries without storing or processing every frame as a dense map.
+
+![Adaptive sparse sensing and object-centric semantic 3D memory](spatial_memory_overview.png)
+
+*The system joins adaptive sensing, persistent open-vocabulary memory, wearable-edge co-design, and downstream spatial-intelligence tasks.*
+
+![Object-centric spatial dataset pipeline](spatial_dataset_pipeline.png)
+
+*The dataset links sparse posed views, geometry, visibility, object records, embeddings, and object relations to support retrieval, localization, cross-view matching, and selective next-view updates.*
 
 **Current pipeline**
 - Sparse Habitat/HM3D or egocentric exploration with VLM-guided object-category selection.

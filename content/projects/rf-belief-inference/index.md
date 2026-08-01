@@ -24,7 +24,8 @@ I develop posterior RF localization methods that preserve competing transmitter-
 *The LOCUS-DT heatmaps show how digital-twin likelihoods preserve multipath-driven spatial hypotheses, while simpler Gaussian baselines tend to smooth out the uncertainty structure.*
 
 **Related papers**
-- [Beyond Point Estimates: Likelihood-Based Full-Posterior Wireless Localization](https://arxiv.org/pdf/2509.25719) (Asilomar, under review; arXiv preprint)
+- [Beyond Point Estimates: Likelihood-Based Full-Posterior Wireless Localization](https://arxiv.org/pdf/2509.25719) (Asilomar 2026)
+- [Likelihood-Based Wireless Localization with Last-Bounce Spatial Features](/publications/bomfinlei2026-lastbounce/) (Asilomar 2026)
 - [Learning a Measurement-to-Posterior Map for Wireless Localization](/publications/lei2025-likelihoodposterior-wirelessloc/) (IEEE TSP, under review)
-- [LOCUS-DT: Localization via Observation-Conditioned Uncertainty Scoring with Digital Twins](/publications/lei2026globecom-locusdt/) (IEEE GLOBECOM, under review)
+- [LOCUS-DT: Localization via Observation-Conditioned Uncertainty Scoring with Digital Twins](/publications/lei2026globecom-locusdt/) (IEEE GLOBECOM 2026)
 - [Site-Agnostic Posterior Inference for Indoor Localization with Ray-Tracing Wireless Digital Twins](/publications/lei2026twc-siteagnostic-posterior/) (IEEE TWC, under review)

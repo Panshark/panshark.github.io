@@ -9,13 +9,11 @@ date: "2026-01-01"
 publishDate: "2026-01-01"
 publication_types:
   - "paper-conference"
-publication: "Asilomar (under review)"
+publication: "Asilomar"
 publication_short: ""
 abstract: ""
-summary: "arXiv preprint; under review at Asilomar."
-tags:
-  - "under-review"
-  - preprint
+summary: ""
+tags: []
 featured: true
 hugoblox:
   ids:

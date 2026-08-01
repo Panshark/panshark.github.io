@@ -9,12 +9,11 @@ date: "2026-01-01"
 publishDate: "2026-01-01"
 publication_types:
   - "paper-conference"
-publication: "IEEE GLOBECOM (under review)"
+publication: "IEEE GLOBECOM"
 publication_short: ""
 abstract: ""
-summary: "Under review at IEEE GLOBECOM."
-tags:
-  - "under-review"
+summary: ""
+tags: []
 featured: true
 links: []
 image:

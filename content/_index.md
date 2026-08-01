@@ -111,8 +111,9 @@ sections:
       text: |-
         - **2026 · IEEE TWC under review** [Site-Agnostic Posterior Inference for Indoor Localization with Ray-Tracing Wireless Digital Twins](/publications/lei2026twc-siteagnostic-posterior/)
         - **2026 · IEEE TSP under review** [Learning a Measurement-to-Posterior Map for Wireless Localization](/publications/lei2025-likelihoodposterior-wirelessloc/)
-        - **2026 · IEEE GLOBECOM under review** [LOCUS-DT: Localization via Observation-Conditioned Uncertainty Scoring with Digital Twins](/publications/lei2026globecom-locusdt/)
-        - **2026 · Asilomar under review** [Beyond Point Estimates: Likelihood-Based Full-Posterior Wireless Localization](/publications/lei2025-likelihoodposterior-rfloc/)
+        - **2026 · IEEE GLOBECOM** [LOCUS-DT: Localization via Observation-Conditioned Uncertainty Scoring with Digital Twins](/publications/lei2026globecom-locusdt/)
+        - **2026 · Asilomar** [Beyond Point Estimates: Likelihood-Based Full-Posterior Wireless Localization](/publications/lei2025-likelihoodposterior-rfloc/)
+        - **2026 · Asilomar** [Likelihood-Based Wireless Localization with Last-Bounce Spatial Features](/publications/bomfinlei2026-lastbounce/)
         - **2026 · IEEE JSAC under review** [MCMB-HDT: A Multi-Cell Multi-Band Handset Digital Twin for Learning-Based Closed-Loop Array Activation](/publications/chenlei2026jsac-mcmbhdt/)
         - **2026 · IEEE ICC Workshops** [Transformer-Based Rate Prediction for Multi-Band Cellular Handsets](/publications/chenlei2025-multibandue-switching/)
         - **2025 · IEEE OJ-COMS** [Digital Twin-Enhanced Wireless Indoor Navigation: Achieving Efficient Environment Sensing with Zero-Shot Reinforcement Learning](/publications/lei2025ojcoms-digitaltwin/)

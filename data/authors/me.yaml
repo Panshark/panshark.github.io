@@ -46,7 +46,7 @@ education:
   - degree: Ph.D. in Electrical and Computer Engineering
     institution: New York University
     start: '2022'
-    end: 'Expected 2027'
+    end: 'Expected May 2027'
     summary: |
       Advisor: [Prof. Sundeep Rangan](https://engineering.nyu.edu/faculty/sundeep-rangan) (Director, NYU WIRELESS)
       Award: 2023 Ernst Weber Fellowship
@@ -71,12 +71,12 @@ experience:
     end: 2026-03-31
     summary: |
       Predictive correlated online learning, distributed pan-tilt-camera control, and digital-twin closed-loop analytics for traffic monitoring, driver-risk-aware mobility/safety prediction, and distributed online control.
-  - role: Research Intern
+  - role: Research Collaborator
     org: Astrabeam LLC
     start: 2025-06-01
     end: 2025-08-31
     summary: |
-      Doppler-based mmWave radar processing in ROS2 for odometry and object detection.
+      Collaborated on Doppler-based mmWave radar processing in ROS2 for odometry and object detection.
   - role: Research Assistant
     org: NYU Center for Cybersecurity
     start: 2021-09-01

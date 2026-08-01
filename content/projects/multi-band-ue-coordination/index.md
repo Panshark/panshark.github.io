@@ -8,9 +8,11 @@ tags:
   - Wireless
   - Systems
   - Machine Learning
+image:
+  focal_point: Right
 ---
 
-I am developing **MCMB-HDT** (Multi-Cell Multi-Band Handset Digital Twin), a UE-centric framework that couples real urban geometry, base-station topology, FR1/FR3/mmWave ray tracing, embodied handset antenna radiation, pedestrian motion, handset pose, and measurement-limited feedback. On top of this twin, we study Transformer-based rate prediction from sparse asynchronous histories and PPO-based power-aware array/band activation under rate, power, and exploration constraints.
+I am developing **MCMB-HDT** (Multi-Cell Multi-Band Handset Digital Twin), a UE-centric framework that couples real urban geometry, base-station topology, FR1/FR3 ray tracing, embodied handset antenna radiation, pedestrian motion, handset pose, and measurement-limited feedback. On top of this twin, we study Transformer-based rate prediction from sparse asynchronous histories and PPO-based retain-or-explore array activation that preserves best-link rate while penalizing extra-array measurements.
 
 ![NYU Tandon geographic data and 3D digital-twin scene](digital_twin_scene.png)
 

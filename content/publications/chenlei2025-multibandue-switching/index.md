@@ -12,12 +12,11 @@ date: "2026-01-01"
 publishDate: "2026-01-01"
 publication_types:
   - "paper-conference"
-publication: "IEEE ICC Workshops"
+publication: "IEEE ICC Workshops 2026"
 publication_short: ""
 abstract: ""
-summary: "Accepted at IEEE ICC Workshops."
-tags:
-  - accepted
+summary: ""
+tags: []
 featured: true
 hugoblox:
   ids:

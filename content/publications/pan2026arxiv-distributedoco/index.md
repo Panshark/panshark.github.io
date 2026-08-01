@@ -10,12 +10,11 @@ date: "2026-01-01"
 publishDate: "2026-01-01"
 publication_types:
   - "article-journal"
-publication: "IEEE Control Systems Letters"
+publication: "IEEE Control Systems Letters, vol. 10, pp. 391–396"
 publication_short: ""
 abstract: ""
 summary: ""
-tags:
-  - accepted
+tags: []
 featured: false
 hugoblox:
   ids:

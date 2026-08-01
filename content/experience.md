@@ -29,8 +29,9 @@ sections:
         - ECE-GY5213 Introduction to System Engineering (Spring 2024)
 
         **Graduate Mentoring**
-        - Ruibin Chen (Ph.D. student, NYU) - Multi-Band Handset Digital Twins and Closed-Loop Array/Band Activation (IEEE ICC accepted; IEEE JSAC under review), Feb 2025 - Present
-        - Yuheng Liu (M.S. student, NYU) - Multimodal Spatial Reasoning with Scene-Graph Memory and Agentic Inference, Jan 2026 - Present
+        - Ruibin Chen (Ph.D. student, NYU) - Multi-Band Handset Digital Twins and Closed-Loop Array/Band Activation (IEEE ICC Workshops 2026; IEEE JSAC under review), Feb 2025 - Present
+        - Yuheng Liu & Ashesh Kaji (M.S. students, NYU) - Multimodal Spatial Reasoning with Object-Centric Scene-Graph Memory and Agentic Inference, Jan 2026 / Jul 2026 - Present
+        - Yuhan Jiang (M.S. student, NYU) - Robotic RF Measurement and FR3 Localization Testbed, Jul 2026 - Present
     design:
       columns: '1'
   - block: resume-awards
