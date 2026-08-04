@@ -15,7 +15,12 @@ abstract: ""
 summary: ""
 tags: []
 featured: true
-links: []
+hugoblox:
+  ids:
+    arxiv: 2608.00406
+links:
+  - type: pdf
+    url: "https://arxiv.org/pdf/2608.00406"
 image:
   caption: ""
   focal_point: ""
