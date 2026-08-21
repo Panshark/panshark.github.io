@@ -48,6 +48,7 @@ sections:
         - IEEE Transactions on Signal Processing (TSP)
         - IEEE Transactions on Communications (TCOM)
         - IEEE Wireless Communications Letters (WCL)
+        - IEEE Transactions on Vehicular Technology (TVT)
         - IEEE Vehicular Technology Magazine (VTM)
         - IEEE Control Systems Letters (L-CSS)
 
