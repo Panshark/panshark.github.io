@@ -24,6 +24,22 @@ I am building and validating a 10-GHz FR3 robotic measurement platform for close
 
 *This public demo shows the TurtleBot4-mounted FR3 hardware operating in a live measurement setting.*
 
+## Media & Public Demonstrations
+
+<div class="media-video-shell">
+  <iframe src="https://www.youtube-nocookie.com/embed/2_3FGVCxYKY" title="Brooklyn 6G Summit 2025 interview on FR3 robotic localization" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+*Interview recorded at the Brooklyn 6G Summit 2025.*
+
+At the 2025 Brooklyn 6G Summit, I demonstrated an FR3-based robotic sensing and localization platform that combines TurtleBot4 mobility, Pi-Radio front ends, angle-of-arrival measurements, and SLAM-based mapping. The demonstration showed how RF observations can support indoor positioning when visual information is incomplete or unavailable.
+
+<div class="media-links" aria-label="Interview and media coverage">
+  <a href="https://www.youtube.com/watch?v=2_3FGVCxYKY" target="_blank" rel="noopener">Watch the interview</a>
+  <a href="https://www.5gtechnologyworld.com/brooklyn-6g-summit-2025-research-exhibits/" target="_blank" rel="noopener">5G Technology World feature</a>
+  <a href="https://engineering.nyu.edu/news/brooklyn-6g-summit-2025-research-exhibits" target="_blank" rel="noopener">NYU Tandon coverage</a>
+</div>
+
 **System capabilities**
 - RFSoC transmit/receive waveform generation, capture, synchronization, channel estimation, SNR estimation, and AoA processing.
 - Pi-Radio/Sivers front-end control, remote TCP/REST control, and synchronized physical metadata logging.

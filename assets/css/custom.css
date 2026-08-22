@@ -68,6 +68,54 @@ img {
   border-radius: 14px;
 }
 
+.media-video-shell {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 1.25rem 0 0.85rem;
+  overflow: hidden;
+  border: 1px solid var(--site-line);
+  border-radius: 12px;
+  background: #111827;
+  box-shadow: 0 14px 32px rgba(24, 33, 47, 0.13);
+}
+
+.media-video-shell iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.media-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.media-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.2rem;
+  padding: 0.45rem 0.72rem;
+  border: 1px solid rgba(138, 21, 56, 0.2);
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--site-accent);
+  font-size: 0.9rem;
+  font-weight: 650;
+  line-height: 1.25;
+  text-decoration: none;
+  transition: transform 180ms ease, border-color 180ms ease, background-color 180ms ease;
+}
+
+.media-links a:hover {
+  transform: translateY(-1px);
+  border-color: rgba(138, 21, 56, 0.38);
+  background: var(--site-accent-soft);
+}
+
 .turtlebot-portrait {
   display: block;
   width: 100%;
@@ -379,6 +427,7 @@ header .navbar {
 
 #about > .flex,
 #projects > .flex,
+#media > .flex,
 #publications > .flex,
 #lab > .flex,
 #contact > .flex {
@@ -400,6 +449,7 @@ header .navbar {
 }
 
 #projects > .flex.max-w-prose,
+#media > .flex,
 #publications > .flex,
 #lab > .flex,
 #contact > .flex {
@@ -413,6 +463,8 @@ header .navbar {
 #research.blox-features section > div > div:first-child,
 #projects > .flex.max-w-prose > .mb-6,
 #projects > .flex.max-w-prose > p,
+#media > .flex > .mb-6,
+#media .prose,
 #publications > .flex > .mb-6,
 #publications .prose,
 #lab > .flex > .mb-6,
@@ -423,6 +475,89 @@ header .navbar {
   max-width: var(--home-rail) !important;
   margin-right: auto !important;
   margin-left: auto !important;
+}
+
+#media {
+  padding-top: 1.35rem !important;
+  padding-bottom: 1.35rem !important;
+}
+
+#media .featured-media-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid var(--site-line);
+  border-radius: 10px;
+  background: var(--site-panel);
+  box-shadow: 0 14px 32px rgba(24, 33, 47, 0.08);
+}
+
+#media .featured-media-visual {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+#media .featured-media-visual img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 0;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: none;
+  transition: transform 220ms ease, filter 220ms ease;
+}
+
+#media .featured-media-visual:hover img {
+  transform: scale(1.018);
+  filter: saturate(1.06) brightness(0.96);
+}
+
+#media .featured-media-play {
+  position: absolute;
+  left: 0.85rem;
+  bottom: 0.85rem;
+  padding: 0.42rem 0.65rem;
+  border-radius: 6px;
+  background: rgba(17, 24, 39, 0.88);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+}
+
+#media .featured-media-copy h3 {
+  margin: 0.2rem 0 0.65rem;
+  color: var(--site-ink);
+  font-family: var(--font-serif);
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+  font-weight: 600;
+  line-height: 1.22;
+}
+
+#media .featured-media-copy > p:not(.featured-media-kicker) {
+  margin: 0;
+  color: var(--site-muted);
+  line-height: 1.68;
+}
+
+#media .featured-media-kicker {
+  margin: 0;
+  color: var(--site-accent-2);
+  font-size: 0.78rem;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dark #media .featured-media-card,
+.dark .media-links a {
+  background: rgba(15, 23, 42, 0.82);
 }
 
 .resume-biography [class*="md:col-span-8"] > .mb-12 > .flex.items-center,
@@ -1159,6 +1294,28 @@ header .nav-link:hover {
     margin-top: 0.65rem;
     font-size: 0.86rem;
     line-height: 1.55;
+  }
+
+  #media .featured-media-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0.7rem;
+  }
+
+  #media .featured-media-copy {
+    padding: 0.15rem 0.15rem 0.3rem;
+  }
+
+  #media .media-links,
+  .page-body .media-links {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #media .media-links a,
+  .page-body .media-links a {
+    justify-content: center;
+    text-align: center;
   }
 
   .resume-biography .max-w-7xl,

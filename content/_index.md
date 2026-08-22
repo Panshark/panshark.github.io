@@ -105,6 +105,31 @@ sections:
       show_read_more: false
 
   - block: markdown
+    id: media
+    content:
+      title: Featured Media
+      text: |-
+        <article class="featured-media-card">
+          <a class="featured-media-visual" href="https://www.youtube.com/watch?v=2_3FGVCxYKY" target="_blank" rel="noopener" aria-label="Watch the Brooklyn 6G Summit 2025 interview">
+            <img src="/media/6gsummit-interview.jpg" alt="FR3 robotic localization demonstration at the Brooklyn 6G Summit 2025">
+            <span class="featured-media-play" aria-hidden="true">Watch interview</span>
+          </a>
+          <div class="featured-media-copy">
+            <p class="featured-media-kicker">Brooklyn 6G Summit 2025</p>
+            <h3>FR3 Robotic Localization Demonstration</h3>
+            <p>I presented an FR3 robotic sensing platform that combines TurtleBot4 mobility, Pi-Radio hardware, and RF localization to show how wireless signals can support indoor positioning when visual information is limited.</p>
+            <div class="media-links" aria-label="Interview and media coverage">
+              <a href="https://www.youtube.com/watch?v=2_3FGVCxYKY" target="_blank" rel="noopener">Watch interview</a>
+              <a href="https://www.5gtechnologyworld.com/brooklyn-6g-summit-2025-research-exhibits/" target="_blank" rel="noopener">5G Technology World</a>
+              <a href="https://engineering.nyu.edu/news/brooklyn-6g-summit-2025-research-exhibits" target="_blank" rel="noopener">NYU Tandon coverage</a>
+              <a href="/projects/wireless-robotics-platform/">View project</a>
+            </div>
+          </div>
+        </article>
+    design:
+      columns: '1'
+
+  - block: markdown
     id: publications
     content:
       title: Key Publications
