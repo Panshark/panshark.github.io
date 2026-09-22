@@ -51,10 +51,10 @@
     <text x="58" y="126" class="muted" font-size="20" font-weight="450">Candidate-wise wireless models and learned spatial scorers turn sparse physical observations into calibrated beliefs</text>
     <text x="58" y="153" class="muted" font-size="20" font-weight="450">that support localization, active measurement, and closed-loop decisions.</text>
 
-    <g transform="translate(250,20)">
-      <rect width="260" height="38" rx="19" fill="#eef4f2" stroke="#d8e6e2"/>
+    <g transform="translate(1450,20)">
+      <rect width="300" height="38" rx="19" fill="#eef4f2" stroke="#d8e6e2"/>
       <circle cx="24" cy="19" r="6" fill="#118a8a"/>
-      <text x="147" y="25" text-anchor="middle" class="navy" font-size="15" font-weight="650" letter-spacing="0.5">WIRELESS / RF FOUNDATION</text>
+      <text x="165" y="25" text-anchor="middle" class="navy" font-size="15" font-weight="650" letter-spacing="0.5">WIRELESS / RF FOUNDATION</text>
     </g>
   </g>
 
