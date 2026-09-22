@@ -38,11 +38,15 @@ hugoblox:
     # Optional: Override theme pack colors
     colors:
       primary: "#0f766e"                # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
-      secondary: "#38bdf8"
+      secondary: "#214f65"
       neutral: "slate"                  # Affects gray utilities (text-gray-*, bg-gray-*)
     # Optional: Mode-specific color overrides
-    colors_light: {}
-    colors_dark: {}
+    colors_light:
+      primary: "#0f766e"
+      secondary: "#214f65"
+    colors_dark:
+      primary: "#55cfc5"
+      secondary: "#86bfd4"
     # Optional: Semantic surface color overrides
     surfaces:
       background: ""
@@ -62,7 +66,7 @@ hugoblox:
     # Font: 'sans' (Inter), 'serif' (Roboto Slab), or 'native' (system fonts)
     font: "sans"
     # Size: 'sm', 'md', 'lg', or 'xl' (affects base font size and scale)
-    size: "lg"
+    size: "md"
 
   # ────────────────────────────────────────────────────────────────────────────
   # LAYOUT
@@ -70,9 +74,9 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   layout:
     # Border radius: 'none', 'sm', 'md', 'lg', or 'full'
-    radius: "lg"
+    radius: "md"
     # Spacing density: 'compact', 'comfortable', or 'spacious'
-    spacing: "spacious"
+    spacing: "comfortable"
     # Avatar shape in author profiles
     avatar_shape: circle                # circle | square | rounded
 
@@ -87,7 +91,7 @@ hugoblox:
     # Stick to top on scroll
     sticky: true
     # Menu alignment
-    align: left                         # left | center | right
+    align: right                        # left | center | right
     # Feature toggles
     search: true
     theme_toggle: true
@@ -116,12 +120,11 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   copyright:
     # Copyright notice - supports {year}, {name}, {license} placeholders
-    notice: "© {year} {name}. All rights reserved."
+    notice: "© {year} Haozhe Lei. All rights reserved."
     license:
-      type: cc                          # cc | custom
-      allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
+      type: custom                      # Keep the footer consistent with the all-rights-reserved notice.
+      label: ""
+      url: ""
 
   # ────────────────────────────────────────────────────────────────────────────
   # SEO

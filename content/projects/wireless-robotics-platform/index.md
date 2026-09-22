@@ -4,6 +4,8 @@ summary: A 10-GHz robotic RF testbed connecting channel sounding, mobile sensing
 date: 2025-01-01
 featured: true
 weight: 4
+project_tier: flagship
+project_label: Flagship experimental system
 tags:
   - Wireless
   - Robotics

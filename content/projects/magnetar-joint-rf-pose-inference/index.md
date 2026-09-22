@@ -4,6 +4,8 @@ summary: Multipath-guided joint posteriors over transmitter position and heading
 date: 2026-09-17
 featured: true
 weight: 2
+project_tier: flagship
+project_label: Flagship research
 tags:
   - Wireless
   - Robotics
@@ -16,13 +18,13 @@ image:
 I lead **MAGNETAR** from probabilistic formulation and neural architecture design through real-to-sim calibration, MobiFR3 integration, experiment design, and evaluation. The method estimates a joint posterior over a transmitter's planar position and heading from one asynchronous RF multipath snapshot, rather than forcing an ambiguous observation into a single pose estimate.
 
 <div class="project-video-shell">
-  <video controls playsinline preload="metadata" poster="featured.png">
+  <video controls playsinline preload="metadata" poster="featured.png" aria-describedby="magnetar-video-description">
     <source src="magnetar-demo.mp4" type="video/mp4">
     Your browser does not support embedded MP4 video.
   </video>
 </div>
 
-*The three-minute overview shows why position and heading must be inferred together, how MAGNETAR scores pose hypotheses, and how it is evaluated with robotic measurements.*
+<p id="magnetar-video-description"><em>The three-minute overview shows why position and heading must be inferred together, how MAGNETAR scores pose hypotheses, and how it is evaluated with robotic measurements.</em></p>
 
 <div class="project-figure-grid" aria-label="MAGNETAR method and physical-system figures">
   <figure class="project-figure-card">

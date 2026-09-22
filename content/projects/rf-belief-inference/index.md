@@ -2,7 +2,7 @@
 title: Probabilistic RF Localization & Wireless Digital Twins
 summary: Likelihood, neural-posterior, and digital-twin methods that turn sparse multipath observations into calibrated spatial beliefs.
 date: 2026-01-01
-featured: true
+featured: false
 weight: 1
 tags:
   - Wireless

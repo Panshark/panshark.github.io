@@ -4,6 +4,8 @@ summary: Ray-tracing digital-twin priors and physics-informed reinforcement lear
 date: 2025-01-01
 featured: true
 weight: 5
+project_tier: related
+project_label: Earlier foundation
 tags:
   - Wireless
   - Robotics
@@ -17,7 +19,10 @@ I co-developed ray-tracing wireless digital-twin and **PIRL** (physics-informed 
 
 *This figure links posterior RF belief maps with indoor navigation, showing how uncertainty-aware localization can inform a search policy.*
 
-<img src="navigation_rollout_animation.gif" alt="Wireless navigation rollout animation" loading="lazy" />
+<picture class="motion-aware-figure">
+  <source media="(prefers-reduced-motion: reduce)" srcset="navigation_rollout_static.png">
+  <img src="navigation_rollout_animation.gif" alt="Wireless navigation rollout animation" loading="lazy" decoding="async" />
+</picture>
 
 *The rollout animation shows a navigation policy using wireless belief maps as spatial guidance during indoor search.*
 

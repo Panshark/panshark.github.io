@@ -2,8 +2,10 @@
 title: Object-Centric RGB-D Spatial Memory
 summary: A mentored exploratory project on sparse RGB-D sensing, object memory, retrieval, and embodied spatial reasoning.
 date: 2026-01-01
-featured: false
+featured: true
 weight: 7
+project_tier: emerging
+project_label: Mentored emerging direction
 tags:
   - Robotics
   - Multimodal AI

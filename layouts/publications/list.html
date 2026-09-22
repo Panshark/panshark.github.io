@@ -40,10 +40,13 @@
         <div class="full-publication-list">
           {{ range .pages }}
             {{ $tags := .Params.tags | default (slice) }}
+            {{ $paperTitle := .Title }}
+            {{ $publicationLabel := .Params.publication | default "" }}
+            {{ $publicationYear := .Date.Format "2006" }}
             <article class="full-publication-card">
               <div class="full-publication-meta">
-                {{ with .Params.publication }}<span>{{ . }}</span>{{ end }}
-                <span>{{ .Date.Format "2006" }}</span>
+                {{ with $publicationLabel }}<span>{{ . }}</span>{{ end }}
+                {{ if not (strings.Contains $publicationLabel $publicationYear) }}<span>{{ $publicationYear }}</span>{{ end }}
               </div>
 
               <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
@@ -73,7 +76,7 @@
                     {{ range . }}
                       {{ $label := or .name .type "Link" }}
                       {{ if eq $label "pdf" }}{{ $label = "PDF" }}{{ end }}
-                      <a href="{{ .url }}" target="_blank" rel="noopener">{{ $label }}</a>
+                      <a href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ $label }} for {{ $paperTitle }}">{{ $label }}</a>
                     {{ end }}
                   </div>
                 {{ end }}

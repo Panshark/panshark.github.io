@@ -4,6 +4,8 @@ summary: Efficient neural posterior inference for RF source localization while a
 date: 2026-09-17
 featured: true
 weight: 3
+project_tier: flagship
+project_label: Flagship research
 tags:
   - Wireless
   - Localization
@@ -16,13 +18,13 @@ image:
 I lead **MAPLE-RF**, an efficient probabilistic RF source-localization method for environments that are still being mapped. The core problem is common in robotic search: a receiver knows its own pose, but most of the surrounding floor plan may remain unobserved, including obstacles that could block or reflect the signal.
 
 <div class="project-video-shell">
-  <video controls playsinline preload="metadata" poster="featured.png">
+  <video controls playsinline preload="metadata" poster="featured.png" aria-describedby="maple-video-description">
     <source src="maple-rf-demo.mp4" type="video/mp4">
     Your browser does not support embedded MP4 video.
   </video>
 </div>
 
-*The simulation follows a receiver along a recorded route while the observed map grows and the transmitter posterior is updated.*
+<p id="maple-video-description"><em>The simulation follows a receiver along a recorded route while the observed map grows and the transmitter posterior is updated.</em></p>
 
 <div class="project-figure-grid" aria-label="MAPLE-RF method and exploration figures">
   <figure class="project-figure-card">

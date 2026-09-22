@@ -3,20 +3,28 @@ title: Projects
 date: 2024-05-19
 type: landing
 
+cascade:
+  hide_date: true
+  reading_time: false
+  show_date_updated: false
+  share: false
+  profile: false
+  pager: false
+
 design:
   spacing: '5rem'
 
 sections:
   - block: collection
     content:
-      title: Selected Projects
-      text: A growing portfolio of wireless sensing, robotics, and ISAC systems. New projects will be added as they mature.
+      title: Research Projects
+      text: Core and supporting projects spanning RF sensing, probabilistic localization, wireless digital twins, and autonomous systems.
+      count: 0
       sort_by: weight
       order: asc
       filters:
         folders:
           - projects
-        featured_only: true
     design:
       view: article-grid
       fill_image: false

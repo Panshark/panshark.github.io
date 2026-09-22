@@ -18,13 +18,15 @@
 {{ $showReadMore := .config.show_read_more | default true }}
 {{ $hasMeta := or $showDate $showReadTime $showReadMore }}
 {{ $index := .index }}
+{{ $projectTier := $item.Params.project_tier | default "standard" }}
+{{ $isProject := eq $item.Type "projects" }}
 {{ $isEvent := eq $item.Type "events" }}
 {{ $event_dates := "" }}
 {{ if $isEvent }}
 {{ $event_dates = partial "functions/get_event_dates" $item }}
 {{ end }}
 
-<div class="group bg-white/90 dark:bg-zinc-900/90 backdrop-blur-sm rounded-2xl ring-1 ring-zinc-900/5 dark:ring-white/10 shadow-lg overflow-hidden transition-all duration-300 ease-out hover:shadow-xl hover:shadow-primary-500/10 hover:-translate-y-2 focus-within:ring-2 focus-within:ring-primary-500/50" role="article" aria-labelledby="card-title-{{ $item.File.UniqueID }}">
+<div class="{{ if $isProject }}project-card project-card--{{ $projectTier }}{{ else }}content-card{{ end }} group" role="article" aria-labelledby="card-title-{{ $item.File.UniqueID }}">
     <!-- Image Section -->
     <div class="relative overflow-hidden aspect-[16/9] bg-gradient-to-br from-zinc-100 to-zinc-200 dark:from-zinc-800 dark:to-zinc-900">
       {{ with $item.Params.content_meta }}
@@ -37,14 +39,14 @@
       {{ end }}
       {{ with $resource }}
         {{ if strings.Contains .MediaType.SubType "svg" }}
-          <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="block">
-            <img class="w-full h-full transition-transform duration-500 ease-out group-hover:scale-105 {{ if $fill_image }}object-fill{{ else }}object-contain{{ end }}" 
+          <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="block" tabindex="-1" aria-hidden="true">
+            <img class="project-card-image w-full h-full {{ if $fill_image }}object-cover{{ else }}object-contain{{ end }}"
                  src="{{ .RelPermalink }}"
                  loading="lazy" 
                  decoding="async"
                  {{ if eq $index 0 }}fetchpriority="high"{{ end }}
                  style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"
-                 alt="{{ $item.Title | plainify }} featured image">
+                 alt="">
           </a>
         {{ else if ne .MediaType.SubType "gif" }}
           {{ $original_image := "" }}
@@ -59,8 +61,8 @@
               "sizes" (slice 400 600 800)
               "formats" (slice "avif" "webp" "jpg")
           ) }}
-          <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="block">
-            <img class="w-full h-full transition-transform duration-500 ease-out group-hover:scale-105 {{ if $fill_image }}object-fill{{ else }}object-contain{{ end }}" 
+          <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="block" tabindex="-1" aria-hidden="true">
+            <img class="project-card-image w-full h-full {{ if $fill_image }}object-cover{{ else }}object-contain{{ end }}"
                  srcset="{{ $responsive.srcset }}"
                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                  src="{{ $responsive.fallback.RelPermalink }}" 
@@ -70,23 +72,23 @@
                  decoding="async"
                  {{ if eq $index 0 }}fetchpriority="high"{{ end }}
                  style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"
-                 alt="{{ $item.Title | plainify }} featured image">
+                 alt="">
           </a>
         {{ else }}
-          <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="block">
-            <img class="w-full h-full transition-transform duration-500 ease-out group-hover:scale-105 {{ if $fill_image }}object-fill{{ else }}object-contain{{ end }}"
+          <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="block" tabindex="-1" aria-hidden="true">
+            <img class="project-card-image w-full h-full {{ if $fill_image }}object-cover{{ else }}object-contain{{ end }}"
                  src="{{ .RelPermalink }}"
                  width="{{ .Width }}"
                  height="{{ .Height }}"
                  loading="lazy"
                  decoding="async"
                  style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"
-                 alt="{{ $item.Title | plainify }} featured image">
+                 alt="">
           </a>
         {{ end }}
       {{ else }}
         <!-- Fallback gradient using theme colors - make clickable for consistency -->
-        <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="block w-full h-full">
+        <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="block w-full h-full" tabindex="-1" aria-hidden="true">
           <div class="w-full h-full bg-gradient-to-br from-primary-600/40 via-secondary-600/30 to-primary-800/50 flex items-center justify-center transition-all duration-300 group-hover:from-primary-500/50 group-hover:via-secondary-500/40 group-hover:to-primary-700/60">
             <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
               <svg class="w-8 h-8 text-white/40" fill="currentColor" viewBox="0 0 20 20">
@@ -98,11 +100,14 @@
       {{end}}
       
       <!-- Subtle overlay for better text contrast (allow clicks to pass through) -->
-      <div class="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      <div class="project-card-overlay absolute inset-0 pointer-events-none"></div>
     </div>
 
     <!-- Content Section -->
     <div class="p-8 space-y-4">
+      {{ if $isProject }}{{ with $item.Params.project_label }}
+      <p class="project-card-eyebrow">{{ . }}</p>
+      {{ end }}{{ end }}
       {{ with $item.Params.content_meta }}
         {{ if or .content_type .difficulty }}
         <div class="flex items-center gap-x-4">
@@ -119,19 +124,15 @@
       {{ end }}
 
       {{ if and $item.Params.tags (gt (len $item.Params.tags) 0) }}
-      <div class="flex items-center gap-2 flex-wrap">
+      <div class="project-card-tags flex items-center gap-2 flex-wrap">
         {{ range first 2 ($item.GetTerms "tags") }}
-        <a href="{{ .RelPermalink }}">
-          <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-primary-100 text-primary-800 dark:bg-primary-900/40 dark:text-primary-300">
-            {{ .Page.LinkTitle }}
-          </span>
-        </a>
+        <span class="project-card-tag">{{ .Page.LinkTitle }}</span>
         {{ end }}
       </div>
       {{ end }}
 
-      <h3 id="card-title-{{ $item.File.UniqueID }}" class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-200 leading-tight">
-        <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="hover:underline">
+      <h3 id="card-title-{{ $item.File.UniqueID }}" class="project-card-title">
+        <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>
           {{ $item.Title }}
           {{ if $item.Params.external_link }}
             {{ partial "functions/get_icon" (dict "name" "arrow-top-right-on-square" "attributes" "style=\"height: 1em;\" class=\"inline-flex h-4 w-4 ml-1 align-text-top\"") }}
@@ -139,7 +140,7 @@
         </a>
       </h3>
       
-      <p class="text-zinc-600 dark:text-zinc-400 text-base leading-relaxed line-clamp-3">
+      <p class="project-card-summary line-clamp-3">
         {{ (partial "functions/get_summary" $item) | plainify | htmlUnescape | truncate 180 }}
       </p>
 

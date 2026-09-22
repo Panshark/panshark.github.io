@@ -15,11 +15,42 @@ sections:
     design:
       date_format: 'January 2006'
       is_education_first: false
-  - block: resume-skills
+  - block: markdown
     id: expertise
     content:
       title: Technical Expertise
-      username: me
+      text: |-
+        <div class="expertise-groups">
+          <section>
+            <p class="panel-kicker">Inference &amp; learning</p>
+            <h3>Spatial inference under uncertainty</h3>
+            <ul>
+              <li>Probabilistic localization, likelihood modeling, Bayesian fusion, and uncertainty calibration</li>
+              <li>U-Net, attention, and Transformer architectures for spatial posterior estimation</li>
+              <li>Physics-informed reinforcement learning and PPO for sensing and navigation decisions</li>
+            </ul>
+          </section>
+          <section>
+            <p class="panel-kicker">Simulation &amp; software</p>
+            <h3>Digital twins and research prototypes</h3>
+            <ul>
+              <li>Sionna RT scene design, ray-tracing experiments, and measurement-aligned real-to-sim calibration</li>
+              <li>ROS 2 and TurtleBot4 integration; Wireless InSite, SUMO, and CARLA workflows</li>
+              <li>Python, MATLAB, Linux, and reproducible experimental pipelines</li>
+            </ul>
+          </section>
+          <section>
+            <p class="panel-kicker">Experimental systems</p>
+            <h3>RF, robotics, and sensing</h3>
+            <ul>
+              <li>MobiFR3 system architecture, experiment design, RF-robot alignment, and evaluation</li>
+              <li>Team-operated RFSoC/PiRadio and Sivers front ends; antenna-pattern and RF-chain calibration</li>
+              <li>TI mmWave radar point-cloud acquisition and filtering for UAV trajectory estimation</li>
+            </ul>
+          </section>
+        </div>
+    design:
+      columns: '1'
   - block: markdown
     id: mentoring
     content:

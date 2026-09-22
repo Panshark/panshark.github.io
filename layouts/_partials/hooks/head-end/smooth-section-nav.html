@@ -1,116 +1,152 @@
 <script>
   document.addEventListener('DOMContentLoaded', () => {
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const bio = document.querySelector('.resume-biography');
-    if (bio) {
-      const bioColumns = bio.querySelectorAll('.md\\:col-span-4, .md\\:col-span-8');
-      const detailColumn = bioColumns[1];
-      const interestBlock = [...(detailColumn?.children || [])].find((child) => child.textContent.includes('Interests'));
+    const themeToggleButtons = [...document.querySelectorAll('.theme-toggle')];
 
-      if (interestBlock) {
-        interestBlock.classList.add('profile-interests');
-      }
-
-      bio.querySelectorAll('[class*="md:col-span-8"] > .mb-16 > .grid p.text-sm').forEach((dateBlock) => {
-        const parts = dateBlock.innerHTML
-          .split(/<br\s*\/?>/i)
-          .map((part) => part.replace(/<[^>]+>/g, '').trim())
-          .filter(Boolean);
-
-        if (parts.length >= 2) {
-          dateBlock.textContent = parts.join(' - ');
-        }
+    const syncThemeToggleLabels = () => {
+      const nextTheme = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
+      themeToggleButtons.forEach((button) => {
+        const label = `Switch to ${nextTheme} mode`;
+        button.setAttribute('aria-label', label);
+        button.setAttribute('title', label);
       });
+    };
+
+    if (themeToggleButtons.length) {
+      syncThemeToggleLabels();
+      new MutationObserver(syncThemeToggleLabels)
+        .observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+    }
+
+    if (bio) {
+      const detailColumn = bio.querySelector('[class*="md:col-span-8"]');
+      const interestBlock = [...(detailColumn?.children || [])]
+        .find((child) => child.textContent.includes('Research Interests'));
+      if (interestBlock) interestBlock.classList.add('profile-interests');
     }
 
     const isHome = window.location.pathname === '/' || window.location.pathname === '/index.html';
     const navMenu = document.querySelector('#nav-menu');
     const sectionLinks = [...document.querySelectorAll('header a[href^="/#"]')];
 
-    if (!navMenu || !sectionLinks.length) return;
-
-    if (!isHome) {
-      const pageLink = document.querySelector(`header a[href="${window.location.pathname}"]`);
-      if (pageLink) pageLink.classList.add('is-active-section');
-      return;
-    }
-
-    const indicator = document.createElement('span');
-    indicator.className = 'section-nav-indicator';
-    indicator.setAttribute('aria-hidden', 'true');
-    navMenu.append(indicator);
-
-    const setActiveLink = (link) => {
+    const setActiveLink = (link, currentValue = 'location') => {
       if (!link) return;
-      sectionLinks.forEach((item) => item.classList.toggle('is-active-section', item === link));
-
-      const menuRect = navMenu.getBoundingClientRect();
-      const linkRect = link.getBoundingClientRect();
-      const center = linkRect.left - menuRect.left + (linkRect.width / 2) - (indicator.offsetWidth / 2);
-      indicator.style.transform = `translateX(${center}px)`;
-      indicator.style.opacity = '1';
+      sectionLinks.forEach((item) => {
+        const isActive = item === link;
+        item.classList.toggle('is-active-section', isActive);
+        if (isActive) {
+          item.setAttribute('aria-current', currentValue);
+        } else {
+          item.removeAttribute('aria-current');
+        }
+      });
     };
 
-    const linksById = new Map(
-      sectionLinks
-        .map((link) => [link.getAttribute('href').replace('/#', ''), link])
-        .filter(([id]) => id)
-    );
+    if (navMenu && sectionLinks.length) {
+      if (!isHome) {
+        const sectionParents = [
+          { prefix: '/projects', href: '/#projects' },
+          { prefix: '/publications', href: '/#publications' }
+        ];
+        const parent = sectionParents.find(({ prefix }) => window.location.pathname.startsWith(prefix));
+        const parentLink = parent
+          ? sectionLinks.find((link) => link.getAttribute('href') === parent.href)
+          : null;
 
-    const sections = [...linksById.entries()]
-      .map(([id, link]) => ({ id, link, node: document.getElementById(id) }))
-      .filter((item) => item.node);
-
-    let ticking = false;
-    const updateActiveFromScroll = () => {
-      const scrollProbe = window.scrollY + 112;
-      const pageBottom = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 4;
-      let active = sections[0];
-
-      if (pageBottom) {
-        active = sections[sections.length - 1];
-      } else {
-        for (const section of sections) {
-          const sectionTop = section.node.getBoundingClientRect().top + window.scrollY;
-          if (sectionTop <= scrollProbe) {
-            active = section;
-          } else {
-            break;
+        if (parentLink) {
+          setActiveLink(parentLink, 'page');
+        } else {
+          const pageLink = document.querySelector(`header a[href="${window.location.pathname}"]`) ||
+            [...document.querySelectorAll('header a[href^="/"]:not([href^="/#"])')]
+              .filter((link) => {
+                const href = link.getAttribute('href');
+                return href && href !== '/' && window.location.pathname.startsWith(href);
+              })
+              .sort((a, b) => b.getAttribute('href').length - a.getAttribute('href').length)[0];
+          if (pageLink) {
+            pageLink.classList.add('is-active-section');
+            pageLink.setAttribute('aria-current', 'page');
           }
         }
-      }
+      } else {
+        const linksById = new Map(
+          sectionLinks
+            .map((link) => [link.getAttribute('href').replace('/#', ''), link])
+            .filter(([id]) => id)
+        );
+        const sections = [...linksById.entries()]
+          .map(([id, link]) => ({ id, link, node: document.getElementById(id) }))
+          .filter((item) => item.node);
 
-      if (active) setActiveLink(active.link);
-      ticking = false;
-    };
+        let ticking = false;
+        const updateActiveFromScroll = () => {
+          const scrollProbe = window.scrollY + 112;
+          const pageBottom = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 4;
+          let active = sections[0];
 
-    if (isHome) {
-      sectionLinks.forEach((link) => {
-        link.addEventListener('click', (event) => {
-          const id = link.getAttribute('href').replace('/#', '');
-          const target = document.getElementById(id);
-          if (!target) return;
+          if (pageBottom) {
+            active = sections[sections.length - 1];
+          } else {
+            for (const section of sections) {
+              const sectionTop = section.node.getBoundingClientRect().top + window.scrollY;
+              if (sectionTop <= scrollProbe) active = section;
+              else break;
+            }
+          }
 
-          event.preventDefault();
-          const targetTop = target.getBoundingClientRect().top + window.scrollY - 72;
-          window.scrollTo({ top: targetTop, behavior: 'smooth' });
-          history.pushState(null, '', `#${id}`);
-          setActiveLink(link);
+          if (active) setActiveLink(active.link);
+          ticking = false;
+        };
+
+        sectionLinks.forEach((link) => {
+          link.addEventListener('click', (event) => {
+            const id = link.getAttribute('href').replace('/#', '');
+            const target = document.getElementById(id);
+            if (!target) return;
+
+            event.preventDefault();
+            const targetTop = target.getBoundingClientRect().top + window.scrollY - 72;
+            window.scrollTo({ top: targetTop, behavior: reduceMotion ? 'auto' : 'smooth' });
+            history.pushState(null, '', `#${id}`);
+            setActiveLink(link);
+          });
         });
-      });
 
-      window.addEventListener('scroll', () => {
-        if (ticking) return;
-        ticking = true;
-        window.requestAnimationFrame(updateActiveFromScroll);
-      }, { passive: true });
+        window.addEventListener('scroll', () => {
+          if (ticking) return;
+          ticking = true;
+          window.requestAnimationFrame(updateActiveFromScroll);
+        }, { passive: true });
+
+        const initial = sectionLinks.find((link) => link.getAttribute('href') === `/${window.location.hash}`);
+        setActiveLink(initial || sectionLinks[0]);
+        updateActiveFromScroll();
+      }
     }
 
-    const initial = sectionLinks.find((link) => link.getAttribute('href') === `/${window.location.hash}`);
-    setActiveLink(initial || sectionLinks[0]);
-    updateActiveFromScroll();
-    window.addEventListener('resize', () => {
-      const active = sectionLinks.find((link) => link.classList.contains('is-active-section'));
-      setActiveLink(active || sectionLinks[0]);
-    });
+    if (!reduceMotion && 'IntersectionObserver' in window) {
+      const motionItems = [...document.querySelectorAll(
+        '#research .research-map-panel, #projects .project-card, #publications .publication-column, #media .featured-media-card, #affiliation .academic-home-grid > *, #contact .contact-band, .publication-list-page .full-publication-card, .page-body .project-figure-card'
+      )];
+
+      if (motionItems.length) {
+        document.documentElement.classList.add('motion-enabled');
+        motionItems.forEach((item, index) => {
+          item.classList.add('site-motion-item');
+          item.style.setProperty('--reveal-delay', `${(index % 3) * 55}ms`);
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          });
+        }, { threshold: 0.08, rootMargin: '0px 0px -7% 0px' });
+
+        motionItems.forEach((item) => observer.observe(item));
+      }
+    }
   });
 </script>
