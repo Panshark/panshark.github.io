@@ -14,19 +14,20 @@ sections:
     content:
       username: me
       text: |-
-        My research develops **RF sensing and probabilistic spatial inference for autonomous systems**. I start from sparse multipath and multimodal measurements, score competing spatial hypotheses with likelihood-based and neural posterior models, and calibrate wireless digital twins against physical measurements. The resulting beliefs support localization and joint pose inference, guide where robots sense and move, and inform closed-loop wireless decisions.
+        I am an **ECE researcher connecting RF sensing and probabilistic spatial inference with robotics and autonomous systems**. My central question is how a robot or wireless device can reason and act when its observations are sparse, ambiguous, and only imperfectly captured by a world model.
+
+        I begin with wireless propagation and physical sensing, align digital twins to measurements, and develop likelihood-based and learned posterior models that preserve uncertainty over position and pose. I then use those spatial beliefs for localization, active sensing and navigation, and closed-loop wireless decisions.
 
         <div class="academic-status" role="list" aria-label="Current academic status">
-          <span role="listitem">NYU ECE Ph.D. Candidate</span>
+          <span role="listitem">Ph.D. Candidate · Expected May 2027</span>
           <span role="listitem"><a href="https://wireless.engineering.nyu.edu/">NYU WIRELESS</a></span>
           <span role="listitem">Advisor: <a href="https://engineering.nyu.edu/faculty/sundeep-rangan">Sundeep Rangan</a></span>
-          <span role="listitem">Expected May 2027</span>
         </div>
 
         <div class="research-signals" aria-label="Research methodology from sensing to action">
-          <div><span>01</span><strong>Physical sensing</strong><small>RF and multimodal evidence</small></div>
-          <div><span>02</span><strong>Spatial belief</strong><small>Posterior inference and calibration</small></div>
-          <div><span>03</span><strong>Decision and action</strong><small>Localization, sensing, and control</small></div>
+          <div><span>01</span><strong>Wireless &amp; RF foundations</strong><small>Propagation, sensing, and digital twins</small></div>
+          <div><span>02</span><strong>Probabilistic spatial inference</strong><small>Calibrated position and pose beliefs</small></div>
+          <div><span>03</span><strong>Robotics &amp; autonomy</strong><small>Active sensing, navigation, and decisions</small></div>
         </div>
 
         <div class="hero-actions">
@@ -165,7 +166,7 @@ sections:
             <div>
               <p class="panel-kicker">NYU WIRELESS</p>
               <h3>From wireless models to robots in the loop</h3>
-              <p>At NYU WIRELESS, I align ray-traced wireless models with measured RF, form calibrated spatial beliefs, and validate them on the MobiFR3 robotic platform.</p>
+              <p>At NYU WIRELESS, I develop wireless models and probabilistic inference, align them with measured RF, and validate the resulting spatial beliefs on the MobiFR3 robotic platform.</p>
               <a class="text-link" href="/uploads/NYU_wireless.pdf">Center overview</a>
             </div>
           </article>

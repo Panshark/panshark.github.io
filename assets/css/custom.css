@@ -1090,7 +1090,7 @@ a:hover {
 
 .academic-home-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.65fr) minmax(330px, 0.75fr);
+  grid-template-columns: minmax(0, 1.75fr) minmax(330px, 0.8fr);
   gap: 1.25rem;
 }
 
@@ -1105,11 +1105,13 @@ a:hover {
 
 .affiliation-panel {
   display: grid;
-  grid-template-columns: minmax(360px, 1.2fr) minmax(260px, 0.9fr);
+  grid-template-columns: minmax(280px, 0.98fr) minmax(280px, 1.02fr);
+  gap: clamp(0.9rem, 1.5vw, 1.25rem);
+  align-items: center;
   min-width: 0;
+  padding: clamp(0.7rem, 1.1vw, 0.95rem);
 }
 
-.affiliation-panel > div,
 .credentials-panel {
   padding: clamp(1.25rem, 2.5vw, 2rem);
 }
@@ -1117,7 +1119,12 @@ a:hover {
 .affiliation-panel > div {
   position: relative;
   z-index: 1;
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: center;
   min-width: 0;
+  padding: clamp(0.8rem, 1.35vw, 1.2rem) clamp(0.45rem, 0.8vw, 0.75rem);
   background: var(--site-panel);
 }
 
@@ -1128,6 +1135,8 @@ a:hover {
   min-width: 0;
   min-height: 0;
   overflow: hidden;
+  border: 1px solid var(--site-line);
+  border-radius: 8px;
   background: #fff;
   text-decoration: none;
 }
@@ -1139,7 +1148,7 @@ a:hover {
   height: 100%;
   min-height: 0;
   margin: 0;
-  border-radius: 0;
+  border-radius: inherit;
   object-fit: cover;
   object-position: center center;
   filter: saturate(0.94);
@@ -1167,12 +1176,15 @@ a:hover {
 }
 
 .affiliation-panel p:not(.panel-kicker) {
+  margin: 0 0 1rem;
   color: var(--site-muted);
+  font-size: clamp(0.95rem, 1.05vw, 1.05rem);
   line-height: 1.65;
 }
 
 .text-link {
-  margin-top: 0.25rem;
+  align-self: flex-start;
+  margin-top: 0.15rem;
 }
 
 .credentials-panel dl {
@@ -2020,6 +2032,17 @@ a:hover {
   .affiliation-panel,
   .contact-band {
     grid-template-columns: 1fr;
+  }
+
+  .affiliation-panel {
+    gap: 0;
+    padding: 0.65rem;
+  }
+
+  .affiliation-panel > div {
+    align-self: auto;
+    justify-content: flex-start;
+    padding: 1.1rem 0.45rem 0.55rem;
   }
 
   .publication-columns {
