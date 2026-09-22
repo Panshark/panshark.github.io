@@ -4,8 +4,9 @@ summary: Efficient neural posterior inference for RF source localization while a
 date: 2026-09-17
 featured: true
 weight: 4
-project_tier: flagship
-project_label: Flagship project
+project_tier: core
+project_label: Core project
+project_layout: core-row-start
 tags:
   - Wireless
   - Localization

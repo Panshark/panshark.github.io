@@ -56,7 +56,7 @@ sections:
     content:
       title: Research Program
       text: |-
-        <p class="section-lede"><a href="/projects/mccle-full-posterior-localization/">MC-CLE</a> and <a href="/projects/locus-dt-digital-twin-localization/">LOCUS-DT</a> provide complementary inference cores: one learns candidate-wise spatial likelihoods from RF measurements, while the other evaluates observations against wireless-digital-twin hypotheses. Both turn ambiguous physical evidence into spatial beliefs for localization, sensing, and action.</p>
+        <p class="section-lede">Across five core projects—<a href="/projects/mccle-full-posterior-localization/">MC-CLE</a>, <a href="/projects/locus-dt-digital-twin-localization/">LOCUS-DT</a>, <a href="/projects/magnetar-joint-rf-pose-inference/">MAGNETAR</a>, <a href="/projects/maple-rf-partial-map-localization/">MAPLE-RF</a>, and <a href="/projects/wireless-robotics-platform/">MobiFR3</a>—I combine measurement-conditioned inference, wireless digital twins, and robotic experimentation to turn ambiguous RF evidence into spatial beliefs for localization, sensing, and action.</p>
 
         <figure class="research-map-panel" aria-labelledby="research-map-caption">
           <a class="research-map-link" href="/media/research-program-overview.svg?v=20260922-1" target="_blank" rel="noopener" aria-label="Open the full-size research program map">
@@ -78,7 +78,7 @@ sections:
     id: projects
     content:
       title: Selected Projects
-      text: Two core inference methods support three flagship efforts spanning joint pose inference, partial-map localization, and robotic RF experimentation; two secondary lines trace earlier and complementary work.
+      text: Five core projects span posterior inference, wireless digital twins, joint pose and partial-map localization, and robotic RF experimentation; two secondary lines capture earlier and complementary work.
       sort_by: weight
       order: asc
       filters:

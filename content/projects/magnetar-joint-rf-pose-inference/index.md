@@ -4,8 +4,8 @@ summary: Multipath-guided joint posteriors over transmitter position and heading
 date: 2026-09-17
 featured: true
 weight: 3
-project_tier: flagship
-project_label: Flagship project
+project_tier: core
+project_label: Core project
 tags:
   - Wireless
   - Robotics

@@ -741,12 +741,12 @@ a:hover {
   transform: translateY(-2px) !important;
 }
 
-.project-card--flagship {
+.project-card--core {
   grid-column: span 2;
 }
 
-.project-card--core {
-  grid-column: span 3;
+.project-card--core-row-start {
+  grid-column: 2 / span 2;
 }
 
 .project-card--secondary {
@@ -1875,13 +1875,12 @@ a:hover {
   }
 
   .project-card--core {
-    grid-column: span 3;
+    grid-column: span 2;
     display: block;
   }
 
-  .project-card--flagship {
-    grid-column: span 2;
-    display: block;
+  .project-card--core-row-start {
+    grid-column: 2 / span 2;
   }
 
   .project-card--secondary {
@@ -2021,7 +2020,6 @@ a:hover {
   }
 
   .project-card--core,
-  .project-card--flagship,
   .project-card--secondary,
   .project-card--emerging {
     grid-column: span 1;

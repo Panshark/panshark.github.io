@@ -5,7 +5,7 @@ date: 2026-01-01
 featured: true
 weight: 2
 project_tier: core
-project_label: Core inference method
+project_label: Core project
 tags:
   - Wireless
   - Localization
