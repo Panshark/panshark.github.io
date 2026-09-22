@@ -83,8 +83,8 @@ sections:
       text: |-
         <figure class="research-map-panel" aria-labelledby="research-map-caption">
           <picture class="research-overview-picture">
-            <source media="(max-width: 680px)" srcset="/media/research-program-overview-mobile.svg?v=20260921-2">
-            <img src="/media/research-program-overview.svg?v=20260921-2" alt="Research pipeline that transforms sparse RF and multimodal evidence through model-aware probabilistic inference into calibrated position and pose beliefs, then uses uncertainty to guide localization, active sensing, navigation, and wireless decisions, with physical validation on the MobiFR3 robotic platform.">
+            <source media="(max-width: 680px)" srcset="/media/research-program-overview-mobile.svg?v=20260921-3">
+            <img src="/media/research-program-overview.svg?v=20260921-3" alt="Research pipeline that transforms sparse RF and multimodal evidence through model-aware probabilistic inference into calibrated position and pose beliefs, then uses uncertainty to guide localization, active sensing, navigation, and wireless decisions, with physical validation on the MobiFR3 robotic platform.">
           </picture>
           <figcaption id="research-map-caption">
             <strong>From physical evidence to spatial belief to action.</strong> Sparse RF and multimodal observations are aligned with measured systems and digital-twin priors, converted into calibrated posteriors, and fused across viewpoints. The resulting uncertainty guides localization, active measurement, navigation, and closed-loop wireless decisions.
