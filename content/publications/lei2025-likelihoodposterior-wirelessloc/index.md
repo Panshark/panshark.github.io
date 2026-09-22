@@ -4,15 +4,20 @@ authors:
   - me
   - Hao Guo
   - Sundeep Rangan
+roles:
+  - First author
+  - Corresponding author
+manuscript_order: 3
 date: "2026-01-01"
 publishDate: "2026-01-01"
 publication_types:
   - "article-journal"
-publication: "IEEE Transactions on Signal Processing (under review)"
+publication: "IEEE Transactions on Vehicular Technology"
 publication_short: ""
 abstract: ""
-summary: "Under review at IEEE Transactions on Signal Processing."
+summary: "Under review at IEEE Transactions on Vehicular Technology."
 tags:
+  - "manuscript"
   - "under-review"
 featured: false
 links: []
@@ -26,5 +31,5 @@ slides: ""
 ---
 
 <div class="author-role-note">
-  <span>Sole corresponding author</span>
+  <span>First and corresponding author</span>
 </div>

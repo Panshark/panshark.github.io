@@ -19,9 +19,9 @@ hugoblox:
     # Schema.org type for structured data
     type: person                        # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: "Uncertainty-aware wireless intelligence for embodied autonomy and adaptive 6G"
+    tagline: "RF sensing and probabilistic spatial intelligence for autonomous systems"
     # Site meta description for search engines and social sharing
-    description: "Haozhe Lei is an NYU WIRELESS Ph.D. candidate advised by Sundeep Rangan, working on posterior RF localization, wireless digital twins, wireless robotics, multi-band UE adaptation, and multimodal spatial reasoning."
+    description: "Haozhe Lei is an NYU WIRELESS Ph.D. candidate developing probabilistic RF localization, measurement-aligned wireless digital twins, and robotic sensing systems for autonomous decision-making."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: ""                       # Twitter/X handle for Twitter Cards (without @)
@@ -91,8 +91,8 @@ hugoblox:
     # Feature toggles
     search: true
     theme_toggle: true
-    theme_picker: true
-    language_switcher: true
+    theme_picker: false
+    language_switcher: false
     # Call-to-action button
     cta:
       enable: false
@@ -106,7 +106,7 @@ hugoblox:
   footer:
     # Footer style variant
     style: minimal                      # minimal | columns | centered
-    language_switcher: true
+    language_switcher: false
     # Custom footer text (HTML supported)
     text: ""
 

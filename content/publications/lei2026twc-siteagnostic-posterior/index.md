@@ -5,16 +5,21 @@ authors:
   - Roberto Bomfin
   - Marwa Chafii
   - Sundeep Rangan
+roles:
+  - First author
+  - Corresponding author
+manuscript_order: 4
 date: "2026-01-01"
 publishDate: "2026-01-01"
 publication_types:
   - "article-journal"
-publication: "IEEE Transactions on Wireless Communications (under review)"
+publication: "IEEE Transactions on Wireless Communications"
 publication_short: ""
 abstract: ""
-summary: "Under review at IEEE Transactions on Wireless Communications."
+summary: "Revision in preparation for resubmission to IEEE Transactions on Wireless Communications."
 tags:
-  - "under-review"
+  - "manuscript"
+  - "in-revision"
 featured: true
 links: []
 image:
@@ -27,5 +32,5 @@ slides: ""
 ---
 
 <div class="author-role-note">
-  <span>Sole corresponding author</span>
+  <span>First and corresponding author</span>
 </div>

@@ -9,49 +9,80 @@
       {{ end }}
     </header>
 
-    <div class="full-publication-list">
-      {{ range .RegularPagesRecursive.ByDate.Reverse }}
-        {{ $tags := .Params.tags | default (slice) }}
-        <article class="full-publication-card">
-          <div class="full-publication-meta">
-            {{ with .Params.publication }}<span>{{ . }}</span>{{ end }}
-            <span>{{ .Date.Format "2006" }}</span>
-          </div>
+    {{ $manuscripts := slice }}
+    {{ $peerReviewed := slice }}
+    {{ $preprints := slice }}
+    {{ range .RegularPagesRecursive.ByDate.Reverse }}
+      {{ $tags := .Params.tags | default (slice) }}
+      {{ if in $tags "manuscript" }}
+        {{ $manuscripts = $manuscripts | append . }}
+      {{ else if in $tags "preprint" }}
+        {{ $preprints = $preprints | append . }}
+      {{ else }}
+        {{ $peerReviewed = $peerReviewed | append . }}
+      {{ end }}
+    {{ end }}
+    {{ $manuscripts = sort $manuscripts "Params.manuscript_order" "asc" }}
 
-          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    {{ $groups := slice
+      (dict "title" "Manuscripts Under Review or in Revision" "description" "Current submissions and revisions are labeled explicitly; venue-only entries below are already peer reviewed." "pages" $manuscripts)
+      (dict "title" "Peer-Reviewed Publications" "description" "Journal, conference, and workshop publications." "pages" $peerReviewed)
+      (dict "title" "Archived and Other Preprints" "description" "Earlier public manuscripts that are not listed as active submissions in the current CV." "pages" $preprints)
+    }}
 
-          {{ with .Params.authors }}
-            {{ $authors := slice }}
-            {{ range . }}
-              {{ $name := . }}
-              {{ if eq $name "me" }}
-                {{ $name = "Haozhe Lei" }}
-              {{ end }}
-              {{ $authors = $authors | append $name }}
-            {{ end }}
-            <p class="full-publication-authors">{{ delimit $authors ", " }}</p>
-          {{ end }}
+    {{ range $groups }}
+      <section class="publication-group">
+        <header class="publication-group-header">
+          <h2>{{ .title }}</h2>
+          <p>{{ .description }}</p>
+        </header>
 
-          <div class="full-publication-footer">
-            <div class="full-publication-badges">
-              {{ if in $tags "under-review" }}<span>Under review</span>{{ end }}
-              {{ if in $tags "accepted" }}<span>Accepted</span>{{ end }}
-              {{ if in $tags "preprint" }}<span>Preprint</span>{{ end }}
-            </div>
+        <div class="full-publication-list">
+          {{ range .pages }}
+            {{ $tags := .Params.tags | default (slice) }}
+            <article class="full-publication-card">
+              <div class="full-publication-meta">
+                {{ with .Params.publication }}<span>{{ . }}</span>{{ end }}
+                <span>{{ .Date.Format "2006" }}</span>
+              </div>
 
-            {{ with .Params.links }}
-              <div class="full-publication-links">
+              <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+
+              {{ with .Params.authors }}
+                {{ $authors := slice }}
                 {{ range . }}
-                  {{ $label := or .name .type "Link" }}
-                  {{ if eq $label "pdf" }}{{ $label = "PDF" }}{{ end }}
-                  <a href="{{ .url }}" target="_blank" rel="noopener">{{ $label }}</a>
+                  {{ $name := . }}
+                  {{ if eq $name "me" }}
+                    {{ $name = "Haozhe Lei" }}
+                  {{ end }}
+                  {{ $authors = $authors | append $name }}
+                {{ end }}
+                <p class="full-publication-authors">{{ delimit $authors ", " }}</p>
+              {{ end }}
+
+              <div class="full-publication-footer">
+                <div class="full-publication-badges">
+                  {{ if in $tags "under-review" }}<span>Under review</span>{{ end }}
+                  {{ if in $tags "in-revision" }}<span>Revision in preparation</span>{{ end }}
+                  {{ if in $tags "preprint" }}<span>Archived preprint</span>{{ end }}
+                  {{ range .Params.roles }}<span class="role-badge">{{ . }}</span>{{ end }}
+                </div>
+
+                {{ with .Params.links }}
+                  <div class="full-publication-links">
+                    {{ range . }}
+                      {{ $label := or .name .type "Link" }}
+                      {{ if eq $label "pdf" }}{{ $label = "PDF" }}{{ end }}
+                      <a href="{{ .url }}" target="_blank" rel="noopener">{{ $label }}</a>
+                    {{ end }}
+                  </div>
                 {{ end }}
               </div>
-            {{ end }}
-          </div>
-        </article>
-      {{ end }}
-    </div>
+            </article>
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
   </div>
 </main>
 {{ end }}

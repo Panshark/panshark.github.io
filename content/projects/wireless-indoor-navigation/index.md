@@ -1,9 +1,9 @@
 ---
-title: Wireless Indoor Navigation & SLAM
-summary: Ray-tracing digital-twin priors and physics-informed RL for zero-shot wireless navigation, localization, and wireless SLAM.
+title: Wireless-Guided Indoor Navigation
+summary: Ray-tracing digital-twin priors and physics-informed reinforcement learning for zero-shot indoor navigation.
 date: 2025-01-01
 featured: true
-weight: 3
+weight: 5
 tags:
   - Wireless
   - Robotics
@@ -11,11 +11,11 @@ tags:
   - Reinforcement Learning
 ---
 
-I develop ray-tracing wireless digital twins and **PIRL** (physics-informed reinforcement learning) methods that use simulated propagation as a transferable prior for zero-shot indoor navigation, wireless SLAM, and symbolic-prior robot policies. This line is being extended toward physical localization and navigation experiments with TurtleBot4 and Jackal UGV platforms, FR3 channel-sounding hardware, and controlled navigation scenarios.
+I co-developed ray-tracing wireless digital-twin and **PIRL** (physics-informed reinforcement learning) methods that use simulated propagation as a transferable prior for zero-shot indoor navigation. The robot's SLAM system supplies the map and robot pose; RF observations and physics-informed priors guide the search policy. This earlier work established the decision-making side of my current research on probabilistic RF localization and robotic sensing.
 
 ![Posterior inference map](prob_estimate.png)
 
-*This figure links posterior RF belief maps with indoor navigation, showing how uncertainty-aware localization can support zero-shot wireless robot policies.*
+*This figure links posterior RF belief maps with indoor navigation, showing how uncertainty-aware localization can inform a search policy.*
 
 <img src="navigation_rollout_animation.gif" alt="Wireless navigation rollout animation" loading="lazy" />
 

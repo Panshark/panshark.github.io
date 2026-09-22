@@ -1,28 +1,30 @@
 ---
-title: Wireless Robotics Platform (FR3 / TurtleBot4 & Jackal UGV)
-summary: RFSoC/Pi-Radio FR3 channel-sounding platform for robotic localization and navigation experiments with TurtleBot4 and Jackal UGV.
+title: Robotic RF Localization & Experimental Systems
+summary: A 10-GHz robotic RF testbed connecting channel sounding, mobile sensing, localization, and SLAM-based navigation experiments.
 date: 2025-01-01
 featured: true
-weight: 2
+weight: 4
 tags:
   - Wireless
   - Robotics
   - Systems
 ---
 
-I am building and validating a 10-GHz FR3 robotic measurement platform for closed-loop localization and navigation experiments. The system combines Xilinx RFSoC 4×2 boards, Pi-Radio FR3 front ends, Vivaldi antennas, 2D LiDAR/RGB sensing, fixed and linear-track/D48 measurements, TurtleBot4 transmitter mobility, Jackal UGV receiver mobility, and Vicon ground truth under controlled LOS/NLOS transitions.
+I lead the architecture and development of **MobiFR3**, a heterogeneous 10-GHz robotic RF testbed for localization experiments and SLAM-based navigation. The current system connects RFSoC/PiRadio channel sounding and Sivers front ends with TurtleBot4/ROS 2, odometry, 2D LiDAR, and RGB sensing. Jackal UGV integration is in progress; a Vicon-based ground-truth extension is planned but is not part of the current platform.
 
-![Vicon validation area with Jackal and TurtleBot platforms](validation_setup.png)
+My role spans system architecture, experiment design, RF-robot synchronization, measurement-aligned simulation, localization inference, and evaluation. I mentor student collaborators in RF hardware operation, calibration, and data collection; routine RF acquisition is conducted as a team rather than presented as a single-person hardware effort.
 
-*The validation setup provides repeatable ground truth for robot motion and obstacle-induced LOS/NLOS experiments.*
+<img class="turtlebot-portrait" src="rf_robot.jpg" alt="MobiFR3 RF-enabled TurtleBot4 platform" />
 
-![Platform demo](demo.gif)
+*MobiFR3 integrates the mobile robot, RF front end, compute, power, and control layers into one experimental platform.*
 
-*The demo shows the robotic measurement platform executing controlled motion while RF sensing data are collected.*
+![Pi-Radio and RFSoC hardware bench](rf_hardware_bench.jpg)
 
-<img class="turtlebot-video" src="/media/6gsummit_turtlebot.gif" alt="TurtleBot demo" />
+*The team-operated RF stack combines a Pi-Radio/Sivers front end, Xilinx RFSoC baseband hardware, Vivaldi antennas, and local compute/control equipment.*
 
-*This public demo shows the TurtleBot4-mounted FR3 hardware operating in a live measurement setting.*
+## From system to inference
+
+MobiFR3 provides the measured data and controlled geometry used by [MAGNETAR](/projects/magnetar-joint-rf-pose-inference/). The algorithm learns a joint posterior over transmitter position and heading from asynchronous AoA/SNR multipath snapshots, with real-to-sim calibration based on measured antenna patterns and RF-chain/noise effects. This connects the physical system directly to probabilistic inference rather than treating the robot as a demonstration platform alone.
 
 ## Media & Public Demonstrations
 
@@ -32,7 +34,7 @@ I am building and validating a 10-GHz FR3 robotic measurement platform for close
 
 *Interview recorded at the Brooklyn 6G Summit 2025.*
 
-At the 2025 Brooklyn 6G Summit, I demonstrated an FR3-based robotic sensing and localization platform that combines TurtleBot4 mobility, Pi-Radio front ends, angle-of-arrival measurements, and SLAM-based mapping. The demonstration showed how RF observations can support indoor positioning when visual information is incomplete or unavailable.
+At the 2025 Brooklyn 6G Summit, I demonstrated the FR3 robotic sensing and localization system, combining TurtleBot4 mobility, Pi-Radio hardware, angle-of-arrival measurements, and SLAM-based mapping. The demonstration showed how RF observations can support indoor positioning when visual information is incomplete or unavailable.
 
 <div class="media-links" aria-label="Interview and media coverage">
   <a href="https://www.youtube.com/watch?v=2_3FGVCxYKY" target="_blank" rel="noopener">Watch the interview</a>
@@ -41,15 +43,8 @@ At the 2025 Brooklyn 6G Summit, I demonstrated an FR3-based robotic sensing and 
 </div>
 
 **System capabilities**
-- RFSoC transmit/receive waveform generation, capture, synchronization, channel estimation, SNR estimation, and AoA processing.
-- Pi-Radio/Sivers front-end control, remote TCP/REST control, and synchronized physical metadata logging.
+- Xilinx RFSoC with PYNQ/Vivado-based control and PiRadio/Sivers RF front ends for 10-GHz channel sounding.
+- Transmit/receive waveform control, capture, synchronization, channel estimation, SNR estimation, and AoA processing in a team-operated workflow.
 - Scripted TurtleBot4, linear-track, and D48 pan-tilt motion for reproducible measurement grids.
-- Physical support for MC-CLE/LOCUS-DT posterior localization and wireless-aware navigation experiments.
-
-![Pi-Radio and RFSoC hardware bench](rf_hardware_bench.jpg)
-
-*The hardware bench combines the Pi-Radio FR3 front end, RFSoC 4×2 baseband, Vivaldi antennas, and local compute/control equipment.*
-
-<img class="turtlebot-portrait" src="rf_robot.jpg" alt="RF-enabled TurtleBot platform" />
-
-*The hardware photo shows the deployed TurtleBot4 stack with the RF front end, compute, power, and control layers integrated on the robot.*
+- Measurement-aligned Sionna RT scenes with TX/RX pose and motion, measured antenna patterns, and stochastic RF-chain/noise effects.
+- Physical validation for posterior localization and future closed-loop sensing/navigation experiments.

@@ -5,6 +5,9 @@ authors:
   - Roberto Bomfin
   - Marwa Chafii
   - Sundeep Rangan
+roles:
+  - First author
+  - Corresponding author
 date: "2026-01-01"
 publishDate: "2026-01-01"
 publication_types:
@@ -31,5 +34,5 @@ slides: ""
 ---
 
 <div class="author-role-note">
-  <span>Sole corresponding author</span>
+  <span>First and corresponding author</span>
 </div>

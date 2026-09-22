@@ -1,9 +1,9 @@
 ---
-title: Multimodal Spatial Reasoning & Object Memory
-summary: Adaptive sparse sensing and object-centric semantic 3D memory for wearable and embodied spatial intelligence.
+title: Object-Centric RGB-D Spatial Memory
+summary: A mentored exploratory project on sparse RGB-D sensing, object memory, retrieval, and embodied spatial reasoning.
 date: 2026-01-01
-featured: true
-weight: 5
+featured: false
+weight: 7
 tags:
   - Robotics
   - Multimodal AI
@@ -11,7 +11,7 @@ tags:
   - Embodied Agents
 ---
 
-I am developing adaptive sparse sensing and lightweight object-centric semantic 3D memory for wearable and embodied spatial intelligence. The system converts selected egocentric RGB/depth/pose observations into localized object records, so an agent can answer spatial queries without storing or processing every frame as a dense map.
+I mentor two M.S. students on an exploratory object-centric RGB-D spatial-memory project for wearable and embodied agents. The pipeline converts selected egocentric RGB, depth, and pose observations into localized object records, allowing retrieval and spatial queries without treating every frame as a dense map. This direction complements my RF work through the shared problems of partial observability, spatial belief, and selective sensing, but it is not presented as a mature publication line.
 
 ![Adaptive sparse sensing and object-centric semantic 3D memory](spatial_memory_overview.png)
 

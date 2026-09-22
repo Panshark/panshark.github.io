@@ -3,7 +3,7 @@ title: Multi-Band UE Coordination Under Mobility
 summary: UE-centric multi-cell multi-band handset digital twins for closed-loop array, band, and rate prediction under mobility.
 date: 2025-01-01
 featured: true
-weight: 4
+weight: 6
 tags:
   - Wireless
   - Systems
@@ -12,7 +12,9 @@ image:
   focal_point: Right
 ---
 
-I am developing **MCMB-HDT** (Multi-Cell Multi-Band Handset Digital Twin), a UE-centric framework that couples real urban geometry, base-station topology, FR1/FR3 ray tracing, embodied handset antenna radiation, pedestrian motion, handset pose, and measurement-limited feedback. On top of this twin, we study Transformer-based rate prediction from sparse asynchronous histories and PPO-based retain-or-explore array activation that preserves best-link rate while penalizing extra-array measurements.
+I lead **MCMB-HDT** (Multi-Cell Multi-Band Handset Digital Twin), including the research direction, system formulation, digital-twin design, and learning methods, while mentoring a Ph.D. student on implementation and evaluation. The framework couples urban geometry, base-station topology, FR1/FR3 ray tracing, handset antenna patterns, pedestrian motion, device pose, and measurement-limited feedback.
+
+On top of this twin, a Transformer predicts per-array rates from sparse asynchronous histories, reducing average per-array rate MSE by 28% in our study. A recurrent PPO policy then makes retain-or-explore array decisions and outperforms the evaluated greedy and bandit baselines while trading link quality against measurement overhead.
 
 ![NYU Tandon geographic data and 3D digital-twin scene](digital_twin_scene.png)
 

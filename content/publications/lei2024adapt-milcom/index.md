@@ -4,6 +4,9 @@ authors:
   - me
   - Yunfei Ge
   - Quanyan Zhu
+roles:
+  - Co-first author
+  - Corresponding author
 date: "2024-01-01"
 publishDate: "2024-01-01"
 publication_types:
@@ -24,3 +27,7 @@ image:
 projects: []
 slides: ""
 ---
+
+<div class="author-role-note">
+  <span>Co-first and corresponding author</span>
+</div>

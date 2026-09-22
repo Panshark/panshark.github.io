@@ -16,9 +16,9 @@ postnominals:
 role: Ph.D. Candidate in Electrical and Computer Engineering
 
 bio: |
-  Haozhe Lei (Graduate Student Member, IEEE) is a Ph.D. candidate in Electrical and Computer Engineering at New York University, advised by [Professor Sundeep Rangan](https://engineering.nyu.edu/faculty/sundeep-rangan) in NYU WIRELESS. He received the B.E. degree in electrical engineering and automation from China Agricultural University in 2019 and the M.S. degree in computer engineering from NYU in 2022. His research develops uncertainty-aware wireless intelligence for embodied autonomy and adaptive 6G systems, combining algorithms, digital twins, and physical testbeds to transform sparse RF and multimodal observations into calibrated spatial beliefs and closed-loop decisions.
+  Haozhe Lei (Graduate Student Member, IEEE) is a Ph.D. candidate in Electrical and Computer Engineering at New York University, advised by [Professor Sundeep Rangan](https://engineering.nyu.edu/faculty/sundeep-rangan) in NYU WIRELESS. He expects to graduate in May 2027. He received the B.E. degree in electrical engineering and automation from China Agricultural University in 2019 and the M.S. degree in computer engineering from NYU in 2022.
 
-  His current work includes MC-CLE and LOCUS-DT for posterior RF localization, PIRL and wireless digital-twin priors for zero-shot robot navigation, MCMB-HDT for closed-loop multi-band handset adaptation, and object-centric graph memory for multimodal spatial reasoning. He also builds FR3/mmWave RFSoC/Pi-Radio channel-sounding systems with TurtleBot4 and Jackal UGV platforms. He received the 2023 Ernst Weber Fellowship from the NYU Tandon School of Engineering.
+  His research focuses on RF sensing and probabilistic spatial intelligence for autonomous systems. He develops likelihood-based and neural posterior methods, measurement-aligned wireless digital twins, and Bayesian fusion algorithms that turn sparse RF observations into calibrated beliefs over location and pose. His current work includes MAGNETAR and MAPLE-RF, MC-CLE and LOCUS-DT, the MobiFR3 robotic RF testbed, and MCMB-HDT for closed-loop multi-band adaptation. He leads algorithm, calibration, and experimental-system development while mentoring students in RF localization, robotic measurements, and multimodal spatial reasoning. He received the 2023 Ernst Weber Fellowship from the NYU Tandon School of Engineering.
 
 affiliations:
   - name: NYU WIRELESS, New York University
@@ -36,11 +36,12 @@ links:
     url: https://www.linkedin.com/in/haozhelei-panshark
 
 interests:
-  - Spatially aware RF sensing and wireless localization
-  - Probabilistic uncertainty quantification for 6G positioning
-  - Wireless digital twins and ray tracing
-  - Multimodal scene graphs and foundation-model agents
-  - Wireless robotics, localization, navigation, and closed-loop control
+  - RF sensing and probabilistic localization
+  - Wireless digital twins and real-to-sim calibration
+  - Robotic sensing, navigation, and active measurement
+  - Bayesian fusion and uncertainty-aware spatial inference
+  - Closed-loop wireless adaptation
+  - Multimodal spatial memory
 
 education:
   - degree: Ph.D. in Electrical and Computer Engineering
@@ -60,23 +61,17 @@ education:
     end: '2019'
 
 experience:
-  - role: Research Assistant
+  - role: Graduate Research Assistant
     org: NYU WIRELESS
     start: 2022-09-01
     summary: |
-      Research agenda: uncertainty-aware wireless intelligence for embodied autonomy and adaptive 6G systems. Current directions include posterior RF localization, wireless digital-twin priors for robot navigation, UE-centric closed-loop multi-band adaptation, and object-centric memory for multimodal spatial reasoning.
+      Lead probabilistic RF localization, measurement-aligned digital-twin inference, and robotic RF experiments. Current systems include MAGNETAR, MAPLE-RF, MC-CLE/LOCUS-DT, MobiFR3, and MCMB-HDT; mentor one Ph.D. and three M.S. researchers across RF localization, wireless control, experimental systems, and multimodal spatial reasoning.
   - role: Research Assistant
     org: NYU C2SMARTER Center
     start: 2023-09-01
     end: 2026-03-31
     summary: |
       Predictive correlated online learning, distributed pan-tilt-camera control, and digital-twin closed-loop analytics for traffic monitoring, driver-risk-aware mobility/safety prediction, and distributed online control.
-  - role: Research Collaborator
-    org: Astrabeam LLC
-    start: 2025-06-01
-    end: 2025-08-31
-    summary: |
-      Collaborated on Doppler-based mmWave radar processing in ROS2 for odometry and object detection.
   - role: Research Assistant
     org: NYU Center for Cybersecurity
     start: 2021-09-01
@@ -88,47 +83,39 @@ experience:
     start: 2021-01-01
     end: 2021-02-28
     summary: |
-      Rotational object detection (CenterNet PIoU) and deployment to manufacturing lab.
+      Developed CenterNet/PIoU-based rotated-object detection and supported integration and on-site validation in a manufacturing laboratory.
 
 skills:
-  - name: Programming & Tools
+  - name: Inference & Learning
     items:
-      - label: Python
+      - label: Probabilistic localization
         level: 5
-      - label: Linux/Shell scripting
+      - label: Bayesian fusion & calibration
         level: 5
-      - label: MATLAB
+      - label: U-Net, attention & Transformer models
+        level: 5
+      - label: Physics-informed RL & PPO
         level: 4
-      - label: R
+  - name: Simulation & Software
+    items:
+      - label: Sionna RT & scene design
+        level: 5
+      - label: ROS 2 & TurtleBot4
+        level: 4
+      - label: Wireless InSite, SUMO & CARLA
+        level: 4
+      - label: Python, MATLAB & Linux
+        level: 5
+  - name: Experimental Systems
+    items:
+      - label: MobiFR3 architecture & experiments
+        level: 5
+      - label: RFSoC/PiRadio & Sivers team system
+        level: 4
+      - label: Antenna-pattern & RF-chain calibration
+        level: 5
+      - label: TI mmWave radar acquisition & filtering
         level: 3
-      - label: LaTeX
-        level: 5
-      - label: Kubernetes (HSRN)
-        level: 3
-  - name: Simulation & Frameworks
-    items:
-      - label: Sionna
-        level: 5
-      - label: ROS2
-        level: 5
-      - label: Wireless InSite
-        level: 4
-      - label: SUMO & CARLA
-        level: 4
-  - name: Robotics & Wireless Hardware
-    items:
-      - label: TurtleBot4 mobile robot
-        level: 4
-      - label: Jackal unmanned ground vehicle (UGV)
-        level: 4
-      - label: RFSoC/Pi-Radio
-        level: 4
-      - label: D48 pan-tilt unit and linear track
-        level: 4
-      - label: TI mmWave radar (AWR1642, AWR6843)
-        level: 4
-      - label: DCA1000
-        level: 4
 
 awards:
   - title: Ernst Weber Fellowship (NYU Tandon School of Engineering)

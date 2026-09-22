@@ -8,12 +8,11 @@ date: "2024-01-01"
 publishDate: "2024-01-01"
 publication_types:
   - manuscript
-publication: "IEEE Transactions on Intelligent Transportation Systems (under review)"
+publication: "arXiv preprint"
 publication_short: ""
 abstract: ""
-summary: "arXiv preprint; under review at IEEE Transactions on Intelligent Transportation Systems."
+summary: "Archived preprint; not listed as an active submission in the current CV."
 tags:
-  - "under-review"
   - preprint
 featured: false
 hugoblox:

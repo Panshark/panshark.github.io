@@ -8,6 +8,9 @@ authors:
   - Hitesh Poddar
   - Tomoki Yoshimura
   - Sundeep Rangan
+roles:
+  - Co-first author
+  - Corresponding author
 date: "2026-01-01"
 publishDate: "2026-01-01"
 publication_types:
@@ -34,6 +37,5 @@ slides: ""
 ---
 
 <div class="author-role-note">
-  <span>Co-first author</span>
-  <span>Sole corresponding author</span>
+  <span>Co-first and corresponding author</span>
 </div>

@@ -7,15 +7,20 @@ authors:
   - Hitesh Poddar
   - Tomoki Yoshimura
   - Sundeep Rangan
+roles:
+  - Co-first author
+  - Corresponding author
+manuscript_order: 5
 date: "2026-01-01"
 publishDate: "2026-01-01"
 publication_types:
   - "article-journal"
-publication: "IEEE Journal on Selected Areas in Communications (under review)"
+publication: "IEEE Journal on Selected Areas in Communications"
 publication_short: ""
 abstract: ""
 summary: "Under review at IEEE Journal on Selected Areas in Communications."
 tags:
+  - "manuscript"
   - "under-review"
 featured: true
 links: []
@@ -29,6 +34,5 @@ slides: ""
 ---
 
 <div class="author-role-note">
-  <span>Co-first author</span>
-  <span>Sole corresponding author</span>
+  <span>Co-first and corresponding author</span>
 </div>

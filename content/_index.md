@@ -13,14 +13,15 @@ sections:
     content:
       username: me
       text: |-
-        I am a Ph.D. candidate in Electrical and Computer Engineering at **New York University**, advised by **[Prof. Sundeep Rangan](https://engineering.nyu.edu/faculty/sundeep-rangan)** at **[NYU WIRELESS](https://wireless.engineering.nyu.edu/)**.
+        I am a Ph.D. candidate in Electrical and Computer Engineering at **New York University**, advised by **[Prof. Sundeep Rangan](https://engineering.nyu.edu/faculty/sundeep-rangan)** at **[NYU WIRELESS](https://wireless.engineering.nyu.edu/)**. I expect to graduate in May 2027.
 
-        My research develops **spatially aware, uncertainty-aware wireless intelligence** for embodied autonomy and adaptive 6G systems. I build algorithms, wireless digital twins, and physical FR3/mmWave testbeds that turn sparse RF and multimodal observations into calibrated spatial beliefs and closed-loop decisions.
+        My research centers on **RF sensing and probabilistic spatial intelligence for autonomous systems**. I combine candidate-wise likelihoods, neural posterior models, Bayesian fusion, and measurement-aligned wireless digital twins to turn sparse, ambiguous RF observations into calibrated spatial beliefs, then use those beliefs for localization, robotic sensing, navigation, and closed-loop wireless decisions.
 
         <div class="hero-actions">
-          <a href="#research">Research themes</a>
-          <a href="#publications">Key publications</a>
+          <a href="#projects">Projects</a>
+          <a href="#publications">Publications</a>
           <a href="/cvs/CV_academic.pdf">Academic CV</a>
+          <a href="/cvs/CV_industrial.pdf">Industry Resume</a>
         </div>
       headings:
         about: About
@@ -43,9 +44,9 @@ sections:
       text: |-
         <img class="about-portrait" src="/media/casual.png" alt="Casual portrait">
 
-        My work starts from a simple problem: future wireless and robotic systems rarely see the world through clean measurements. A receiver may observe only a few multipath components; a robot may have partial visual context; a handset may only measure the bands and antenna modules it chooses to activate. In these settings, a single point estimate is often less useful than a belief over competing spatial hypotheses.
+        Wireless and robotic systems rarely observe a clean, complete world. A receiver sees only a few noisy multipath components, a robot may know only part of the map, and a handset can measure only the bands and antenna modules it activates. I treat that ambiguity as a first-class object: represent competing hypotheses, calibrate simulation against measurements, and fuse evidence across observations instead of collapsing uncertainty too early.
 
-        I use this view to connect four threads: **posterior RF localization** through MC-CLE and LOCUS-DT, **wireless digital twins** for zero-shot robot navigation and SLAM, **UE-centric multi-band adaptation** under mobility and blockage, and **object-centric spatial memory** for wearable and embodied agents. The long-term goal is to make wireless systems not only communicate, but also reason about space, uncertainty, and action.
+        This methodology connects my current research: **MAGNETAR** infers a joint posterior over transmitter position and heading from a single multipath snapshot; **MAPLE-RF** localizes efficiently with a partially observed map; **MC-CLE** and **LOCUS-DT** use likelihoods and ray-tracing priors for calibrated localization; and **MobiFR3** grounds these ideas in a 10-GHz robotic measurement system. A complementary line, **MCMB-HDT**, carries the same belief-and-action perspective into closed-loop multi-band link decisions. I also mentor an emerging object-centric RGB-D spatial-memory project for embodied agents.
     design:
       columns: '2'
 
@@ -54,20 +55,23 @@ sections:
     content:
       title: Research Themes
       items:
-        - name: Belief-Aware RF Sensing
-          description: Posterior localization methods that retain multimodal spatial hypotheses for 6G and robotics.
+        - name: Probabilistic RF Localization
+          description: Likelihood and neural-posterior methods that retain multimodal position and pose hypotheses.
           icon: chart-bar
         - name: Wireless Digital Twins
-          description: Ray-tracing priors for zero-shot indoor navigation, wireless SLAM, and robot policies.
+          description: Measurement-aligned ray-tracing priors, real-to-sim calibration, and partial-map inference.
           icon: map
-        - name: Wireless Robotics Systems
-          description: FR3/mmWave RFSoC/Pi-Radio testbeds with TurtleBot4, Jackal UGV, D48 pan-tilt, and linear-track motion.
+        - name: Robotic RF Sensing
+          description: MobiFR3 combines 10-GHz channel sounding, TurtleBot4 motion, ROS 2, LiDAR, RGB, and odometry.
           icon: cpu-chip
+        - name: Belief-Space Decision Making
+          description: Bayesian fusion, physics-informed RL, and PPO connect uncertainty to motion, sensing, and control.
+          icon: arrow-path
         - name: Closed-Loop UE Adaptation
-          description: Multi-cell multi-band handset digital twins for array, band, and rate prediction under mobility.
+          description: Multi-cell, multi-band handset digital twins for rate prediction and sensing-aware array decisions.
           icon: arrows-right-left
         - name: Object-Centric Spatial Memory
-          description: Sparse egocentric sensing and semantic 3D object memories for wearable and embodied agents.
+          description: A complementary RGB-D direction for sparse sensing, retrieval, and embodied spatial reasoning.
           icon: cube
     design:
       columns: 2
@@ -78,9 +82,12 @@ sections:
       title: ''
       text: |-
         <figure class="research-map-panel" aria-labelledby="research-map-caption">
-          <img src="/media/research-program-detail.png" alt="Detailed research map connecting RF posterior inference, wireless digital twins, robotics testbeds, UE adaptation, and object-centric spatial reasoning.">
+          <picture class="research-overview-picture">
+            <source media="(max-width: 680px)" srcset="/media/research-program-overview-mobile.svg?v=20260921-2">
+            <img src="/media/research-program-overview.svg?v=20260921-2" alt="Research pipeline that transforms sparse RF and multimodal evidence through model-aware probabilistic inference into calibrated position and pose beliefs, then uses uncertainty to guide localization, active sensing, navigation, and wireless decisions, with physical validation on the MobiFR3 robotic platform.">
+          </picture>
           <figcaption id="research-map-caption">
-            <strong>How the themes connect.</strong> The figure summarizes my research program as one loop: sparse RF and multimodal observations are converted into spatial beliefs, validated through wireless digital twins and robotic testbeds, and used for closed-loop decisions in localization, navigation, UE adaptation, and spatial memory.
+            <strong>From physical evidence to spatial belief to action.</strong> Sparse RF and multimodal observations are aligned with measured systems and digital-twin priors, converted into calibrated posteriors, and fused across viewpoints. The resulting uncertainty guides localization, active measurement, navigation, and closed-loop wireless decisions.
           </figcaption>
         </figure>
     design:
@@ -97,6 +104,7 @@ sections:
         folders:
           - projects
         featured_only: true
+      count: 6
     design:
       view: article-grid
       columns: 3
@@ -117,7 +125,7 @@ sections:
           <div class="featured-media-copy">
             <p class="featured-media-kicker">Brooklyn 6G Summit 2025</p>
             <h3>FR3 Robotic Localization Demonstration</h3>
-            <p>I presented an FR3 robotic sensing platform that combines TurtleBot4 mobility, Pi-Radio hardware, and RF localization to show how wireless signals can support indoor positioning when visual information is limited.</p>
+            <p>I presented our FR3 robotic sensing platform, combining TurtleBot4 mobility, Pi-Radio hardware, and probabilistic RF localization to show how wireless measurements can support indoor positioning when visual information is limited.</p>
             <div class="media-links" aria-label="Interview and media coverage">
               <a href="https://www.youtube.com/watch?v=2_3FGVCxYKY" target="_blank" rel="noopener">Watch interview</a>
               <a href="https://www.5gtechnologyworld.com/brooklyn-6g-summit-2025-research-exhibits/" target="_blank" rel="noopener">5G Technology World</a>
@@ -134,15 +142,20 @@ sections:
     content:
       title: Key Publications
       text: |-
-        - **2026 · IEEE TWC under review** [Site-Agnostic Posterior Inference for Indoor Localization with Ray-Tracing Wireless Digital Twins](/publications/lei2026twc-siteagnostic-posterior/)
-        - **2026 · IEEE TSP under review** [Learning a Measurement-to-Posterior Map for Wireless Localization](/publications/lei2025-likelihoodposterior-wirelessloc/)
+        **Current manuscripts**
+
+        - **2027 · IEEE ICRA under review** [MAGNETAR: Multipath-Guided Spatial Posteriors for Transmitter Pose Inference in the Upper Mid-Band](/publications/lei2027-icra-magnetar/)
+        - **2027 · IEEE ICRA under review** [MAPLE-RF: Efficient Probabilistic RF Source Localization in Partially Explored Environments](/publications/lei2027-icra-maple-rf/)
+        - **2026 · IEEE TVT under review** [Learning a Measurement-to-Posterior Map for Wireless Localization](/publications/lei2025-likelihoodposterior-wirelessloc/)
+        - **2026 · IEEE TWC revision in preparation** [Site-Agnostic Posterior Inference for Indoor Localization with Ray-Tracing Wireless Digital Twins](/publications/lei2026twc-siteagnostic-posterior/)
+        - **2026 · IEEE JSAC under review** [MCMB-HDT: A Multi-Cell Multi-Band Handset Digital Twin for Learning-Based Closed-Loop Array Activation](/publications/chenlei2026jsac-mcmbhdt/)
+
+        **Selected peer-reviewed work**
+
         - **2026 · IEEE GLOBECOM** [LOCUS-DT: Localization via Observation-Conditioned Uncertainty Scoring with Digital Twins](/publications/lei2026globecom-locusdt/)
         - **2026 · Asilomar** [Beyond Point Estimates: Likelihood-Based Full-Posterior Wireless Localization](/publications/lei2025-likelihoodposterior-rfloc/)
-        - **2026 · Asilomar** [Likelihood-Based Wireless Localization with Last-Bounce Spatial Features](/publications/bomfinlei2026-lastbounce/)
-        - **2026 · IEEE JSAC under review** [MCMB-HDT: A Multi-Cell Multi-Band Handset Digital Twin for Learning-Based Closed-Loop Array Activation](/publications/chenlei2026jsac-mcmbhdt/)
         - **2026 · IEEE ICC Workshops** [Transformer-Based Rate Prediction for Multi-Band Cellular Handsets](/publications/chenlei2025-multibandue-switching/)
         - **2025 · IEEE OJ-COMS** [Digital Twin-Enhanced Wireless Indoor Navigation: Achieving Efficient Environment Sensing with Zero-Shot Reinforcement Learning](/publications/lei2025ojcoms-digitaltwin/)
-        - **2025 · RLC** [Reinforcement Learning with Physics-Informed Symbolic Program Priors for Zero-Shot Wireless Indoor Navigation](/publications/li2025rlc-symbolicpriors/)
         - **2024 · IEEE ICRA** [Zero-Shot Wireless Indoor Navigation through Physics-Informed Reinforcement Learning](/publications/yin2024zeroshot-icra/)
 
         [Full publication list](/publications/)
@@ -171,5 +184,7 @@ sections:
     content:
       title: Contact
       text: |-
+        **NYU WIRELESS**<br>
+        9th Floor, 370 Jay Street, Brooklyn, NY 11201<br>
         Email: [hl4155@nyu.edu](mailto:hl4155@nyu.edu)
 ---
