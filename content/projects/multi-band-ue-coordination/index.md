@@ -4,8 +4,8 @@ summary: UE-centric multi-cell multi-band handset digital twins for closed-loop 
 date: 2025-01-01
 featured: true
 weight: 7
-project_tier: related
-project_label: Complementary system line
+project_tier: secondary
+project_label: Secondary project
 tags:
   - Wireless
   - Systems

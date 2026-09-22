@@ -56,7 +56,7 @@ sections:
     content:
       title: Research Program
       text: |-
-        <p class="section-lede">A shared methodology connects the program: physical evidence is tested against model-aware hypotheses, retained as calibrated spatial belief, and actively refined through new measurements and actions.</p>
+        <p class="section-lede"><a href="/projects/mccle-full-posterior-localization/">MC-CLE</a> and <a href="/projects/locus-dt-digital-twin-localization/">LOCUS-DT</a> provide complementary inference cores: one learns candidate-wise spatial likelihoods from RF measurements, while the other evaluates observations against wireless-digital-twin hypotheses. Both turn ambiguous physical evidence into spatial beliefs for localization, sensing, and action.</p>
 
         <figure class="research-map-panel" aria-labelledby="research-map-caption">
           <a class="research-map-link" href="/media/research-program-overview.svg?v=20260922-1" target="_blank" rel="noopener" aria-label="Open the full-size research program map">
@@ -70,7 +70,6 @@ sections:
           </figcaption>
         </figure>
 
-        <p class="research-method-note"><strong>Core inference methods.</strong> <a href="/projects/mccle-full-posterior-localization/">MC-CLE</a> learns candidate-wise spatial likelihoods from compact RF measurements; <a href="/projects/locus-dt-digital-twin-localization/">LOCUS-DT</a> scores observed multipath against wireless-digital-twin hypotheses. Their journal extensions deepen learned posterior mapping and robustness to site and model mismatch.</p>
     design:
       css_class: research-program-section
       columns: '1'
@@ -79,7 +78,7 @@ sections:
     id: projects
     content:
       title: Selected Projects
-      text: Two core probabilistic-inference methods anchor three current flagship efforts and two earlier or complementary system lines.
+      text: Two core inference methods support three flagship efforts spanning joint pose inference, partial-map localization, and robotic RF experimentation; two secondary lines trace earlier and complementary work.
       sort_by: weight
       order: asc
       filters:

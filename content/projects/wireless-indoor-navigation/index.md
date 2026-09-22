@@ -4,8 +4,8 @@ summary: Ray-tracing digital-twin priors and physics-informed reinforcement lear
 date: 2025-01-01
 featured: true
 weight: 6
-project_tier: related
-project_label: Earlier foundation
+project_tier: secondary
+project_label: Secondary project
 tags:
   - Wireless
   - Robotics

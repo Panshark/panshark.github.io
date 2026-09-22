@@ -5,7 +5,7 @@ date: 2026-09-17
 featured: true
 weight: 4
 project_tier: flagship
-project_label: Flagship research
+project_label: Flagship project
 tags:
   - Wireless
   - Localization

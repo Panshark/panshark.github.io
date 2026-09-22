@@ -5,8 +5,7 @@ date: 2025-01-01
 featured: true
 weight: 5
 project_tier: flagship
-project_label: Flagship experimental system
-project_layout: tablet-wide
+project_label: Flagship project
 tags:
   - Wireless
   - Robotics
