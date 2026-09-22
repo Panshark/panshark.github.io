@@ -20,7 +20,6 @@ image:
   caption: ""
   focal_point: ""
   preview_only: true
-projects:
-  - "mccle-full-posterior-localization"
+projects: []
 slides: ""
 ---
