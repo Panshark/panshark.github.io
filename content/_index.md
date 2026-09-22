@@ -59,16 +59,18 @@ sections:
         <p class="section-lede">A shared methodology connects the program: physical evidence is tested against model-aware hypotheses, retained as calibrated spatial belief, and actively refined through new measurements and actions.</p>
 
         <figure class="research-map-panel" aria-labelledby="research-map-caption">
-          <a class="research-map-link" href="/media/research-program-overview.svg?v=20260921-4" target="_blank" rel="noopener" aria-label="Open the full-size research program map">
+          <a class="research-map-link" href="/media/research-program-overview.svg?v=20260922-1" target="_blank" rel="noopener" aria-label="Open the full-size research program map">
             <picture class="research-overview-picture">
-              <source media="(max-width: 680px)" srcset="/media/research-program-overview-mobile.svg?v=20260921-4">
-              <img src="/media/research-program-overview.svg?v=20260921-4" alt="Research pipeline that transforms sparse RF and multimodal evidence through model-aware probabilistic inference into calibrated position and pose beliefs, then uses uncertainty to guide localization, active sensing, navigation, and wireless decisions, with physical validation on the MobiFR3 robotic platform.">
+              <source media="(max-width: 680px)" srcset="/media/research-program-overview-mobile.svg?v=20260922-1">
+              <img src="/media/research-program-overview.svg?v=20260922-1" alt="Research pipeline in which MC-CLE and LOCUS-DT transform sparse RF and multimodal evidence through model-aware probabilistic inference into calibrated position and pose beliefs, then use uncertainty to guide localization, active sensing, navigation, and wireless decisions, with physical validation on the MobiFR3 robotic platform.">
             </picture>
           </a>
           <figcaption id="research-map-caption">
             <strong>One methodology across the program.</strong> Open the full-size map to follow the evidence, inference, and active-update pipeline in detail.
           </figcaption>
         </figure>
+
+        <p class="research-method-note"><strong>Core inference methods.</strong> <a href="/publications/lei2025-likelihoodposterior-rfloc/">MC-CLE</a> learns candidate-wise spatial likelihoods from compact RF measurements; <a href="/publications/lei2026globecom-locusdt/">LOCUS-DT</a> scores observed multipath against wireless-digital-twin hypotheses. Their journal extensions deepen learned posterior mapping and robustness to site and model mismatch.</p>
     design:
       css_class: research-program-section
       columns: '1'
@@ -77,7 +79,7 @@ sections:
     id: projects
     content:
       title: Selected Projects
-      text: Three flagship efforts define the current program, supported by earlier and complementary work and one mentored emerging direction.
+      text: A probabilistic inference foundation anchors three current flagship efforts and two earlier or complementary system lines.
       sort_by: weight
       order: asc
       filters:

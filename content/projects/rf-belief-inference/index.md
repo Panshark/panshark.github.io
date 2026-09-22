@@ -1,9 +1,11 @@
 ---
-title: Probabilistic RF Localization & Wireless Digital Twins
-summary: Likelihood, neural-posterior, and digital-twin methods that turn sparse multipath observations into calibrated spatial beliefs.
+title: "MC-CLE & LOCUS-DT: Probabilistic RF Localization"
+summary: MC-CLE learns candidate-wise RF likelihoods; LOCUS-DT scores measured multipath against wireless-digital-twin hypotheses to recover calibrated spatial posteriors.
 date: 2026-01-01
-featured: false
+featured: true
 weight: 1
+project_tier: foundation
+project_label: Core inference foundation
 tags:
   - Wireless
   - Localization
@@ -11,25 +13,48 @@ tags:
   - Uncertainty
 ---
 
-I lead a research line on posterior RF localization that preserves competing spatial hypotheses instead of collapsing a sparse wireless observation into one point estimate. The common methodology is to score candidate locations or poses, calibrate simulation to the measurement process, and fuse multiple posterior beliefs over time.
+I lead a research line on RF localization that preserves competing spatial hypotheses instead of collapsing an ambiguous measurement into one coordinate. **MC-CLE** establishes the candidate-wise likelihood foundation; **LOCUS-DT** extends that idea by comparing an observed multipath snapshot with a ray-traced library of location hypotheses. Both methods produce spatial posteriors that can be calibrated, fused across views, and used by downstream autonomous systems.
 
-The line includes **MC-CLE** for candidate-likelihood inference, **LOCUS-DT** for observation-conditioned scoring against ray-tracing libraries, direct neural measurement-to-posterior models, **MAGNETAR** for joint position-and-heading inference, and **MAPLE-RF** for efficient localization when most of the map is still unexplored.
+## MC-CLE: learning candidate-wise likelihoods
 
-<div style="background: #fff; padding: 12px; border-radius: 6px;">
-  <img src="mccle_flow.png" alt="MC-CLE posterior inference workflow" style="display: block; width: 100%; height: auto;" />
+MC-CLE asks a direct probabilistic question: for each candidate transmitter location, how compatible is the measured angle-and-strength signature with that state? The learned likelihood field retains multipath ambiguity, shadowing, and directional structure that a Gaussian point-error model cannot represent.
+
+<div class="project-figure-wide">
+  <figure class="project-figure-card">
+    <img src="mccle_flow.png" alt="MC-CLE workflow from a ray-traced scene, receiver pose geometry, and RF channel signature to a full spatial posterior." loading="lazy" decoding="async">
+    <figcaption><strong>Journal schematic.</strong> The scene, receiver geometry, and RF channel signature condition a learned candidate scorer; normalizing those scores over space yields a full posterior rather than a single estimate.</figcaption>
+  </figure>
 </div>
 
-*MC-CLE uses the ray-tracing scene, receiver pose geometry, and channel signature to score candidate transmitter locations and produce a posterior belief map.*
+<div class="project-figure-wide project-figure-wide--results">
+  <figure class="project-figure-card">
+    <img src="mccle_conference_posteriors.png" alt="MC-CLE posterior fields compared with Cartesian and polar Gaussian baselines across transmitter-receiver geometries." loading="lazy" decoding="async">
+    <figcaption><strong>Conference evidence.</strong> Across varied transmitter-receiver geometries, MC-CLE preserves directional and multimodal posterior structure that is smoothed away or geometrically constrained by Gaussian baselines.</figcaption>
+  </figure>
+</div>
 
-![LOCUS-DT probability heatmap results](locus_dt_probability_heatmaps.png)
+The peer-reviewed [Asilomar 2026 paper](https://arxiv.org/abs/2509.25719) introduces likelihood-based full-posterior localization. The first- and corresponding-author journal extension, [*Learning a Measurement-to-Posterior Map for Wireless Localization*](/publications/lei2025-likelihoodposterior-wirelessloc/), is under review at **IEEE Transactions on Vehicular Technology (TVT)**.
 
-*The LOCUS-DT heatmaps show how digital-twin likelihoods preserve multipath-driven spatial hypotheses, while simpler Gaussian baselines tend to smooth out the uncertainty structure.*
+## LOCUS-DT: conditioning on a wireless digital twin
 
-**Related papers**
-- [Beyond Point Estimates: Likelihood-Based Full-Posterior Wireless Localization](https://arxiv.org/pdf/2509.25719) (Asilomar 2026)
-- [Likelihood-Based Wireless Localization with Last-Bounce Spatial Features](/publications/bomfinlei2026-lastbounce/) (Asilomar 2026)
-- [Learning a Measurement-to-Posterior Map for Wireless Localization](/publications/lei2025-likelihoodposterior-wirelessloc/) (IEEE TVT, under review)
-- [LOCUS-DT: Localization via Observation-Conditioned Uncertainty Scoring with Digital Twins](/publications/lei2026globecom-locusdt/) (IEEE GLOBECOM 2026)
-- [Site-Agnostic Posterior Inference for Indoor Localization with Ray-Tracing Wireless Digital Twins](/publications/lei2026twc-siteagnostic-posterior/) (revision in preparation for resubmission to IEEE TWC)
-- [MAGNETAR: Multipath-Guided Spatial Posteriors for Transmitter Pose Inference in the Upper Mid-Band](/projects/magnetar-joint-rf-pose-inference/) (IEEE ICRA 2027, under review)
-- [MAPLE-RF: Efficient Probabilistic RF Source Localization in Partially Explored Environments](/projects/maple-rf-partial-map-localization/) (IEEE ICRA 2027, under review)
+LOCUS-DT makes the propagation model explicit. It extracts the observed multipath peaks, retrieves the corresponding path signatures for each candidate location from a wireless digital twin, and learns an observation-conditioned compatibility score. Normalizing the candidate scores produces a posterior over transmitter location, including multiple plausible modes when the evidence is incomplete.
+
+<div class="project-figure-wide">
+  <figure class="project-figure-card">
+    <img src="locus_dt_overview.png" alt="LOCUS-DT framework connecting a real RF snapshot, a wireless-digital-twin candidate library, learned compatibility scoring, and the resulting location posterior." loading="lazy" decoding="async">
+    <figcaption><strong>Journal schematic.</strong> LOCUS-DT matches measured multipath features with candidate-specific ray-traced signatures, then converts learned compatibility scores into a calibrated spatial posterior.</figcaption>
+  </figure>
+</div>
+
+<div class="project-figure-wide project-figure-wide--results">
+  <figure class="project-figure-card">
+    <img src="locus_dt_conference_posteriors.png" alt="LOCUS-DT posterior localization results in three unseen indoor layouts." loading="lazy" decoding="async">
+    <figcaption><strong>Conference evidence.</strong> GLOBECOM experiments across three unseen indoor layouts show structured, often multimodal posteriors that reflect blockage and multipath instead of hiding them behind one coordinate.</figcaption>
+  </figure>
+</div>
+
+The peer-reviewed [IEEE GLOBECOM 2026 paper](https://arxiv.org/abs/2608.00406) establishes LOCUS-DT. The journal extension, [*Site-Agnostic Posterior Inference for Indoor Localization with Ray-Tracing Wireless Digital Twins*](/publications/lei2026twc-siteagnostic-posterior/), studies generalization and explicit digital-twin mismatch; a revision is in preparation for resubmission to **IEEE Transactions on Wireless Communications (TWC)**.
+
+## From posterior inference to autonomous systems
+
+This foundation continues in [MAGNETAR](/projects/magnetar-joint-rf-pose-inference/), which expands the state from position to joint position-heading belief on the MobiFR3 physical platform, and in [MAPLE-RF](/projects/maple-rf-partial-map-localization/), which performs efficient posterior inference before a robot has finished mapping its environment. The common interface is the spatial belief: RF evidence becomes a calibrated distribution that can be fused, queried, and acted upon.
