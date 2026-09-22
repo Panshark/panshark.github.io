@@ -31,7 +31,6 @@ image:
   preview_only: true
 projects:
   - "maple-rf-partial-map-localization"
-  - "rf-belief-inference"
   - "wireless-indoor-navigation"
 slides: ""
 ---

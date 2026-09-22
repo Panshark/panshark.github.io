@@ -27,7 +27,7 @@ image:
   focal_point: ""
   preview_only: true
 projects:
-  - "rf-belief-inference"
+  - "locus-dt-digital-twin-localization"
 slides: ""
 ---
 

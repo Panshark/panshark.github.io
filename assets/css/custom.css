@@ -745,10 +745,8 @@ a:hover {
   grid-column: span 2;
 }
 
-.project-card--foundation {
-  grid-column: span 6;
-  display: grid;
-  grid-template-columns: minmax(0, 1.42fr) minmax(330px, 0.78fr);
+.project-card--core {
+  grid-column: span 3;
 }
 
 .project-card--related {
@@ -771,7 +769,6 @@ a:hover {
   isolation: isolate;
 }
 
-.project-card--foundation > .relative:first-child,
 .project-card--related > .relative:first-child,
 .project-card--emerging > .relative:first-child {
   height: 100%;
@@ -903,13 +900,6 @@ a:hover {
   color: var(--site-muted) !important;
   font-size: 0.88rem;
   line-height: 1.64;
-}
-
-.project-card--foundation .project-card-summary {
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;
 }
 
 .research-method-note {
@@ -1906,24 +1896,24 @@ a:hover {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 
+  .project-card--core,
   .project-card--flagship,
   .project-card--related {
     grid-column: span 1;
     display: block;
   }
 
-  .project-card--foundation,
   .project-card--emerging {
     grid-column: span 2;
   }
 
-  #projects .project-card--flagship:nth-child(4) {
+  #projects .project-card--tablet-wide {
     grid-column: span 2;
     display: grid;
     grid-template-columns: minmax(260px, 0.95fr) minmax(0, 1.05fr);
   }
 
-  #projects .project-card--flagship:nth-child(4) > .relative:first-child {
+  #projects .project-card--tablet-wide > .relative:first-child {
     height: 100%;
     border-right: 1px solid var(--site-line);
     border-bottom: 0;
@@ -2057,7 +2047,7 @@ a:hover {
     aspect-ratio: 16 / 9 !important;
   }
 
-  .project-card--foundation,
+  .project-card--core,
   .project-card--flagship,
   .project-card--related,
   .project-card--emerging {
@@ -2065,17 +2055,16 @@ a:hover {
     display: block;
   }
 
-  .project-card--foundation > .relative:first-child,
   .project-card--related > .relative:first-child,
   .project-card--emerging > .relative:first-child,
-  #projects .project-card--flagship:nth-child(4) > .relative:first-child {
+  #projects .project-card--tablet-wide > .relative:first-child {
     height: auto;
     border-right: 0;
     border-bottom: 1px solid var(--site-line);
     aspect-ratio: 16 / 9 !important;
   }
 
-  #projects .project-card--flagship:nth-child(4) {
+  #projects .project-card--tablet-wide {
     grid-column: span 1;
     display: block;
   }

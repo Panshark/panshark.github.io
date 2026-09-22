@@ -3,7 +3,7 @@ title: "MAGNETAR: Joint RF Pose Inference"
 summary: Multipath-guided joint posteriors over transmitter position and heading, calibrated from simulation and evaluated on a 10-GHz robotic RF testbed.
 date: 2026-09-17
 featured: true
-weight: 2
+weight: 3
 project_tier: flagship
 project_label: Flagship research
 tags:

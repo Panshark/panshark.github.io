@@ -3,7 +3,7 @@ title: "MAPLE-RF: Localization with Partial Maps"
 summary: Efficient neural posterior inference for RF source localization while a robot has explored only part of its environment.
 date: 2026-09-17
 featured: true
-weight: 3
+weight: 4
 project_tier: flagship
 project_label: Flagship research
 tags:

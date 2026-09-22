@@ -3,7 +3,7 @@ title: Wireless-Guided Indoor Navigation
 summary: Ray-tracing digital-twin priors and physics-informed reinforcement learning for zero-shot indoor navigation.
 date: 2025-01-01
 featured: true
-weight: 5
+weight: 6
 project_tier: related
 project_label: Earlier foundation
 tags:

@@ -36,7 +36,6 @@ image:
 projects:
   - "magnetar-joint-rf-pose-inference"
   - "wireless-robotics-platform"
-  - "rf-belief-inference"
 slides: ""
 ---
 

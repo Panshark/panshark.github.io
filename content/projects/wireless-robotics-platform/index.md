@@ -3,9 +3,10 @@ title: Robotic RF Localization & Experimental Systems
 summary: A 10-GHz robotic RF testbed connecting channel sounding, mobile sensing, localization, and SLAM-based navigation experiments.
 date: 2025-01-01
 featured: true
-weight: 4
+weight: 5
 project_tier: flagship
 project_label: Flagship experimental system
+project_layout: tablet-wide
 tags:
   - Wireless
   - Robotics

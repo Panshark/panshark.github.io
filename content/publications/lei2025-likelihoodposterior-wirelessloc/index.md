@@ -26,7 +26,7 @@ image:
   focal_point: ""
   preview_only: true
 projects:
-  - "rf-belief-inference"
+  - "mccle-full-posterior-localization"
 slides: ""
 ---
 

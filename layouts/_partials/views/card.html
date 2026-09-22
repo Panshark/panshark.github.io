@@ -19,6 +19,7 @@
 {{ $hasMeta := or $showDate $showReadTime $showReadMore }}
 {{ $index := .index }}
 {{ $projectTier := $item.Params.project_tier | default "standard" }}
+{{ $projectLayout := $item.Params.project_layout | default "" }}
 {{ $isProject := eq $item.Type "projects" }}
 {{ $isEvent := eq $item.Type "events" }}
 {{ $event_dates := "" }}
@@ -26,7 +27,7 @@
 {{ $event_dates = partial "functions/get_event_dates" $item }}
 {{ end }}
 
-<div class="{{ if $isProject }}project-card project-card--{{ $projectTier }}{{ else }}content-card{{ end }} group" role="article" aria-labelledby="card-title-{{ $item.File.UniqueID }}">
+<div class="{{ if $isProject }}project-card project-card--{{ $projectTier }}{{ with $projectLayout }} project-card--{{ . }}{{ end }}{{ else }}content-card{{ end }} group" role="article" aria-labelledby="card-title-{{ $item.File.UniqueID }}">
     <!-- Image Section -->
     <div class="relative overflow-hidden aspect-[16/9] bg-gradient-to-br from-zinc-100 to-zinc-200 dark:from-zinc-800 dark:to-zinc-900">
       {{ with $item.Params.content_meta }}
