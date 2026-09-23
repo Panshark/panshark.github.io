@@ -175,9 +175,9 @@ sections:
             <p class="panel-kicker">Education</p>
             <h3>Academic Background</h3>
             <dl>
-              <div><dt>Ph.D.</dt><dd>New York University<br><span>Expected May 2027</span></dd></div>
-              <div><dt>M.S.</dt><dd>Computer Engineering, NYU<br><span>2022</span></dd></div>
-              <div><dt>B.E.</dt><dd>Electrical Engineering and Automation, CAU<br><span>2019</span></dd></div>
+              <div><dt>Ph.D.</dt><dd>Electrical and Computer Engineering<br>New York University<br><span>Expected May 2027</span></dd></div>
+              <div><dt>M.S.</dt><dd>Computer Engineering<br>New York University<br><span>2022</span></dd></div>
+              <div><dt>B.E.</dt><dd>Electrical Engineering and Automation<br>China Agricultural University<br><span>2019</span></dd></div>
             </dl>
             <p class="credential-note">2023 Ernst Weber Fellowship · NYU Tandon</p>
           </article>
