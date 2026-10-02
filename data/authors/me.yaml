@@ -104,13 +104,13 @@ skills:
         level: 4
       - label: Wireless InSite, SUMO & CARLA
         level: 4
-      - label: Python, MATLAB & Linux
+      - label: Python, PyTorch, MATLAB & Linux
         level: 5
   - name: Experimental Systems
     items:
       - label: MobiFR3 architecture & experiments
         level: 5
-      - label: RFSoC/PiRadio & Sivers team system
+      - label: RFSoC/Pi-Radio SDR channel sounding
         level: 4
       - label: Antenna-pattern & RF-chain calibration
         level: 5

@@ -36,7 +36,7 @@ sections:
             <ul>
               <li>Sionna RT scene design, ray-tracing experiments, and measurement-aligned real-to-sim calibration</li>
               <li>ROS 2 and TurtleBot4 integration; Wireless InSite, SUMO, and CARLA workflows</li>
-              <li>Python, MATLAB, Linux, and reproducible experimental pipelines</li>
+              <li>Python, PyTorch, MATLAB, Linux, and reproducible experimental pipelines</li>
             </ul>
           </section>
           <section>
@@ -44,7 +44,7 @@ sections:
             <h3>RF, robotics, and sensing</h3>
             <ul>
               <li>MobiFR3 system architecture, experiment design, RF-robot alignment, and evaluation</li>
-              <li>Team-operated RFSoC/PiRadio and Sivers front ends; antenna-pattern and RF-chain calibration</li>
+              <li>Team-operated RFSoC/Pi-Radio SDR channel sounding; antenna-pattern and RF-chain calibration</li>
               <li>TI mmWave radar point-cloud acquisition and filtering for UAV trajectory estimation</li>
             </ul>
           </section>
