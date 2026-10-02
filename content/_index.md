@@ -14,9 +14,9 @@ sections:
     content:
       username: me
       text: |-
-        I am an **ECE researcher connecting RF sensing and probabilistic spatial inference with robotics and autonomous systems**. My central question is how a robot or wireless device can reason and act when its observations are sparse, ambiguous, and only imperfectly captured by a world model.
+        I am an **ECE researcher connecting RF sensing and probabilistic spatial inference with robotics and autonomous systems**. My central question is how a robot or wireless device can use sparse, ambiguous RF observations to support localization and task-driven sensing when maps and propagation models are imperfect.
 
-        I begin with wireless propagation and physical sensing, align digital twins to measurements, and develop likelihood-based and learned posterior models that preserve uncertainty over position and pose. I then use those spatial beliefs for localization, active sensing and navigation, and closed-loop wireless decisions.
+        I begin with wireless propagation and physical sensing, align digital twins to measurements, and develop likelihood-based and learned posterior models that preserve uncertainty over position and pose. My work spans RF localization, physics-informed navigation, and closed-loop wireless adaptation. I am developing a task-driven sensing agenda in which spatial beliefs guide the next measurement or action.
 
         <div class="academic-status" role="list" aria-label="Current academic status">
           <span role="listitem">Ph.D. Candidate · Expected May 2027</span>
@@ -62,11 +62,11 @@ sections:
           <a class="research-map-link" href="/media/research-program-overview.svg?v=20260922-1" target="_blank" rel="noopener" aria-label="Open the full-size research program map">
             <picture class="research-overview-picture">
               <source media="(max-width: 680px)" srcset="/media/research-program-overview-mobile.svg?v=20260922-1">
-              <img src="/media/research-program-overview.svg?v=20260922-1" alt="Research pipeline in which MC-CLE and LOCUS-DT transform sparse RF and multimodal evidence through model-aware probabilistic inference into calibrated position and pose beliefs, then use uncertainty to guide localization, active sensing, navigation, and wireless decisions, with physical validation on the MobiFR3 robotic platform.">
+              <img src="/media/research-program-overview.svg?v=20260922-1" alt="Research program connecting sparse RF observations, MC-CLE and LOCUS-DT posterior inference, real-to-sim calibration, and proposed task-driven sensing. MobiFR3 provides RF measurements and supports experimental validation of pose inference.">
             </picture>
           </a>
           <figcaption id="research-map-caption">
-            <strong>One methodology across the program.</strong> Open the full-size map to follow the evidence, inference, and active-update pipeline in detail.
+            <strong>One methodology across the program.</strong> Open the full-size map to explore RF inference, real-to-sim calibration, and proposed task-driven sensing.
           </figcaption>
         </figure>
 
