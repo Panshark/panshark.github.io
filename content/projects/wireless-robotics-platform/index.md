@@ -12,7 +12,7 @@ tags:
   - Systems
 ---
 
-I lead the architecture and development of **MobiFR3**, a heterogeneous 10-GHz robotic RF testbed for localization experiments and SLAM-based navigation. The current system connects RFSoC/PiRadio channel sounding and Sivers front ends with TurtleBot4/ROS 2, odometry, 2D LiDAR, and RGB sensing. Jackal UGV integration is in progress; a Vicon-based ground-truth extension is planned but is not part of the current platform.
+I lead the architecture and development of **MobiFR3**, a heterogeneous 10-GHz robotic RF testbed for localization experiments and SLAM-based navigation. The current system connects Pi-Radio SDR channel sounding with TurtleBot4/ROS 2, odometry, 2D LiDAR, and RGB sensing. Jackal UGV integration is in progress; a Vicon-based ground-truth extension is planned but is not part of the current platform.
 
 My role spans system architecture, experiment design, RF-robot synchronization, measurement-aligned simulation, localization inference, and evaluation. I mentor student collaborators in RF hardware operation, calibration, and data collection; routine RF acquisition is conducted as a team rather than presented as a single-person hardware effort.
 
@@ -20,9 +20,9 @@ My role spans system architecture, experiment design, RF-robot synchronization, 
 
 *MobiFR3 integrates the mobile robot, RF front end, compute, power, and control layers into one experimental platform.*
 
-![Pi-Radio and RFSoC hardware bench](rf_hardware_bench.jpg)
+![Pi-Radio SDR hardware bench](rf_hardware_bench.jpg)
 
-*The team-operated RF stack combines a Pi-Radio/Sivers front end, Xilinx RFSoC baseband hardware, Vivaldi antennas, and local compute/control equipment.*
+*The team-operated Pi-Radio SDR stack combines FR3 RF hardware, Vivaldi antennas, and local compute/control equipment.*
 
 ## From system to inference
 
@@ -45,7 +45,7 @@ At the 2025 Brooklyn 6G Summit, I demonstrated the FR3 robotic sensing and local
 </div>
 
 **System capabilities**
-- Xilinx RFSoC with PYNQ/Vivado-based control and PiRadio/Sivers RF front ends for 10-GHz channel sounding.
+- Pi-Radio SDR channel sounding with Vivaldi antennas and motion-controlled 10-GHz measurements.
 - Transmit/receive waveform control, capture, synchronization, channel estimation, SNR estimation, and AoA processing in a team-operated workflow.
 - Scripted TurtleBot4, linear-track, and D48 pan-tilt motion for reproducible measurement grids.
 - Measurement-aligned Sionna RT scenes with TX/RX pose and motion, measured antenna patterns, and stochastic RF-chain/noise effects.

@@ -27,6 +27,7 @@ sections:
             <ul>
               <li>Probabilistic localization, likelihood modeling, Bayesian fusion, and uncertainty calibration</li>
               <li>U-Net, attention, and Transformer architectures for spatial posterior estimation</li>
+              <li>VLM-guided perception and tool-mediated information exchange for object-centric RGB-D spatial memory</li>
               <li>Physics-informed reinforcement learning and PPO for sensing and navigation decisions</li>
             </ul>
           </section>
@@ -44,7 +45,7 @@ sections:
             <h3>RF, robotics, and sensing</h3>
             <ul>
               <li>MobiFR3 system architecture, experiment design, RF-robot alignment, and evaluation</li>
-              <li>Team-operated RFSoC/Pi-Radio SDR channel sounding; antenna-pattern and RF-chain calibration</li>
+              <li>Team-operated Pi-Radio SDR channel sounding; antenna-pattern and RF-chain calibration</li>
               <li>TI mmWave radar point-cloud acquisition and filtering for UAV trajectory estimation</li>
             </ul>
           </section>

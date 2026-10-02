@@ -94,6 +94,8 @@ skills:
         level: 5
       - label: U-Net, attention & Transformer models
         level: 5
+      - label: VLM-guided agents & RGB-D spatial memory
+        level: 4
       - label: Physics-informed RL & PPO
         level: 4
   - name: Simulation & Software
@@ -110,7 +112,7 @@ skills:
     items:
       - label: MobiFR3 architecture & experiments
         level: 5
-      - label: RFSoC/Pi-Radio SDR channel sounding
+      - label: Pi-Radio SDR channel sounding
         level: 4
       - label: Antenna-pattern & RF-chain calibration
         level: 5
