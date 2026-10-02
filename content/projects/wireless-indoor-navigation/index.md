@@ -1,6 +1,6 @@
 ---
 title: Wireless-Guided Indoor Navigation
-summary: Ray-tracing digital-twin priors and physics-informed reinforcement learning (PIRL) for zero-shot indoor navigation.
+summary: Ray-tracing digital-twin priors and physics-informed reinforcement learning for zero-shot indoor navigation.
 date: 2025-01-01
 featured: true
 weight: 6
@@ -13,7 +13,7 @@ tags:
   - Reinforcement Learning
 ---
 
-I co-developed ray-tracing wireless digital-twin and physics-informed reinforcement learning (PIRL) methods that use simulated propagation as a transferable prior for zero-shot indoor navigation. The robot's SLAM system supplies the map and robot pose; RF observations and physics-informed priors guide the search policy. This earlier work established the decision-making side of my current research on probabilistic RF localization and robotic sensing.
+I co-developed ray-tracing wireless digital-twin and PIRL methods that use simulated propagation as a transferable prior for zero-shot indoor navigation. The robot's SLAM system supplies the map and robot pose; RF observations and physics-informed priors guide the search policy. This earlier work established the decision-making side of my current research on probabilistic RF localization and robotic sensing.
 
 ![Posterior inference map](prob_estimate.png)
 

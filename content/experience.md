@@ -28,7 +28,7 @@ sections:
               <li>Probabilistic localization, likelihood modeling, Bayesian fusion, and uncertainty calibration</li>
               <li>U-Net, attention, and Transformer architectures for spatial posterior estimation</li>
               <li>VLM-guided perception and tool-mediated information exchange for object-centric RGB-D spatial memory</li>
-              <li>Physics-informed reinforcement learning (PIRL) and PPO for sensing and navigation decisions</li>
+              <li>Physics-informed reinforcement learning and PPO for sensing and navigation decisions</li>
             </ul>
           </section>
           <section>

@@ -16,7 +16,7 @@ sections:
       text: |-
         I am an **ECE researcher connecting RF sensing and probabilistic spatial inference with robotics and autonomous systems**. My central question is how a robot or wireless device can use sparse, ambiguous RF observations to support localization and task-driven sensing when maps and propagation models are imperfect.
 
-        I begin with wireless propagation and physical sensing, align digital twins to measurements, and develop likelihood-based and learned posterior models that preserve uncertainty over position and pose. My work spans RF localization, physics-informed navigation, and closed-loop wireless adaptation. I am developing a task-driven sensing agenda in which spatial beliefs guide the next measurement or action.
+        I begin with wireless propagation and physical sensing, use real-to-sim calibration to align RF simulations with measurements, and develop likelihood-based and learned posterior models that preserve uncertainty over position and pose. My work spans RF localization, physics-informed navigation, and closed-loop wireless adaptation. I am developing task-driven RF sensing for spatial decisions in robotics and autonomous systems.
 
         <div class="academic-status" role="list" aria-label="Current academic status">
           <span role="listitem">Ph.D. Candidate · Expected May 2027</span>

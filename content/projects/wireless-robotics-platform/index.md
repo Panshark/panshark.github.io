@@ -12,7 +12,7 @@ tags:
   - Systems
 ---
 
-I lead the architecture and development of **MobiFR3**, a heterogeneous 10-GHz robotic RF testbed for localization experiments and SLAM-based navigation. The current system connects Pi-Radio SDR channel sounding with TurtleBot4/ROS 2, odometry, 2D LiDAR, and RGB sensing. Jackal UGV integration is in progress; a Vicon-based ground-truth extension is planned but is not part of the current platform.
+I lead the architecture and development of **MobiFR3**, a heterogeneous 10-GHz robotic RF testbed for localization experiments and SLAM-based navigation. The current system connects Pi-Radio SDR channel sounding with TurtleBot4/ROS 2, odometry, 2D LiDAR, and RGB sensing. Jackal UGV integration is in progress.
 
 My role spans system architecture, experiment design, RF-robot synchronization, measurement-aligned simulation, localization inference, and evaluation. I mentor student collaborators in RF hardware operation, calibration, and data collection; routine RF acquisition is conducted as a team rather than presented as a single-person hardware effort.
 

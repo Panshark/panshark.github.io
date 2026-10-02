@@ -96,7 +96,7 @@ skills:
         level: 5
       - label: VLM-guided agents & RGB-D spatial memory
         level: 4
-      - label: Physics-informed RL (PIRL) & PPO
+      - label: Physics-informed RL & PPO
         level: 4
   - name: Simulation & Software
     items:
