@@ -96,6 +96,55 @@ sections:
       show_read_more: false
 
   - block: markdown
+    id: media
+    content:
+      title: Demos & Media
+      text: |-
+        <div class="media-showcase-grid">
+          <article class="featured-media-card" aria-labelledby="b6gs-2026-title">
+            <div class="featured-media-visual">
+              <video class="showcase-video" controls playsinline preload="none" width="1920" height="1080" poster="/media/b6gs-2026-showcase.jpg" aria-labelledby="b6gs-2026-title" aria-describedby="b6gs-2026-description">
+                <source src="/media/b6gs-2026-showcase.mp4" type="video/mp4">
+                <a href="/media/b6gs-2026-showcase.mp4">Watch the B6GS 2026 research showcase</a>.
+              </video>
+            </div>
+            <div class="featured-media-copy">
+              <p class="featured-media-kicker">Brooklyn 6G Summit 2026</p>
+              <h3 id="b6gs-2026-title">Finding the Invisible</h3>
+              <p class="featured-media-format">Research showcase · 0:45</p>
+              <p id="b6gs-2026-description">An NYU WIRELESS research showcase featuring robotic RF experiments with MAGNETAR and localization with incomplete maps in MAPLE-RF simulations.</p>
+              <div class="media-links" aria-label="Showcase and related projects">
+                <a href="https://youtu.be/PJaz6TokX84" target="_blank" rel="noopener">Watch on YouTube</a>
+                <a href="/projects/magnetar-joint-rf-pose-inference/">MAGNETAR</a>
+                <a href="/projects/maple-rf-partial-map-localization/">MAPLE-RF</a>
+                <a href="/projects/wireless-robotics-platform/">MobiFR3 platform</a>
+              </div>
+            </div>
+          </article>
+          <article class="featured-media-card" aria-labelledby="b6gs-2025-title">
+            <a class="featured-media-visual" href="https://www.youtube.com/watch?v=2_3FGVCxYKY" target="_blank" rel="noopener" aria-label="Watch the Brooklyn 6G Summit 2025 interview on YouTube">
+              <img src="/media/6gsummit-interview.jpg" alt="FR3 robotic localization demonstration at the Brooklyn 6G Summit 2025" loading="lazy" decoding="async">
+              <span class="featured-media-play" aria-hidden="true"><span>▶</span> Watch interview</span>
+            </a>
+            <div class="featured-media-copy">
+              <p class="featured-media-kicker">Brooklyn 6G Summit 2025</p>
+              <h3 id="b6gs-2025-title">MobiFR3: Interview &amp; Live Demonstration</h3>
+              <p class="featured-media-format">Video interview</p>
+              <p>I demonstrated our 10-GHz robotic RF platform and discussed how probabilistic localization can support indoor positioning when visual information is incomplete.</p>
+              <div class="media-links" aria-label="Interview and media coverage">
+                <a href="https://www.youtube.com/watch?v=2_3FGVCxYKY" target="_blank" rel="noopener">Watch on YouTube</a>
+                <a href="https://www.5gtechnologyworld.com/brooklyn-6g-summit-2025-research-exhibits/" target="_blank" rel="noopener">5G Technology World</a>
+                <a href="https://engineering.nyu.edu/news/brooklyn-6g-summit-2025-research-exhibits" target="_blank" rel="noopener">NYU Tandon</a>
+                <a href="/projects/wireless-robotics-platform/">Project details</a>
+              </div>
+            </div>
+          </article>
+        </div>
+    design:
+      css_class: field-section
+      columns: '1'
+
+  - block: markdown
     id: publications
     content:
       title: Selected Publications
@@ -126,32 +175,6 @@ sections:
         <p class="publication-index-link"><a href="/publications/">View the full publication list</a></p>
     design:
       css_class: publications-section
-      columns: '1'
-
-  - block: markdown
-    id: media
-    content:
-      title: In the Field
-      text: |-
-        <article class="featured-media-card">
-          <a class="featured-media-visual" href="https://www.youtube.com/watch?v=2_3FGVCxYKY" target="_blank" rel="noopener" aria-label="Watch the Brooklyn 6G Summit 2025 interview">
-            <img src="/media/6gsummit-interview.jpg" alt="FR3 robotic localization demonstration at the Brooklyn 6G Summit 2025" loading="lazy" decoding="async">
-            <span class="featured-media-play" aria-hidden="true"><span>▶</span> Watch interview</span>
-          </a>
-          <div class="featured-media-copy">
-            <p class="featured-media-kicker">Brooklyn 6G Summit 2025</p>
-            <h3>MobiFR3 in a live research demonstration</h3>
-            <p>I demonstrated our 10-GHz robotic RF platform and discussed how probabilistic localization can support indoor positioning when visual information is incomplete.</p>
-            <div class="media-links" aria-label="Interview and media coverage">
-              <a href="https://www.youtube.com/watch?v=2_3FGVCxYKY" target="_blank" rel="noopener">Video interview</a>
-              <a href="https://www.5gtechnologyworld.com/brooklyn-6g-summit-2025-research-exhibits/" target="_blank" rel="noopener">5G Technology World</a>
-              <a href="https://engineering.nyu.edu/news/brooklyn-6g-summit-2025-research-exhibits" target="_blank" rel="noopener">NYU Tandon</a>
-              <a href="/projects/wireless-robotics-platform/">Project details</a>
-            </div>
-          </div>
-        </article>
-    design:
-      css_class: field-section
       columns: '1'
 
   - block: markdown

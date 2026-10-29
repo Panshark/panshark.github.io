@@ -26,6 +26,8 @@ I lead **MAGNETAR** from probabilistic formulation and neural architecture desig
 
 <p id="magnetar-video-description"><em>The three-minute overview shows why position and heading must be inferred together, how MAGNETAR scores pose hypotheses, and how it is evaluated with robotic measurements.</em></p>
 
+<p><a href="/#media">Watch the 45-second Brooklyn 6G Summit 2026 research showcase</a>.</p>
+
 <div class="project-figure-grid" aria-label="MAGNETAR method and physical-system figures">
   <figure class="project-figure-card">
     <img src="magnetar-method.png" alt="MAGNETAR pipeline from a multipath RF observation and receiver pose to a joint posterior over transmitter position and heading." loading="lazy" decoding="async">

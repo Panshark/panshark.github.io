@@ -978,7 +978,7 @@ a:hover {
   margin: 1.35rem 0 0 !important;
 }
 
-/* In the field */
+/* Demos and media */
 
 #media > .flex,
 #media .prose {
@@ -1074,6 +1074,76 @@ a:hover {
   min-height: 2.35rem;
   padding: 0.43rem 0.65rem;
   font-size: 0.78rem;
+}
+
+/* Homepage media cards: keep player geometry independent of detail-page videos. */
+#media .media-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 2.5vw, 1.75rem);
+}
+
+#media .media-showcase-grid .featured-media-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#media .media-showcase-grid .featured-media-visual,
+#media .media-showcase-grid .featured-media-visual img {
+  border-radius: 0;
+}
+
+#media .media-showcase-grid .showcase-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  margin: 0;
+  object-fit: contain;
+  background: #071014;
+}
+
+#media .media-showcase-grid .featured-media-copy {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: clamp(1.1rem, 2vw, 1.65rem);
+}
+
+#media .media-showcase-grid .featured-media-copy h3 {
+  margin: 0.55rem 0 0.65rem;
+  font-size: clamp(1.45rem, 2vw, 1.85rem);
+  line-height: 1.2;
+}
+
+#media .media-showcase-grid .featured-media-format {
+  margin: 0 0 0.8rem;
+  color: var(--site-muted);
+  font-size: 0.78rem;
+}
+
+#media .media-showcase-grid .media-links {
+  width: 100%;
+  margin-top: auto;
+  padding-top: 1.15rem;
+}
+
+@media (max-width: 767px) {
+  #media .media-showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #media .media-showcase-grid .media-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 /* Academic home and contact */

@@ -27,6 +27,8 @@ I lead **MAPLE-RF**, an efficient probabilistic RF source-localization method fo
 
 <p id="maple-video-description"><em>The simulation follows a receiver along a recorded route while the observed map grows and the transmitter posterior is updated.</em></p>
 
+<p><a href="/#media">Watch the 45-second Brooklyn 6G Summit 2026 research showcase</a>.</p>
+
 <div class="project-figure-grid" aria-label="MAPLE-RF method and exploration figures">
   <figure class="project-figure-card">
     <img src="maple-method.png" alt="MAPLE-RF pipeline aligning multipath measurements with partial-map and receiver-centered spatial channels to infer a transmitter posterior." loading="lazy" decoding="async">

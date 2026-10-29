@@ -30,6 +30,12 @@ MobiFR3 provides the measured data and controlled geometry used by [MAGNETAR](/p
 
 ## Media & Public Demonstrations
 
+### Brooklyn 6G Summit 2026
+
+[Finding the Invisible — watch the 45-second research showcase](/#media), featuring MAGNETAR's robotic RF experiments on MobiFR3 and MAPLE-RF's partial-map localization simulations.
+
+### Brooklyn 6G Summit 2025
+
 <div class="media-video-shell">
   <iframe src="https://www.youtube-nocookie.com/embed/2_3FGVCxYKY" title="Brooklyn 6G Summit 2025 interview on FR3 robotic localization" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
