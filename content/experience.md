@@ -36,7 +36,7 @@ sections:
             <h3>Digital twins and research prototypes</h3>
             <ul>
               <li>Sionna RT scene design, ray-tracing experiments, and measurement-aligned real-to-sim calibration</li>
-              <li>ROS 2 and TurtleBot4 integration; Wireless InSite, SUMO, and CARLA workflows</li>
+              <li>ROS 2, TurtleBot4 and Jackal mobile sensing platforms; Wireless InSite, SUMO, and CARLA workflows</li>
               <li>Python, PyTorch, MATLAB, Linux, and reproducible experimental pipelines</li>
             </ul>
           </section>
@@ -58,10 +58,10 @@ sections:
       title: Mentoring
       text: |-
         **Teaching Assistant**
-        - ECE-GY5213 Introduction to System Engineering (Spring 2024)
+        - ECE-GY5213 Introduction to System Engineering (September–December 2024)
 
         **Graduate Mentoring**
-        - Ruibin Chen (Ph.D. student, NYU) - Mentor research on MCMB-HDT, which I lead, and on RF localization; joint work includes IEEE ICC Workshops 2026 and manuscripts at IEEE JSAC and IEEE ICRA 2027, Feb 2025 - Present
+        - Ruibin Chen (Ph.D. student, NYU) - Mentor research on MCMB-HDT and RF localization; joint work includes IEEE ICC Workshops 2026, an MCMB-HDT manuscript (venue to be determined), and a manuscript under review at IEEE ICRA 2027, Feb 2025 - Present
         - Yuheng Liu & Ashesh Kaji (M.S. students, NYU) - Mentor one project on object-centric RGB-D spatial memory, including VLM-guided proposals, depth-grounded 3D projection, cross-view association, retrieval, and localization, Jan 2026 / Jul 2026 - Present
         - Yuhan Jiang (M.S. student, NYU) - Mentor RF hardware operation, calibration, and data acquisition for the FR3 robotic localization platform; co-author of MAGNETAR, under review at IEEE ICRA 2027, Jul 2026 - Present
     design:
@@ -78,6 +78,7 @@ sections:
       text: |-
         **Journals**
         - IEEE Transactions on Signal Processing (TSP)
+        - IEEE Transactions on Robotics (T-RO)
         - IEEE Transactions on Communications (TCOM)
         - IEEE Wireless Communications Letters (WCL)
         - IEEE Transactions on Vehicular Technology (TVT)
@@ -86,7 +87,7 @@ sections:
 
         **Conferences**
         - IEEE International Conference on Communications (ICC 2026)
-        - IEEE International Conference on Computer Communications (INFOCOM 2025)
+        - Workshop on Resilience in Next Generation Networks at IEEE INFOCOM (2025)
         - IEEE Global Communications Conference (GLOBECOM 2025)
         - IEEE Conference on Decision and Control (CDC 2025)
         - IEEE International Conference on Robotics and Automation (ICRA 2024)

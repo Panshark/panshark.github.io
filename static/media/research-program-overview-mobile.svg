@@ -4,7 +4,7 @@
      width="900" height="1700" viewBox="0 0 900 1700"
      role="img" aria-labelledby="title desc">
   <title id="title">RF spatial intelligence research program</title>
-  <desc id="desc">A mobile research overview connecting sparse physical RF evidence, MC-CLE likelihood scoring, LOCUS-DT wireless-digital-twin hypotheses, calibrated spatial beliefs, active measurement, and physical validation.</desc>
+  <desc id="desc">A mobile research overview connecting sparse physical RF evidence, MC-CLE likelihood scoring, LOCUS-DT wireless-digital-twin hypotheses, calibrated spatial beliefs, and physical validation. Future task-driven sensing will use these beliefs to select informative measurements.</desc>
 
   <defs>
     <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
@@ -59,7 +59,7 @@
     <text x="46" y="46" font-size="17" font-weight="760" letter-spacing="2.5" fill="#008f83">RESEARCH PROGRAM</text>
     <text x="46" y="95" font-size="42" font-weight="810" letter-spacing="-1.1" class="navy">RF Spatial Intelligence</text>
     <text x="46" y="130" font-size="22" font-weight="520" class="muted">Sparse physical evidence becomes calibrated spatial belief,</text>
-    <text x="46" y="158" font-size="22" font-weight="520" class="muted">then guides localization, motion, and the next measurement.</text>
+    <text x="46" y="158" font-size="22" font-weight="520" class="muted">then supports localization and future task-driven sensing.</text>
     <line x1="46" y1="174" x2="854" y2="174" stroke="#9fb8c3" stroke-width="2"/>
   </g>
 
@@ -139,8 +139,8 @@
   <g class="sans">
     <rect x="53" y="968" width="146" height="31" rx="15.5" fill="#008f83"/>
     <text x="126" y="989" text-anchor="middle" font-size="16" font-weight="760" fill="#ffffff">03  BELIEVE</text>
-    <text x="216" y="993" class="stageTitle navy">Calibrated belief and active update</text>
-    <text x="55" y="1024" class="stageCopy muted">Preserve alternatives and uncertainty, then choose where to sense next.</text>
+    <text x="216" y="993" class="stageTitle navy">Calibrated belief and future sensing</text>
+    <text x="55" y="1024" class="stageCopy muted">Preserve uncertainty for localization and future sensing policies.</text>
 
     <rect x="55" y="1052" width="210" height="234" rx="12" class="imageFrame"/>
     <image x="63" y="1059" width="194" height="220" preserveAspectRatio="xMidYMid meet"
@@ -167,7 +167,7 @@
         stroke-dasharray="12 9" marker-end="url(#arrowTeal)"/>
   <g class="sans">
     <rect x="595" y="916" width="264" height="27" rx="13.5" fill="#dff4f0" stroke="#86c9c1"/>
-    <text x="727" y="935" text-anchor="middle" font-size="15" font-weight="770" letter-spacing="0.7" class="teal">MOVE - SENSE - UPDATE</text>
+    <text x="727" y="935" text-anchor="middle" font-size="15" font-weight="770" letter-spacing="0.7" class="teal">Future: task-driven sensing</text>
   </g>
 
   <!-- Physical validation and extensions -->
@@ -176,7 +176,7 @@
   </g>
   <g class="sans">
     <text x="55" y="1420" font-size="25" font-weight="780" class="navy">Physical validation and extensions</text>
-    <text x="55" y="1447" font-size="17" font-weight="500" class="muted">Close the loop in measured systems; extend the same logic to adaptive wireless decisions.</text>
+    <text x="55" y="1447" font-size="17" font-weight="500" class="muted">Measured RF inference; adaptive wireless decisions; future active sensing.</text>
 
     <rect x="55" y="1465" width="530" height="145" rx="12" class="imageFrame"/>
     <image x="63" y="1472" width="514" height="131" preserveAspectRatio="xMidYMid meet"

@@ -15,16 +15,16 @@ tags:
 
 I co-developed ray-tracing wireless digital-twin and PIRL methods that use simulated propagation as a transferable prior for zero-shot indoor navigation. The robot's SLAM system supplies the map and robot pose; RF observations and physics-informed priors guide the search policy. This earlier work established the decision-making side of my current research on probabilistic RF localization and robotic sensing.
 
-![Posterior inference map](prob_estimate.png)
+![RF spatial-belief illustration](prob_estimate.png)
 
-*This figure links posterior RF belief maps with indoor navigation, showing how uncertainty-aware localization can inform a search policy.*
+*Research outlook: calibrated RF posteriors provide a spatial representation for future uncertainty-aware search policies.*
 
 <picture class="motion-aware-figure">
   <source media="(prefers-reduced-motion: reduce)" srcset="navigation_rollout_static.png">
   <img src="navigation_rollout_animation.gif" alt="Wireless navigation rollout animation" loading="lazy" decoding="async" />
 </picture>
 
-*The rollout animation shows a navigation policy using wireless belief maps as spatial guidance during indoor search.*
+*The simulation rollout illustrates wireless navigation with RF observations. PIRL trains search policies with physics-informed rewards; future work will connect these policies to calibrated spatial posteriors.*
 
 **Related papers**
 - [Zero-Shot Wireless Indoor Navigation through Physics-Informed Reinforcement Learning (ICRA 2024)](https://par.nsf.gov/servlets/purl/10548847)

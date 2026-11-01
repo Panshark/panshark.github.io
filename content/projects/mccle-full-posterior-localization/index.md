@@ -15,7 +15,7 @@ image:
   preview_only: true
 ---
 
-I lead **MC-CLE**, a probabilistic localization method that asks how compatible each candidate transmitter location is with a sparse angle-and-strength measurement. Instead of forcing ambiguous RF evidence into one coordinate, MC-CLE learns a spatial likelihood field that retains directional structure and multiple plausible hypotheses.
+I lead **MC-CLE**, a probabilistic localization method that asks how compatible each candidate transmitter location is with a sparse angle-and-strength measurement. MC-CLE learns a spatial likelihood field that preserves directional structure and multiple plausible location hypotheses.
 
 ## From physical measurement to spatial likelihood
 
@@ -24,7 +24,7 @@ The model conditions candidate-wise scoring on receiver geometry and the measure
 <div class="project-figure-wide">
   <figure class="project-figure-card">
     <img src="mccle_flow.png" alt="MC-CLE workflow from a ray-traced scene, receiver pose geometry, and RF channel signature to a full spatial posterior." loading="lazy" decoding="async">
-    <figcaption><strong>Journal schematic.</strong> Scene geometry, receiver pose, and the RF channel signature condition a learned candidate scorer, producing a full spatial posterior rather than a single estimate.</figcaption>
+    <figcaption><strong>Journal schematic.</strong> Scene geometry, receiver pose, and the RF channel signature condition a learned candidate scorer, producing a full posterior over candidate transmitter locations.</figcaption>
   </figure>
 </div>
 

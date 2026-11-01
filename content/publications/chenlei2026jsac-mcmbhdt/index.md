@@ -15,13 +15,13 @@ date: "2026-01-01"
 publishDate: "2026-01-01"
 publication_types:
   - "article-journal"
-publication: "IEEE Journal on Selected Areas in Communications"
+publication: "Manuscript; venue to be determined"
 publication_short: ""
 abstract: ""
-summary: "Under review at IEEE Journal on Selected Areas in Communications."
+summary: "Current manuscript; venue to be determined."
 tags:
   - "manuscript"
-  - "under-review"
+  - "venue-tbd"
 featured: true
 links: []
 image:

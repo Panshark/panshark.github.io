@@ -42,7 +42,7 @@ I lead **MAPLE-RF**, an efficient probabilistic RF source-localization method fo
 
 ## Method
 
-MAPLE-RF aligns estimated path angles and SNRs with spatial channels for map knownness, occupancy, line-of-sight visibility, receiver pose, bearing, and range. A residual U-Net then scores every candidate transmitter location in one pass. Unlike a full-grid digital-twin query, inference does not ray-trace every candidate whenever the map or receiver pose changes.
+MAPLE-RF aligns estimated path angles and SNRs with spatial channels for map knownness, occupancy, line-of-sight visibility, receiver pose, bearing, and range. A residual U-Net scores all candidate transmitter locations across the spatial grid in one forward pass, enabling efficient posterior updates as the map and receiver pose change.
 
 ## Findings
 

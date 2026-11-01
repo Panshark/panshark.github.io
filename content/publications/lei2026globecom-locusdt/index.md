@@ -42,4 +42,4 @@ slides: ""
 
 LOCUS-DT turns a wireless digital twin into a probabilistic inference engine: candidate-specific multipath signatures are scored against the observation and normalized into a spatial posterior, retaining multiple plausible locations when the evidence is incomplete.
 
-The continuing journal study, [*Site-Agnostic Posterior Inference for Indoor Localization with Ray-Tracing Wireless Digital Twins*](/publications/lei2026twc-siteagnostic-posterior/), develops the framework around site generalization and explicit digital-twin mismatch; a revision is in preparation for resubmission to IEEE Transactions on Wireless Communications.
+The continuing journal study, [*Posterior Inference for Indoor Localization with Ray-Tracing Wireless Digital Twins*](/publications/lei2026twc-siteagnostic-posterior/), develops the framework around site generalization and explicit digital-twin mismatch. It has been revised and resubmitted to IEEE Transactions on Wireless Communications.

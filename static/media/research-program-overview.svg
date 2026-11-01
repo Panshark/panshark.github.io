@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1800" height="1180" viewBox="0 0 1800 1180" role="img" aria-labelledby="title desc">
   <title id="title">RF sensing and probabilistic spatial intelligence research program</title>
-  <desc id="desc">A three-stage closed loop from physical RF and multimodal evidence, through MC-CLE likelihood scoring and LOCUS-DT wireless-digital-twin hypotheses, to calibrated spatial beliefs and active measurement. MobiFR3 provides physical validation, and MCMB-HDT is a complementary wireless systems extension.</desc>
+  <desc id="desc">A three-stage research program from physical RF and multimodal evidence, through MC-CLE likelihood scoring and LOCUS-DT wireless-digital-twin hypotheses, to calibrated spatial beliefs. Future task-driven sensing will use these beliefs to select informative measurements. MobiFR3 provides physical validation, and MCMB-HDT is a complementary wireless systems extension.</desc>
 
   <defs>
     <filter id="shadow" x="-15%" y="-15%" width="130%" height="145%">
@@ -111,20 +111,20 @@
     <g transform="translate(575,546)">
       <circle cx="7" cy="7" r="5" fill="#118a8a"/>
       <text x="22" y="13" class="method ink">MC-CLE candidate likelihoods</text>
-      <text x="22" y="35" class="small muted">compare each possible state with measured multipath</text>
+      <text x="22" y="35" class="small muted">learned from AoA/SNR inputs</text>
       <circle cx="7" cy="63" r="5" fill="#118a8a"/>
       <text x="22" y="69" class="method ink">Neural spatial scoring</text>
       <text x="22" y="91" class="small muted">combines map, geometry, RF cues, and uncertainty</text>
       <circle cx="7" cy="119" r="5" fill="#8a1538"/>
       <text x="22" y="125" class="method ink">Real-to-sim calibration</text>
-      <text x="22" y="147" class="small muted">tests robustness when the digital twin is imperfect</text>
+      <text x="22" y="147" class="small muted">aligns measured antenna and RF-chain responses</text>
     </g>
 
     <!-- Stage 3 -->
     <circle cx="1167" cy="219" r="18" fill="#118a8a"/>
     <text x="1167" y="226" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="700">3</text>
-    <text x="1197" y="227" class="stage-title ink">Calibrated belief / active update</text>
-    <text x="1163" y="262" class="stage-copy muted">Retain multiple hypotheses, then act to resolve them</text>
+    <text x="1197" y="227" class="stage-title ink">Calibrated belief / future sensing</text>
+    <text x="1163" y="262" class="stage-copy muted">Retain multiple hypotheses for task-driven sensing</text>
 
     <text x="1166" y="293" class="mini-label teal">POSITION</text>
     <rect x="1165" y="304" width="142" height="194" rx="11" fill="#f4faf9" stroke="#d7e8e5"/>
@@ -140,7 +140,7 @@
 
     <text x="1167" y="530" class="stage-kicker teal">BELIEF IS AN INTERFACE TO ACTION</text>
     <text x="1167" y="558" class="small muted">A posterior records where the source may be, how confident</text>
-    <text x="1167" y="580" class="small muted">the system is, and which new view can reduce uncertainty.</text>
+    <text x="1167" y="580" class="small muted">the system is, providing inputs for future sensing policies.</text>
 
     <g transform="translate(1165,614)">
       <rect width="154" height="54" rx="15" fill="#eef7f6" stroke="#cee4e1"/>
@@ -171,7 +171,7 @@
   <g class="sans">
     <path d="M 1680 690 C 1718 714 1719 780 1665 798 H 307 C 260 798 248 777 248 744" fill="none" stroke="#118a8a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowTeal)"/>
     <rect x="653" y="776" width="541" height="43" rx="21.5" fill="#ffffff" stroke="#cfe4e1"/>
-    <text x="923.5" y="803" text-anchor="middle" class="teal" font-size="17" font-weight="650">new viewpoint → new evidence → sharper belief</text>
+    <text x="923.5" y="803" text-anchor="middle" class="teal" font-size="17" font-weight="650">Future: task-driven sensing</text>
   </g>
 
   <!-- Secondary research cards -->

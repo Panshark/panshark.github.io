@@ -102,7 +102,7 @@ skills:
     items:
       - label: Sionna RT & scene design
         level: 5
-      - label: ROS 2 & TurtleBot4
+      - label: ROS 2 & mobile robotic sensing
         level: 4
       - label: Wireless InSite, SUMO & CARLA
         level: 4
@@ -112,6 +112,8 @@ skills:
     items:
       - label: MobiFR3 architecture & experiments
         level: 5
+      - label: TurtleBot4 & Jackal UGV platforms
+        level: 4
       - label: Pi-Radio SDR channel sounding
         level: 4
       - label: Antenna-pattern & RF-chain calibration

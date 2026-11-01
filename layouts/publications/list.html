@@ -25,9 +25,9 @@
     {{ $manuscripts = sort $manuscripts "Params.manuscript_order" "asc" }}
 
     {{ $groups := slice
-      (dict "title" "Manuscripts Under Review or in Revision" "description" "Current submissions and revisions are labeled explicitly; venue-only entries below are already peer reviewed." "pages" $manuscripts)
+      (dict "title" "Current Manuscripts" "description" "Active submissions and other current manuscripts; review status is labeled explicitly." "pages" $manuscripts)
       (dict "title" "Peer-Reviewed Publications" "description" "Journal, conference, and workshop publications." "pages" $peerReviewed)
-      (dict "title" "Archived and Other Preprints" "description" "Earlier public manuscripts that are not listed as active submissions in the current CV." "pages" $preprints)
+      (dict "title" "Archived and Other Preprints" "description" "Earlier public manuscripts retained for reference." "pages" $preprints)
     }}
 
     {{ range $groups }}
@@ -67,6 +67,8 @@
                 <div class="full-publication-badges">
                   {{ if in $tags "under-review" }}<span>Under review</span>{{ end }}
                   {{ if in $tags "in-revision" }}<span>Revision in preparation</span>{{ end }}
+                  {{ if in $tags "revised-resubmitted" }}<span>Revised and resubmitted</span>{{ end }}
+                  {{ if in $tags "venue-tbd" }}<span>Venue to be determined</span>{{ end }}
                   {{ if in $tags "preprint" }}<span>Archived preprint</span>{{ end }}
                   {{ range .Params.roles }}<span class="role-badge">{{ . }}</span>{{ end }}
                 </div>

@@ -13,7 +13,7 @@ tags:
   - Embodied Agents
 ---
 
-I mentor two M.S. students on an exploratory object-centric RGB-D spatial-memory project for wearable and embodied agents. The pipeline converts selected egocentric RGB, depth, and pose observations into localized object records, allowing retrieval and spatial queries without treating every frame as a dense map. This direction complements my RF work through the shared problems of partial observability, spatial belief, and selective sensing, but it is not presented as a mature publication line.
+I mentor two M.S. students on an exploratory object-centric RGB-D spatial-memory project for wearable and embodied agents. The pipeline converts selected egocentric RGB, depth, and pose observations into localized object records for retrieval and spatial queries. This emerging direction complements my RF work through the shared problems of partial observability, spatial belief, and selective sensing.
 
 ![Adaptive sparse sensing and object-centric semantic 3D memory](spatial_memory_overview.png)
 

@@ -31,11 +31,11 @@ For every candidate location, the digital twin supplies the multipath structure 
 <div class="project-figure-wide project-figure-wide--results">
   <figure class="project-figure-card">
     <img src="locus_dt_conference_posteriors.png" alt="LOCUS-DT posterior localization results in three unseen indoor layouts." loading="lazy" decoding="async">
-    <figcaption><strong>Conference evidence.</strong> Experiments across three unseen indoor layouts recover structured, often multimodal posteriors that expose blockage and multipath instead of hiding them behind one coordinate.</figcaption>
+    <figcaption><strong>Conference evidence.</strong> Simulations across three unseen indoor layouts recover structured, often multimodal posteriors that reflect blockage and multipath.</figcaption>
   </figure>
 </div>
 
-The peer-reviewed [IEEE GLOBECOM 2026 paper](https://arxiv.org/abs/2608.00406) establishes LOCUS-DT. The first- and corresponding-author journal extension, [*Site-Agnostic Posterior Inference for Indoor Localization with Ray-Tracing Wireless Digital Twins*](/publications/lei2026twc-siteagnostic-posterior/), studies site generalization and explicit digital-twin mismatch; a revision is in preparation for resubmission to **IEEE Transactions on Wireless Communications (TWC)**.
+The peer-reviewed [IEEE GLOBECOM 2026 paper](https://arxiv.org/abs/2608.00406) establishes LOCUS-DT. The first- and corresponding-author journal extension, [*Posterior Inference for Indoor Localization with Ray-Tracing Wireless Digital Twins*](/publications/lei2026twc-siteagnostic-posterior/), studies site generalization and explicit digital-twin mismatch. It has been **revised and resubmitted to IEEE Transactions on Wireless Communications (TWC)**.
 
 ## Relationship to MC-CLE
 

@@ -1445,6 +1445,14 @@ a:hover {
   transform: translateX(-50%);
 }
 
+/* Preserve complete platform photographs rather than cropping hardware. */
+.platform-configurations .project-figure-card img {
+  height: clamp(330px, 42vw, 480px);
+  object-fit: contain;
+  object-position: center center;
+  background: #fff;
+}
+
 .project-figure-card {
   display: flex;
   min-width: 0;

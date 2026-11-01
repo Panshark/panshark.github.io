@@ -40,6 +40,6 @@ slides: ""
   <span>First and corresponding author</span>
 </div>
 
-MC-CLE scores candidate transmitter states rather than regressing directly to one coordinate. The resulting posterior retains spatial ambiguity created by blockage, antenna directivity, and multipath, and provides a probabilistic interface for multi-view fusion and downstream decisions.
+MC-CLE learns likelihood scores for candidate transmitter states. The resulting posterior retains spatial ambiguity created by blockage, antenna directivity, and multipath, and provides a probabilistic interface for multi-view fusion and downstream decisions.
 
 The continuing journal study, [*Learning a Measurement-to-Posterior Map for Wireless Localization*](/publications/lei2025-likelihoodposterior-wirelessloc/), is under review at IEEE Transactions on Vehicular Technology.

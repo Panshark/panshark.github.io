@@ -11,7 +11,7 @@ publication_types:
 publication: "arXiv preprint"
 publication_short: ""
 abstract: ""
-summary: "Archived preprint; not listed as an active submission in the current CV."
+summary: "Archived preprint on adaptive route recommendations in urban transportation networks."
 tags:
   - preprint
 featured: false

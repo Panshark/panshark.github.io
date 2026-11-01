@@ -1,5 +1,5 @@
 ---
-title: "Site-Agnostic Posterior Inference for Indoor Localization with Ray-Tracing Wireless Digital Twins"
+title: "Posterior Inference for Indoor Localization with Ray-Tracing Wireless Digital Twins"
 authors:
   - me
   - Roberto Bomfin
@@ -16,10 +16,10 @@ publication_types:
 publication: "IEEE Transactions on Wireless Communications"
 publication_short: ""
 abstract: ""
-summary: "Revision in preparation for resubmission to IEEE Transactions on Wireless Communications."
+summary: "Revised and resubmitted to IEEE Transactions on Wireless Communications."
 tags:
   - "manuscript"
-  - "in-revision"
+  - "revised-resubmitted"
 featured: true
 links: []
 image:

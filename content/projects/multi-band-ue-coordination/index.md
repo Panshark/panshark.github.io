@@ -36,4 +36,4 @@ On top of this twin, a Transformer predicts per-array rates from sparse asynchro
 
 **Related papers**
 - [Transformer-Based Rate Prediction for Multi-Band Cellular Handsets](https://arxiv.org/pdf/2509.25722) (IEEE ICC Workshops 2026)
-- [MCMB-HDT: A Multi-Cell Multi-Band Handset Digital Twin for Learning-Based Closed-Loop Array Activation](/publications/chenlei2026jsac-mcmbhdt/) (IEEE JSAC, under review)
+- [MCMB-HDT: A Multi-Cell Multi-Band Handset Digital Twin for Learning-Based Closed-Loop Array Activation](/publications/chenlei2026jsac-mcmbhdt/) (manuscript; venue to be determined)

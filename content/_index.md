@@ -59,10 +59,10 @@ sections:
         <p class="section-lede">Across five core projects—<a href="/projects/mccle-full-posterior-localization/">MC-CLE</a>, <a href="/projects/locus-dt-digital-twin-localization/">LOCUS-DT</a>, <a href="/projects/magnetar-joint-rf-pose-inference/">MAGNETAR</a>, <a href="/projects/maple-rf-partial-map-localization/">MAPLE-RF</a>, and <a href="/projects/wireless-robotics-platform/">MobiFR3</a>—I combine measurement-conditioned inference, wireless digital twins, and robotic experimentation to turn ambiguous RF evidence into spatial beliefs for localization, sensing, and action.</p>
 
         <figure class="research-map-panel" aria-labelledby="research-map-caption">
-          <a class="research-map-link" href="/media/research-program-overview.svg?v=20260922-1" target="_blank" rel="noopener" aria-label="Open the full-size research program map">
+          <a class="research-map-link" href="/media/research-program-overview.svg?v=20261031-1" target="_blank" rel="noopener" aria-label="Open the full-size research program map">
             <picture class="research-overview-picture">
-              <source media="(max-width: 680px)" srcset="/media/research-program-overview-mobile.svg?v=20260922-1">
-              <img src="/media/research-program-overview.svg?v=20260922-1" alt="Research program connecting sparse RF observations, MC-CLE and LOCUS-DT posterior inference, real-to-sim calibration, and proposed task-driven sensing. MobiFR3 provides RF measurements and supports experimental validation of pose inference.">
+              <source media="(max-width: 680px)" srcset="/media/research-program-overview-mobile.svg?v=20261031-1">
+              <img src="/media/research-program-overview.svg?v=20261031-1" alt="Research program connecting sparse RF observations, MC-CLE and LOCUS-DT posterior inference, real-to-sim calibration, and proposed task-driven sensing. MobiFR3 provides RF measurements and supports experimental validation of pose inference.">
             </picture>
           </a>
           <figcaption id="research-map-caption">
@@ -158,7 +158,7 @@ sections:
               <li><strong>IEEE ICRA 2027 · under review</strong><a href="/publications/lei2027-icra-magnetar/">MAGNETAR: Multipath-Guided Spatial Posteriors for Transmitter Pose Inference in the Upper Mid-Band</a></li>
               <li><strong>IEEE ICRA 2027 · under review</strong><a href="/publications/lei2027-icra-maple-rf/">MAPLE-RF: Efficient Probabilistic RF Source Localization in Partially Explored Environments</a></li>
               <li><strong>IEEE TVT · under review</strong><a href="/publications/lei2025-likelihoodposterior-wirelessloc/">Learning a Measurement-to-Posterior Map for Wireless Localization</a></li>
-              <li><strong>IEEE TWC · revision in preparation</strong><a href="/publications/lei2026twc-siteagnostic-posterior/">Site-Agnostic Posterior Inference for Indoor Localization with Ray-Tracing Wireless Digital Twins</a></li>
+              <li><strong>IEEE TWC · revised and resubmitted</strong><a href="/publications/lei2026twc-siteagnostic-posterior/">Posterior Inference for Indoor Localization with Ray-Tracing Wireless Digital Twins</a></li>
             </ul>
           </section>
           <section class="publication-column" aria-labelledby="peer-reviewed-heading">

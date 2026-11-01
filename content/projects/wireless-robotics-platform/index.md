@@ -1,32 +1,44 @@
 ---
 title: Robotic RF Localization & Experimental Systems
-summary: A 10-GHz robotic RF testbed connecting channel sounding, mobile sensing, localization, and SLAM-based navigation experiments.
+summary: A heterogeneous robotic RF testbed with TurtleBot4 and Jackal configurations, combining 10-GHz channel sounding with geometric and visual sensing.
 date: 2025-01-01
 featured: true
 weight: 5
 project_tier: core
 project_label: Core project
+image:
+  preview_only: true
+  fit: contain
 tags:
   - Wireless
   - Robotics
   - Systems
 ---
 
-I lead the architecture and development of **MobiFR3**, a heterogeneous 10-GHz robotic RF testbed for localization experiments and SLAM-based navigation. The current system connects Pi-Radio SDR channel sounding with TurtleBot4/ROS 2, odometry, 2D LiDAR, and RGB sensing. Jackal UGV integration is in progress.
+**MobiFR3** is a heterogeneous robotic RF testbed for studying wireless localization with geometric and visual context. Its **TurtleBot4 and Jackal UGV configurations** combine mobile sensing with a dedicated Pi-Radio FR3 radio payload on each robot. The platform connects 10-GHz channel-sounding experiments with ROS 2, robot pose and map information, LiDAR, and RGB-D sensing.
 
-My role spans system architecture, experiment design, RF-robot synchronization, measurement-aligned simulation, localization inference, and evaluation. I mentor student collaborators in RF hardware operation, calibration, and data collection; routine RF acquisition is conducted as a team rather than presented as a single-person hardware effort.
+My contributions span system architecture, experiment design, RF–robot alignment, measurement-aligned simulation, probabilistic inference, and evaluation. I work with and mentor student collaborators on RF operation, calibration, and data collection.
 
-<img class="turtlebot-portrait" src="rf_robot.jpg" alt="MobiFR3 RF-enabled TurtleBot4 platform" />
-
-*MobiFR3 integrates the mobile robot, RF front end, compute, power, and control layers into one experimental platform.*
+<div class="project-figure-grid platform-configurations" aria-label="Current Jackal and earlier TurtleBot4 MobiFR3 configurations">
+  <figure class="project-figure-card">
+    <img src="mobifr3-jackal-2026.webp" alt="MobiFR3 Jackal UGV with its mounted Pi-Radio FR3 radio payload, Vivaldi antennas, 3D LiDAR, RGB-D camera, compute, and power equipment." width="872" height="1122" loading="lazy" decoding="async">
+    <figcaption><strong>Jackal UGV configuration · 2026.</strong> The mounted RF payload is complemented by Ouster OS1 3D LiDAR and an Intel RealSense RGB-D camera.</figcaption>
+  </figure>
+  <figure class="project-figure-card">
+    <img src="mobifr3-turtlebot4-earlier.webp" alt="Earlier MobiFR3 TurtleBot4 configuration with a Pi-Radio FR3 payload, Vivaldi antennas, onboard LiDAR, compute, and power equipment." width="800" height="1565" loading="lazy" decoding="async">
+    <figcaption><strong>Earlier TurtleBot4 configuration.</strong> The compact platform combines the FR3 radio payload with 2D LiDAR and onboard RGB-D sensing; it was used in the earlier robotic RF experiments.</figcaption>
+  </figure>
+</div>
 
 ![Pi-Radio SDR hardware bench](rf_hardware_bench.jpg)
 
-*The team-operated Pi-Radio SDR stack combines FR3 RF hardware, Vivaldi antennas, and local compute/control equipment.*
+*The Pi-Radio SDR stack combines FR3 RF hardware, Vivaldi antennas, and local compute/control equipment.*
 
 ## From system to inference
 
-MobiFR3 provides the measured data and controlled geometry used by [MAGNETAR](/projects/magnetar-joint-rf-pose-inference/). The algorithm learns a joint posterior over transmitter position and heading from asynchronous AoA/SNR multipath snapshots, with real-to-sim calibration based on measured antenna patterns and RF-chain/noise effects. This connects the physical system directly to probabilistic inference rather than treating the robot as a demonstration platform alone.
+The earlier MobiFR3 setup provides the measured data and controlled geometry used by [MAGNETAR](/projects/magnetar-joint-rf-pose-inference/). The algorithm infers a joint posterior over **RF transmitter position and heading**, conditioned on known receiver poses and asynchronous AoA/SNR multipath snapshots. Real-to-sim calibration incorporates measured antenna patterns and RF-chain/noise effects.
+
+The broader research program also includes [MAPLE-RF](/projects/maple-rf-partial-map-localization/) for source localization with partial maps, [LOCUS-DT](/projects/locus-dt-digital-twin-localization/) for digital-twin-conditioned posterior inference, and [physics-informed wireless navigation](/projects/wireless-indoor-navigation/). These simulation studies motivate future closed-loop experiments on the testbed.
 
 ## Media & Public Demonstrations
 
@@ -52,7 +64,8 @@ At the 2025 Brooklyn 6G Summit, I demonstrated the FR3 robotic sensing and local
 
 **System capabilities**
 - Pi-Radio SDR channel sounding with Vivaldi antennas and motion-controlled 10-GHz measurements.
-- Transmit/receive waveform control, capture, synchronization, channel estimation, SNR estimation, and AoA processing in a team-operated workflow.
-- Scripted TurtleBot4, linear-track, and D48 pan-tilt motion for reproducible measurement grids.
+- Transmit/receive waveform control, capture, synchronization, channel estimation, SNR estimation, and AoA processing.
+- TurtleBot4 and Jackal mobile configurations with platform-specific LiDAR and RGB-D sensing; recorded Jackal SLAM and geometric/visual examples complement the RF observations.
+- Scripted TurtleBot4, linear-track, and D48 pan-tilt motion in the earlier reproducible RF measurement grids.
 - Measurement-aligned Sionna RT scenes with TX/RX pose and motion, measured antenna patterns, and stochastic RF-chain/noise effects.
 - Physical validation for posterior localization and future closed-loop sensing/navigation experiments.

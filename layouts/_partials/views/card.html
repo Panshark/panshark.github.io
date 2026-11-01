@@ -13,6 +13,11 @@
   {{ $anchor = $item.Params.image.focal_point | default "Center" }}
 {{ end }}
 {{ $fill_image := .config.fill_image | default true }}
+{{ if and $item.Params.image (reflect.IsMap $item.Params.image) }}
+  {{ if eq $item.Params.image.fit "contain" }}
+    {{ $fill_image = false }}
+  {{ end }}
+{{ end }}
 {{ $showDate := .config.show_date | default true }}
 {{ $showReadTime := .config.show_read_time | default true }}
 {{ $showReadMore := .config.show_read_more | default true }}
