@@ -112,9 +112,11 @@ sections:
               <p class="featured-media-kicker">Brooklyn 6G Summit 2026</p>
               <h3 id="b6gs-2026-title">Finding the Invisible</h3>
               <p class="featured-media-format">Research showcase · 0:45</p>
-              <p id="b6gs-2026-description">An NYU WIRELESS research showcase featuring robotic RF experiments with MAGNETAR and localization with incomplete maps in MAPLE-RF simulations.</p>
+              <p id="b6gs-2026-description">Our NYU WIRELESS team exhibited the TurtleBot4 and Jackal MobiFR3 platforms at B6GS 2026, sharing wireless-aided robotics and RF source-localization demos.</p>
+              <p>The video introduces MAGNETAR's measured-RF experiments and MAPLE-RF's partial-map localization simulations.</p>
               <div class="media-links" aria-label="Showcase and related projects">
                 <a href="https://youtu.be/PJaz6TokX84" target="_blank" rel="noopener">Watch on YouTube</a>
+                <a href="https://www.linkedin.com/posts/haozhelei-panshark_b6gs-6g-nyuwireless-ugcPost-7524236390554050561-LiM8/" target="_blank" rel="noopener">B6GS 2026 exhibit recap</a>
                 <a href="/projects/magnetar-joint-rf-pose-inference/">MAGNETAR</a>
                 <a href="/projects/maple-rf-partial-map-localization/">MAPLE-RF</a>
                 <a href="/projects/wireless-robotics-platform/">MobiFR3 platform</a>

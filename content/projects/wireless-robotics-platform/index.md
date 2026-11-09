@@ -1,7 +1,8 @@
 ---
 title: Robotic RF Localization & Experimental Systems
-summary: A heterogeneous robotic RF testbed with TurtleBot4 and Jackal configurations, combining 10-GHz channel sounding with geometric and visual sensing.
+summary: A robotic RF testbed with TurtleBot4 and Jackal configurations, combining 10-GHz channel sounding with geometric and visual sensing; exhibited at B6GS 2026.
 date: 2025-01-01
+lastmod: 2026-11-08
 featured: true
 weight: 5
 project_tier: core
@@ -22,7 +23,7 @@ My contributions span system architecture, experiment design, RF–robot alignme
 <div class="project-figure-grid platform-configurations" aria-label="Current Jackal and earlier TurtleBot4 MobiFR3 configurations">
   <figure class="project-figure-card">
     <img src="mobifr3-jackal-2026.webp" alt="MobiFR3 Jackal UGV with its mounted Pi-Radio FR3 radio payload, Vivaldi antennas, 3D LiDAR, RGB-D camera, compute, and power equipment." width="872" height="1122" loading="lazy" decoding="async">
-    <figcaption><strong>Jackal UGV configuration · 2026.</strong> The mounted RF payload is complemented by Ouster OS1 3D LiDAR and an Intel RealSense RGB-D camera.</figcaption>
+    <figcaption><strong>Jackal UGV configuration · 2026.</strong> The mounted RF payload is complemented by Ouster OS1 3D LiDAR and an Intel RealSense RGB-D camera. This configuration was exhibited at B6GS 2026.</figcaption>
   </figure>
   <figure class="project-figure-card">
     <img src="mobifr3-turtlebot4-earlier.webp" alt="Earlier MobiFR3 TurtleBot4 configuration with a Pi-Radio FR3 payload, Vivaldi antennas, onboard LiDAR, compute, and power equipment." width="800" height="1565" loading="lazy" decoding="async">
@@ -44,7 +45,11 @@ The broader research program also includes [MAPLE-RF](/projects/maple-rf-partial
 
 ### Brooklyn 6G Summit 2026
 
-[Finding the Invisible — watch the 45-second research showcase](/#media), featuring MAGNETAR's robotic RF experiments on MobiFR3 and MAPLE-RF's partial-map localization simulations.
+Our NYU WIRELESS team exhibited the **Jackal and TurtleBot4 MobiFR3 platforms** at the 2026 Brooklyn 6G Summit. The booth brought together our mobile FR3 hardware and RF source-localization demos, with discussions on how wireless observations can support spatial reasoning when direct paths are blocked or maps are incomplete.
+
+[Exhibit recap and photos on LinkedIn](https://www.linkedin.com/posts/haozhelei-panshark_b6gs-6g-nyuwireless-ugcPost-7524236390554050561-LiM8/).
+
+[Finding the Invisible — watch the 45-second research showcase](/#media) introduces MAGNETAR's robotic RF experiments on MobiFR3 and MAPLE-RF's partial-map localization simulations.
 
 ### Brooklyn 6G Summit 2025
 

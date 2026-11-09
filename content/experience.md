@@ -45,6 +45,7 @@ sections:
             <h3>RF, robotics, and sensing</h3>
             <ul>
               <li>MobiFR3 system architecture, experiment design, RF-robot alignment, and evaluation</li>
+              <li>Jackal and TurtleBot4 MobiFR3 platforms exhibited at the 2026 Brooklyn 6G Summit; <a href="/projects/wireless-robotics-platform/">platform and demonstration details</a></li>
               <li>Team-operated Pi-Radio SDR channel sounding; antenna-pattern and RF-chain calibration</li>
               <li>TI mmWave radar point-cloud acquisition and filtering for UAV trajectory estimation</li>
             </ul>
